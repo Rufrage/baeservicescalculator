@@ -123,19 +123,86 @@
                             onclick="addField('tv_schrank', 'wohnzimmer', 'TV-Schrank')">TV-Schrank
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('umzugskarton', 'wohnzimmer', 'Umzugskarton bis 80 l (gepackt)')">Umzugskarton bis 80 l (gepackt)
+                            onclick="addField('umzugskarton_b80', 'wohnzimmer', 'Umzugskarton bis 80 l (gepackt)')">Umzugskarton bis 80 l
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('umzugskarton_ü80', 'wohnzimmer', 'Umzugskarton über 80 l (gepackt)')">Umzugskarton über 80 l
                     </button>
 
                 </div>
                 <h3>Schlafzimmer</h3>
                 <div>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('sofa_couch', 'schlafzimmer', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
-                    </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('tisch', 'schlafzimmer', 'Tisch (m)')">Tisch
+                            onclick="addField('schrank_bis_2_türen', 'schlafzimmer', 'Schrank bis 2 Türen, nicht zerlegb.')">Schrank bis 2 Türen
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('schrank_zerlegbar', 'schlafzimmer', 'Schrank zerlegb. (m)')">Schrank zerlegb.
+                            onclick="addField('schrank_zerlegbar', 'schlafzimmer', 'Schrank zerlegbar (je angefang. m)')">Schrank zerlegbar
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('doppelbett', 'schlafzimmer', 'Doppelbett komplett')">Doppelbett komplett
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('einzelbett', 'schlafzimmer', 'Einzelbett komplett')">Einzelbett komplett
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('bett_französisch', 'schlafzimmer', 'Französisches Bett komplett')">Französisches Bett komplett
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('bettzeug', 'schlafzimmer', 'Bettzeug je Betteinheit')">Bettzeug je Betteinheit
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('nachttisch', 'schlafzimmer', 'Nachttisch')">Nachttisch
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('bettumbau', 'schlafzimmer', 'Bettumbau')">Bettumbau
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('kommode', 'schlafzimmer', 'Kommode')">Kommode
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('frisierkommode', 'schlafzimmer', 'Frisierkommode (mit Spiegel)')">Frisierkommode
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('wäschetruhe', 'schlafzimmer', 'Wäschetruhe')">Wäschetruhe
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('stuhl_hocker', 'schlafzimmer', 'Stuhl, Hocker')">Stuhl, Hocker
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('spiegel_ü0,8', 'schlafzimmer', 'Spiegel über 0,8 (m)')">Spiegel über 0,8 (m)
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('deckenlampe', 'schlafzimmer', 'Deckenlampe')">Deckenlampe
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('fernseher', 'schlafzimmer', 'Fernseher')">Fernseher
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('teppich', 'schlafzimmer', 'Teppich')">Teppich
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('bilder_b0,8', 'schlafzimmer', 'Bilder bis 0,8 (m)')">Bilder bis 0,8 (m)
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('bilder_ü0,8', 'schlafzimmer', 'Bilder über 0,8 (m)')">Bilder über 0,8 (m)
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('tv_schrank', 'schlafzimmer', 'TV-Schrank')">TV-Schrank
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('kleiderbehältnis', 'schlafzimmer', 'Kleiderbehältnis')">Kleiderbehältnis
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('umzugskarton_b80', 'schlafzimmer', 'Umzugskarton bis 80 l')">Umzugskarton bis 80 l
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('umzugskarton_ü80', 'schlafzimmer', 'Umzugskarton über 80 l')">Umzugskarton über 80 l
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('umzugskarton_b80_gepackt', 'schlafzimmer', 'Umzugskarton bis 80 l (gepackt)')">Umzugskarton bis 80 l(gepackt)
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('umzugskarton_ü80_gepackt', 'schlafzimmer', 'Umzugskarton über 80 l (gepackt)')">Umzugskarton über 80 l(gepackt)
                     </button>
                 </div>
                 <h3>Esszimmer</h3>
@@ -304,7 +371,7 @@
             }
         }
 
-
+        //<span class="glyphicon glyphicon-plus-sign"></span>
         function updateDistance() {
             if (auszug_autocomplete.getPlace() && einzug_autocomplete.getPlace()) {
                 $auszug = auszug_autocomplete.getPlace().formatted_address;
