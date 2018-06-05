@@ -6,117 +6,119 @@
 
     <div class="row">
 
-        {{-- Sidebar for list buttons --}}
-        <div class="col-3" id="accordion">
-            <h3>Wohnzimmer</h3>
-            <div>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('sofa_couch', 'wohnzimmer', 'Sofa/Couch/Liege (Anzahl Sitze)')">Sofa/Couch
-                </button>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('sitzlandschaft', 'wohnzimmer', 'Sitzlandschaft(Element, Anzahl Sitze)')">Sitzlandschaft (Element)
-                </button>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('sessel_mit', 'wohnzimmer','Sessel mit Armlehne')">Sessel mit Armlehne
-                </button>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('sessel_ohne', 'wohnzimmer', 'Sessel ohne Armlehne')">Sessel ohne Armlehne
-                </button>
-                <button class="btn btn-sm btn-block" onclick="addField('stuhl_mit', 'wohnzimmer','Stuhl mit Armlehne')">
-                    Stuhl mit Armlehne
-                </button>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('stuhl_ohne', 'wohnzimmer', 'Stuhl ohne Armlehne')">Stuhl ohne Armlehne
-                </button>
-                <button class="btn btn-sm btn-block" onclick="addField('tisch', 'wohnzimmer', 'Tisch (m)')">Tisch
-                </button>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('schrank_zerlegbar', 'wohnzimmer', 'Schrank zerlegb. (m)')">Schrank zerlegb.
-                </button>
-                <button class="btn btn-sm btn-block" onclick="addField('buffet', 'wohnzimmer', 'Buffet')">Buffet
-                </button>
-                <button class="btn btn-sm btn-block" onclick="addField('deckenlampe', 'wohnzimmer', 'Deckenlampe')">
-                    Deckenlampe
-                </button>
-            </div>
-            <h3>Schlafzimmer</h3>
-            <div>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('sofa_couch', 'schlafzimmer', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
-                </button>
-                <button class="btn btn-sm btn-block" onclick="addField('tisch', 'schlafzimmer', 'Tisch (m)')">Tisch
-                </button>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('schrank_zerlegbar', 'schlafzimmer', 'Schrank zerlegb. (m)')">Schrank zerlegb.
-                </button>
-            </div>
-            <h3>Esszimmer</h3>
-            <div>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('sofa_couch', 'esszimmer', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
-                </button>
-                <button class="btn btn-sm btn-block" onclick="addField('tisch', 'esszimmer', 'Tisch (m)')">Tisch
-                </button>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('schrank_zerlegbar', 'esszimmer', 'Schrank zerlegb. (m)')">Schrank zerlegb.
-                </button>
-            </div>
-            <h3>Küche</h3>
-            <div>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('sofa_couch', 'küche', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
-                </button>
-                <button class="btn btn-sm btn-block" onclick="addField('tisch', 'küche', 'Tisch (m)')">Tisch
-                </button>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('schrank_zerlegbar', 'küche', 'Schrank zerlegb. (m)')">Schrank zerlegb.
-                </button>
-            </div>
-            <h3>Bad</h3>
-            <div>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('sofa_couch', 'bad', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
-                </button>
-                <button class="btn btn-sm btn-block" onclick="addField('tisch', 'bad', 'Tisch (m)')">Tisch
-                </button>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('schrank_zerlegbar', 'bad', 'Schrank zerlegb. (m)')">Schrank zerlegb.
-                </button>
-            </div>
-            <h3>Kinderzimmer</h3>
-            <div>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('sofa_couch', 'kinderzimmer', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
-                </button>
-                <button class="btn btn-sm btn-block" onclick="addField('tisch', 'kinderzimmer', 'Tisch (m)')">Tisch
-                </button>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('schrank_zerlegbar', 'kinderzimmer', 'Schrank zerlegb. (m)')">Schrank zerlegb.
-                </button>
-            </div>
-            <h3>Sonstiges</h3>
-            <div>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('sofa_couch', 'sonstiges', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
-                </button>
-                <button class="btn btn-sm btn-block" onclick="addField('tisch', 'sonstiges', 'Tisch (m)')">Tisch
-                </button>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('schrank_zerlegbar', 'sonstiges', 'Schrank zerlegb. (m)')">Schrank zerlegb.
-                </button>
-            </div>
-            <h3>Weitere Zimmer</h3>
-            <div>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('sofa_couch', 'weitere_zimmer', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
-                </button>
-                <button class="btn btn-sm btn-block" onclick="addField('tisch', 'weitere_zimmer', 'Tisch (m)')">Tisch
-                </button>
-                <button class="btn btn-sm btn-block"
-                        onclick="addField('schrank_zerlegbar', 'weitere_zimmer', 'Schrank zerlegb. (m)')">Schrank zerlegb.
-                </button>
-            </div>
+        <div class="col-3">
+            {{-- Sidebar for list buttons --}}
+            <div class="sticky-top" id="accordion" style="top: 20px;">
+                <h3>Wohnzimmer</h3>
+                <div>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('sofa_couch', 'wohnzimmer', 'Sofa/Couch/Liege (Anzahl Sitze)')">Sofa/Couch
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('sitzlandschaft', 'wohnzimmer', 'Sitzlandschaft(Element, Anzahl Sitze)')">Sitzlandschaft (Element)
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('sessel_mit', 'wohnzimmer','Sessel mit Armlehne')">Sessel mit Armlehne
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('sessel_ohne', 'wohnzimmer', 'Sessel ohne Armlehne')">Sessel ohne Armlehne
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('stuhl_mit', 'wohnzimmer','Stuhl mit Armlehne')">
+                        Stuhl mit Armlehne
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('stuhl_ohne', 'wohnzimmer', 'Stuhl ohne Armlehne')">Stuhl ohne Armlehne
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch', 'wohnzimmer', 'Tisch (m)')">Tisch
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('schrank_zerlegbar', 'wohnzimmer', 'Schrank zerlegb. (m)')">Schrank zerlegb.
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('buffet', 'wohnzimmer', 'Buffet')">Buffet
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('deckenlampe', 'wohnzimmer', 'Deckenlampe')">
+                        Deckenlampe
+                    </button>
+                </div>
+                <h3>Schlafzimmer</h3>
+                <div>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('sofa_couch', 'schlafzimmer', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch', 'schlafzimmer', 'Tisch (m)')">Tisch
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('schrank_zerlegbar', 'schlafzimmer', 'Schrank zerlegb. (m)')">Schrank zerlegb.
+                    </button>
+                </div>
+                <h3>Esszimmer</h3>
+                <div>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('sofa_couch', 'esszimmer', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch', 'esszimmer', 'Tisch (m)')">Tisch
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('schrank_zerlegbar', 'esszimmer', 'Schrank zerlegb. (m)')">Schrank zerlegb.
+                    </button>
+                </div>
+                <h3>Küche</h3>
+                <div>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('sofa_couch', 'küche', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch', 'küche', 'Tisch (m)')">Tisch
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('schrank_zerlegbar', 'küche', 'Schrank zerlegb. (m)')">Schrank zerlegb.
+                    </button>
+                </div>
+                <h3>Bad</h3>
+                <div>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('sofa_couch', 'bad', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch', 'bad', 'Tisch (m)')">Tisch
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('schrank_zerlegbar', 'bad', 'Schrank zerlegb. (m)')">Schrank zerlegb.
+                    </button>
+                </div>
+                <h3>Kinderzimmer</h3>
+                <div>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('sofa_couch', 'kinderzimmer', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch', 'kinderzimmer', 'Tisch (m)')">Tisch
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('schrank_zerlegbar', 'kinderzimmer', 'Schrank zerlegb. (m)')">Schrank zerlegb.
+                    </button>
+                </div>
+                <h3>Sonstiges</h3>
+                <div>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('sofa_couch', 'sonstiges', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch', 'sonstiges', 'Tisch (m)')">Tisch
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('schrank_zerlegbar', 'sonstiges', 'Schrank zerlegb. (m)')">Schrank zerlegb.
+                    </button>
+                </div>
+                <h3>Weitere Zimmer</h3>
+                <div>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('sofa_couch', 'weitere_zimmer', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch', 'weitere_zimmer', 'Tisch (m)')">Tisch
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('schrank_zerlegbar', 'weitere_zimmer', 'Schrank zerlegb. (m)')">Schrank zerlegb.
+                    </button>
+                </div>
 
+            </div>
         </div>
 
         <div class="col-9">
