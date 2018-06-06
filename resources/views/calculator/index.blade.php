@@ -30,25 +30,25 @@
                             onclick="addField('stuhl_mit', 'wohnzimmer','Stuhl mit Armlehne')">Stuhl mit Armlehne
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('tisch_b0,6', 'wohnzimmer', 'Tisch bis 0,6 (m)')">Tisch bis 0,6 (m)
+                            onclick="addField('tisch_b06', 'wohnzimmer', 'Tisch bis 0,6 m')">Tisch bis 0,6 m
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('tisch_b1,0', 'wohnzimmer', 'Tisch bis 1,0 (m)')">Tisch bis 1,0 (m)
+                            onclick="addField('tisch_b10', 'wohnzimmer', 'Tisch bis 1,0 m')">Tisch bis 1,0 m
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('tisch_b1,2', 'wohnzimmer', 'Tisch bis 1,2 (m)')">Tisch bis 1,2 (m)
+                            onclick="addField('tisch_b12', 'wohnzimmer', 'Tisch bis 1,2 m')">Tisch bis 1,2 m
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('tisch_ü1,2', 'wohnzimmer', 'Tisch über 1,2 (m)')">Tisch bis 1,2 (m)
+                            onclick="addField('tisch_a12', 'wohnzimmer', 'Tisch ab 1,2 m')">Tisch ab 1,2 m
                     </button>
                     <button class="btn btn-sm btn-block"
                                      onclick="addField('schrank_zerlegbar', 'wohnzimmer', 'Schrank zerlegb. (je angef. m)')">Schrank zerlegb.
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('anbauwand_b38', 'wohnzimmer', 'Anbauwand b. 38cm Tiefe (je angef. m)')">Anbauwand b. 38cm Tiefe
+                            onclick="addField('anbauwand_b38', 'wohnzimmer', 'Anbauwand bis 38cm Tiefe (je angef. m)')">Anbauwand bis 38cm Tiefe
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('anbauwand_ü38', 'wohnzimmer', 'Anbauwand ü. 38cm Tiefe (je angef. m)')">Anbauwand ü. 38cm Tiefe
+                            onclick="addField('anbauwand_a38', 'wohnzimmer', 'Anbauwand ab 38cm Tiefe (je angef. m)')">Anbauwand ab 38cm Tiefe
                     </button>
                     <button class="btn btn-sm btn-block"
                             onclick="addField('bücherregal_zerlegbar', 'wohnzimmer', 'Bücherregal zerlegb. (je angef. m)')">Bücherregal zerlegb.
@@ -60,10 +60,10 @@
                             onclick="addField('buffet_ohne', 'wohnzimmer', 'Buffet ohne Aufsatz')">Buffet ohne Aufsatz
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('schreibtisch_b1,6', 'wohnzimmer', 'Schreibtisch bis 1,6 (m)')">Schreibtisch bis 1,6 (m)
+                            onclick="addField('schreibtisch_b16', 'wohnzimmer', 'Schreibtisch bis 1,6 m')">Schreibtisch bis 1,6 m
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('schreibtisch_ü1,6', 'wohnzimmer', 'Schreibtisch über 1,6 (m)')">Schreibtisch über 1,6 (m)
+                            onclick="addField('schreibtisch_a16', 'wohnzimmer', 'Schreibtisch ab 1,6 m')">Schreibtisch ab 1,6 m
                     </button>
                     <button class="btn btn-sm btn-block"
                             onclick="addField('standuhr', 'wohnzimmer', 'Standuhr')">Standuhr
@@ -108,10 +108,10 @@
                             onclick="addField('teppich', 'wohnzimmer', 'Teppich')">Teppich
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('bilder_b0,8', 'wohnzimmer', 'Bilder bis 0,8 (m)')">Bilder bis 0,8 (m)
+                            onclick="addField('bilder_b08', 'wohnzimmer', 'Bilder bis 0,8 m')">Bilder bis 0,8 m
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('bilder_ü0,8', 'wohnzimmer', 'Bilder über 0,8 (m)')">Bilder über 0,8 (m)
+                            onclick="addField('bilder_a08', 'wohnzimmer', 'Bilder ab 0,8 m')">Bilder ab 0,8 m
                     </button>
                     <button class="btn btn-sm btn-block"
                             onclick="addField('sideboard_klein', 'wohnzimmer', 'Sideboard klein')">Sideboard klein
@@ -126,7 +126,7 @@
                             onclick="addField('umzugskarton_b80', 'wohnzimmer', 'Umzugskarton bis 80 l (gepackt)')">Umzugskarton bis 80 l
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('umzugskarton_ü80', 'wohnzimmer', 'Umzugskarton über 80 l (gepackt)')">Umzugskarton über 80 l
+                            onclick="addField('umzugskarton_a80', 'wohnzimmer', 'Umzugskarton ab 80 l (gepackt)')">Umzugskarton ab 80 l
                     </button>
 
                 </div>
@@ -169,7 +169,7 @@
                             onclick="addField('stuhl_hocker', 'schlafzimmer', 'Stuhl, Hocker')">Stuhl, Hocker
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('spiegel_ü0,8', 'schlafzimmer', 'Spiegel über 0,8 (m)')">Spiegel über 0,8 (m)
+                            onclick="addField('spiegel_a08', 'schlafzimmer', 'Spiegel ab 0,8 m')">Spiegel ab 0,8 m
                     </button>
                     <button class="btn btn-sm btn-block"
                             onclick="addField('deckenlampe', 'schlafzimmer', 'Deckenlampe')">Deckenlampe
@@ -181,10 +181,10 @@
                             onclick="addField('teppich', 'schlafzimmer', 'Teppich')">Teppich
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('bilder_b0,8', 'schlafzimmer', 'Bilder bis 0,8 (m)')">Bilder bis 0,8 (m)
+                            onclick="addField('bilder_b08', 'schlafzimmer', 'Bilder bis 0,8 m')">Bilder bis 0,8 m
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('bilder_ü0,8', 'schlafzimmer', 'Bilder über 0,8 (m)')">Bilder über 0,8 (m)
+                            onclick="addField('bilder_a08', 'schlafzimmer', 'Bilder ab 0,8 m')">Bilder ab 0,8 m
                     </button>
                     <button class="btn btn-sm btn-block"
                             onclick="addField('tv_schrank', 'schlafzimmer', 'TV-Schrank')">TV-Schrank
@@ -196,79 +196,295 @@
                             onclick="addField('umzugskarton_b80', 'schlafzimmer', 'Umzugskarton bis 80 l')">Umzugskarton bis 80 l
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('umzugskarton_ü80', 'schlafzimmer', 'Umzugskarton über 80 l')">Umzugskarton über 80 l
+                            onclick="addField('umzugskarton_a80', 'schlafzimmer', 'Umzugskarton ab 80 l')">Umzugskarton ab 80 l
                     </button>
                     <button class="btn btn-sm btn-block"
                             onclick="addField('umzugskarton_b80_gepackt', 'schlafzimmer', 'Umzugskarton bis 80 l (gepackt)')">Umzugskarton bis 80 l(gepackt)
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('umzugskarton_ü80_gepackt', 'schlafzimmer', 'Umzugskarton über 80 l (gepackt)')">Umzugskarton über 80 l(gepackt)
+                            onclick="addField('umzugskarton_a80_gepackt', 'schlafzimmer', 'Umzugskarton ab 80 l (gepackt)')">Umzugskarton ab 80 l(gepackt)
                     </button>
                 </div>
                 <h3>Esszimmer</h3>
                 <div>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('sofa_couch', 'esszimmer', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
+                            onclick="addField('stuhl_ohne', 'esszimmer', 'Stuhl')">Stuhl
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('tisch', 'esszimmer', 'Tisch (m)')">Tisch
+                    <button class="btn btn-sm btn-block" onclick="addField('stuhl_mit', 'esszimmer', 'Stuhl mit Armlehnen')">Stuhl mit Armlehnen
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('schrank_zerlegbar', 'esszimmer', 'Schrank zerlegb. (m)')">Schrank zerlegb.
+                            onclick="addField('eckbank', 'esszimmer', 'Eckbank (je Sitz)')">Eckbank (je Sitz)
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch_b06', 'esszimmer', 'Tisch bis 0,6 m')">Tisch bis 0,6 m
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch_b10', 'esszimmer', 'Tisch bis 1,0 m')">Tisch bis 1,0 m
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch_b12', 'esszimmer', 'Tisch bis 1,2 m')">Tisch bis 1,2 m
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch_a12', 'esszimmer', 'Tisch ab 1,2 m')">Tisch ab 1,2 m
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('sekretär', 'esszimmer', 'Sekretär')">Sekretär
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('sideboard_klein', 'esszimmer', 'Sideboard klein')">Sideboard klein
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('sideboard_groß', 'esszimmer', 'Sideboard groß')">Sideboard groß
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('hausbar', 'esszimmer', 'Hausbar')">Hausbar
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('teewagen', 'esszimmer', 'Teewagen (nicht zerlegbar)')">Teewagen
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('teppich', 'esszimmer', 'Teppich')">Teppich
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('brücke', 'esszimmer', 'Brücke')">Brücke
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('deckenlampe', 'esszimmer', 'Deckenlampe')">Deckenlampe
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('stehlampe', 'esszimmer', 'Stehlampe')">Stehlampe
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('vitrine', 'esszimmer', 'Vitrine (Glasschrank)')">Vitrine
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('bilder_b08', 'esszimmer', 'Bilder bis 0,8 m')">Bilder bis 0,8 m
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('bilder_a08', 'esszimmer', 'Bilder ab 0,8 m')">Bilder ab 0,8 m
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_b80_gepackt', 'esszimmer', 'Umzugskarton bis 80 l (gepackt)')">Umzugskarton bis 80 l (gepackt)
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_a80_gepackt', 'esszimmer', 'Umzugskarton ab 80 l (gepackt)')">Umzugskarton ab 80 l (gepackt)
                     </button>
                 </div>
                 <h3>Küche</h3>
                 <div>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('sofa_couch', 'küche', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
+                            onclick="addField('buffet', 'küche', 'Buffet mit Aufsätzen')">Buffet mit Aufsätzen
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('tisch', 'küche', 'Tisch (m)')">Tisch
+                    <button class="btn btn-sm btn-block" onclick="addField('unterteil_tür', 'küche', 'Unterteil je Tür')">Unterteil je Tür
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('schrank_zerlegbar', 'küche', 'Schrank zerlegb. (m)')">Schrank zerlegb.
+                            onclick="addField('oberteil_tür', 'küche', 'Oberteil je Tür')">Oberteil je Tür
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch_b06', 'küche', 'Tisch bis 0,6 m')">Tisch bis 0,6 m
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch_b10', 'küche', 'Tisch bis 1,0 m')">Tisch bis 1,0 m
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch_b12', 'küche', 'Tisch bis 1,2 m')">Tisch bis 1,2 m
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch_a12', 'küche', 'Tisch ab 1,2 m')">Tisch ab 1,2 m
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('stuhl', 'küche', 'Stuhl')">Stuhl
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('eckbank', 'küche', 'Eckbank je Sitz')">Eckbank je Sitz
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('besenschrank', 'küche', 'Besenschrank')">Besenschrank
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('herd', 'küche', 'Herd')">Herd
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('geschirrspülmaschine', 'küche', 'Geschirrspülmaschine')">Geschirrspülmaschine
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('waschmaschine_trockner', 'küche', 'Waschmaschine / Trockner')">Waschmaschine / Trockner
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('kühlschrank_truhe_b120', 'küche', 'Kühlschrank / Truhe bis 120 l')">Kühlschrank / Truhe bis 120 l
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('kühlschrank_truhe_a120', 'küche', 'Kühlschrank / Truhe ab 120 l')">Kühlschrank / Truhe ab 120 l
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('arbeitsplatte', 'küche', 'Arbeitsplatte nicht unterb. (je angef. m)')">Arbeitsplatte nicht unterb.
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('deckenlampe', 'küche', 'Deckenlampe')">Deckenlampe
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('teppich', 'küche', 'Teppich')">Teppich
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('mikrowelle', 'küche', 'Mikrowelle')">Mikrowelle
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_b80_gepackt', 'küche', 'Umzugskarton bis 80 l (gepackt)')">Umzugskarton bis 80 l (gepackt)
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_a80_gepackt', 'küche', 'Umzugskarton ab 80 l (gepackt)')">Umzugskarton ab 80 l (gepackt)
                     </button>
                 </div>
                 <h3>Bad</h3>
                 <div>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('sofa_couch', 'bad', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
+                            onclick="addField('truhe_kommode', 'bad', 'Truhe / Kommode')">Truhe / Kommode
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('tisch', 'bad', 'Tisch (m)')">Tisch
+                    <button class="btn btn-sm btn-block" onclick="addField('kleiderablage', 'bad', 'Kleiderablage')">Kleiderablage
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('schrank_zerlegbar', 'bad', 'Schrank zerlegb. (m)')">Schrank zerlegb.
+                            onclick="addField('stuhl_hocker', 'bad', 'Stuhl / Hocker')">Stuhl / Hocker
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('toilettenschrank', 'bad', 'Toilettenschrank')">Toilettenschrank
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('wäschekorb', 'bad', 'Wäschekorb')">Wäschekorb
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('deckenlampe', 'bad', 'Deckenlampe')">Deckenlampe
                     </button>
                 </div>
                 <h3>Kinderzimmer</h3>
                 <div>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('sofa_couch', 'kinderzimmer', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
+                            onclick="addField('schrank_bis_2_türen', 'kinderzimmer', 'Schrank bis 2 Türen nicht zerlegbar')">Schrank bis 2 Türen nicht zerlegb.
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('tisch', 'kinderzimmer', 'Tisch (m)')">Tisch
+                    <button class="btn btn-sm btn-block" onclick="addField('schrank_zerlegbar', 'kinderzimmer', 'Schrank zerlegbar (je angef. m)')">Schrank zerlegbar
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('schrank_zerlegbar', 'kinderzimmer', 'Schrank zerlegb. (m)')">Schrank zerlegb.
+                            onclick="addField('bett_komplett', 'kinderzimmer', 'Bett komplett')">Bett komplett
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('kinderbett_komplett', 'kinderzimmer', 'Kinderbett komplett')">Kinderbett komplett
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('etagenbett_komplett', 'kinderzimmer', 'Etagenbett komplett')">Etagenbett komplett
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('bettzeug', 'kinderzimmer', 'Bettzeug je Betteinheit')">Bettzeug je Betteinheit
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('nachttisch', 'kinderzimmer', 'Nachttisch')">Nachttisch
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('kommode', 'kinderzimmer', 'Kommode')">Kommode
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('schreibpult', 'kinderzimmer', 'Schreibpult')">Schreibpult
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('spielzeugkiste', 'kinderzimmer', 'Spielzeugkiste')">Spielzeugkiste
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch_b06', 'kinderzimmer', 'Tisch bis 0,6 m')">Tisch bis 0,6 m
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch_b10', 'kinderzimmer', 'Tisch bis 1,0 m')">Tisch bis 1,0 m
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch_b12', 'kinderzimmer', 'Tisch bis 1,2 m')">Tisch bis 1,2 m
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch_a12', 'kinderzimmer', 'Tisch ab 1,2 m')">Tisch ab 1,2 m
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('laufgitter', 'kinderzimmer', 'Laufgitter')">Laufgitter
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('stuhl_hocker', 'kinderzimmer', 'Stuhl / Hocker')">Stuhl / Hocker
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('teppich', 'kinderzimmer', 'Teppich')">Teppich
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('brücke', 'kinderzimmer', 'Brücke')">Brücke
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('anbauwand_b38', 'kinderzimmer', 'Anbauwand b. 38cm Tiefe (je angef. m)')">Anbauwand b. 38cm Tiefe
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('anbauwand_a38', 'kinderzimmer', 'Anbauwand ab 38cm Tiefe (je angef. m)')">Anbauwand ab 38cm Tiefe
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('deckenlampe', 'kinderzimmer', 'Deckenlampe')">Deckenlampe
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('kleiderbehältnis', 'kinderzimmer', 'Kleiderbehältnis')">Kleiderbehältnis
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_b80_gepackt', 'kinderzimmer', 'Umzugskarton bis 80 l (gepackt)')">Umzugskarton bis 80 l (gepackt)
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_a80_gepackt', 'kinderzimmer', 'Umzugskarton ab 80 l (gepackt)')">Umzugskarton ab 80 l (gepackt)
                     </button>
                 </div>
                 <h3>Sonstiges</h3>
                 <div>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('sofa_couch', 'sonstiges', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
+                            onclick="addField('fahrrad_moped', 'sonstiges', 'Fahrrad / Moped')">Fahrrad / Moped
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('tisch', 'sonstiges', 'Tisch (m)')">Tisch
+                    <button class="btn btn-sm btn-block" onclick="addField('motorrad', 'sonstiges', 'Motorrad')">Motorrad
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('schrank_zerlegbar', 'sonstiges', 'Schrank zerlegb. (m)')">Schrank zerlegb.
+                            onclick="addField('dreirad_kinderrad', 'sonstiges', 'Dreirad / Kinderrad')">Dreirad / Kinderrad
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('bügelbrett', 'sonstiges', 'Bügelbrett')">Bügelbrett
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('staubsauger', 'sonstiges', 'Staubsauger')">Staubsauger
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('autoreifen', 'sonstiges', 'Autoreifen')">Autoreifen
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('koffer', 'sonstiges', 'Koffer')">Koffer
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('klapptisch_klappstuhl', 'sonstiges', 'Klapptisch / Klappstuhl')">Klapptisch / Klappstuhl
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('kinderwagen', 'sonstiges', 'Kinderwagen')">Kinderwagen
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('leiter', 'sonstiges', 'Leiter')">Leiter
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('rasenmäher_motor', 'sonstiges', 'Rasenmäher Motor')">Rasenmäher Motor
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('rasenmäher_hand', 'sonstiges', 'Rasenmäher Hand')">Rasenmäher Hand
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('schubkarre', 'sonstiges', 'Schubkarre')">Schubkarre
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('werkzeugschrank', 'sonstiges', 'Werkzeugschrank')">Werkzeugschrank
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('werkzeugkoffer', 'sonstiges', 'Werkzeugkoffer')">Werkzeugkoffer
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('ski', 'sonstiges', 'Ski')">Ski
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('schlitten', 'sonstiges', 'Schlitten')">Schlitten
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('blumenkübel_kasten', 'sonstiges', 'Blumenkübel / Kasten')">MBlumenkübel / Kasten
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('sonnenschirm', 'sonstiges', 'Sonnenschirm')">Sonnenschirm
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tischtennisplatte', 'sonstiges', 'Tischtennisplatte')">Tischtennisplatte
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('mülltonne', 'sonstiges', 'Mülltonne')">Mülltonne
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('regal_zerlegbar', 'sonstiges', 'Regal zerlegbar (je angef. m)')">Regal zerlegbar
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('gartengeräte', 'sonstiges', 'Gartengeräte')">Gartengeräte
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('sonnenbank', 'sonstiges', 'Sonnenbank')">Sonnenbank
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('gartengrill', 'sonstiges', 'Gartengrill')">Gartengrill
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_b80_gepackt', 'sonstiges', 'Umzugskarton bis 80 l (gepackt)')">Umzugskarton bis 80 l (gepackt)
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_a80_gepackt', 'sonstiges', 'Umzugskarton ab 80 l (gepackt)')">Umzugskarton ab 80 l (gepackt)
                     </button>
                 </div>
                 <h3>Weitere Zimmer</h3>
                 <div>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('sofa_couch', 'weitere_zimmer', 'Sofa/Couch (Anzahl Sitze)')">Sofa/Couch
+                            onclick="addField('schreibtisch_b16', 'weitere_zimmer', 'Schreibtisch bis 1,6 m')">Schreibtisch bis 1,6 m
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('tisch', 'weitere_zimmer', 'Tisch (m)')">Tisch
+                    <button class="btn btn-sm btn-block" onclick="addField('schreibtisch_a16', 'weitere_zimmer', 'Schreibtisch ab 1,6 m')">Schreibtisch bis 1,6 m
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('schrank_zerlegbar', 'weitere_zimmer', 'Schrank zerlegb. (m)')">Schrank zerlegb.
+                            onclick="addField('schreibtischcontainer', 'weitere_zimmer', 'Schreibtischcontainer')">Schreibtischcontainer
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('schreibtischstuhl', 'weitere_zimmer', 'Schreibtischstuhl')">Schreibtischstuhl
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('winkelkombination', 'weitere_zimmer', 'Winkelkombination')">SWinkelkombination
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('bücherregal_zerlegbar', 'weitere_zimmer', 'Bücherregal zerlegbar (je angef. m)')">Bücherregal zerlegbar
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('aktenschrank', 'weitere_zimmer', 'Aktenschrank (je angef. m)')">Aktenschrank
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('sessel_ohne', 'weitere_zimmer', 'Sessel ohne Armlehnen')">Sessel ohne Armlehnen
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('sessel_mit', 'weitere_zimmer', 'Sessel mit Armlehnen')">Sessel mit Armlehnen
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch_b06', 'weitere_zimmer', 'Tisch bis 0,6 m')">Tisch bis 0,6 m
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch_b10', 'weitere_zimmer', 'Tisch bis 1,0 m')">Tisch bis 1,0 m
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch_b12', 'weitere_zimmer', 'Tisch bis 1,2 m')">Tisch bis 1,2 m
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('tisch_a12', 'weitere_zimmer', 'Tisch ab 1,2 m')">Tisch ab 1,2 m
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('computer', 'weitere_zimmer', 'Computer: PC / EDV-Anlage')">Computer: PC / EDV-Anlage
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('tischkopierer', 'weitere_zimmer', 'Tischkopierer')">Tischkopierer
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('stehlampe', 'weitere_zimmer', 'Stehlampe')">Stehlampe
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('deckenlampe', 'weitere_zimmer', 'Deckenlampe')">Deckenlampe
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('teppich', 'weitere_zimmer', 'Teppich')">Teppich
+                    </button>
+                    <button class="btn btn-sm btn-block"
+                            onclick="addField('brücke', 'weitere_zimmer', 'Brücke')">Brücke
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_b80_gepackt', 'weitere_zimmer', 'Umzugskarton bis 80 l (gepackt)')">Umzugskarton bis 80 l (gepackt)
+                    </button>
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_a80_gepackt', 'weitere_zimmer', 'Umzugskarton ab 80 l (gepackt)')">Umzugskarton ab 80 l (gepackt)
                     </button>
                 </div>
 
@@ -358,20 +574,35 @@
         $(document).ready(function () {
             $("#accordion").accordion({
                 heightStyle: "content",
+                collapsible:true,
             });
         });
+
 
         function addField(name, section, label) {
             if ($('#' + name + '-' + section).length > 0) {
                 $('#' + name + '-' + section).effect("shake", {distance: 5, times: 3});
             } else {
                 $('#form-' + section).append(
-                    "<div class='col-sm-6' style='margin-bottom: 16px;'><label for='" + name + "[]'>" + label + "</label><input min='0' id='" + name + "-" + section + "' type='number' name='" + name + "[]' class='form-control'></div>"
+                    "<div class='col-sm-6' style='margin-bottom: 16px;'>" +
+                    "<label for='" + name + "[]'>" + label + "</label>" +
+                    "<div class='input-group'>" +
+                    "<span class=\"input-group-btn\">" +
+                    "<button class=\"btn btn-default\" type=\"button\">-</button>" +
+                    "</span>" +
+                    "<input min='0' id='" + name + "-" + section + "' type='number' name='" + name + "[]' class='form-control'>" +
+                    "<span class=\"input-group-btn\">" +
+                    "<button class=\"btn btn-default\" type=\"button\" onclick='increase(name, section)'>+</button>" +
+                    "</span>" +
+                    "</div>" +
+                    "</div>"
                 );
             }
         }
+        function increase(name, section){
 
-        //<span class="glyphicon glyphicon-plus-sign"></span>
+        }
+
         function updateDistance() {
             if (auszug_autocomplete.getPlace() && einzug_autocomplete.getPlace()) {
                 $auszug = auszug_autocomplete.getPlace().formatted_address;
@@ -413,6 +644,7 @@
             auszug_autocomplete.addListener('place_changed', updateDistance);
             einzug_autocomplete.addListener('place_changed', updateDistance);
         }
+
     </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0S1h8oYvT1KdHFbUGmHy8wTAo4FACNF0&libraries=places&callback=initAutocomplete"
