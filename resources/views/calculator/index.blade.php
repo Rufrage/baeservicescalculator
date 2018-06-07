@@ -588,18 +588,47 @@
                     "<label for='" + name + "[]'>" + label + "</label>" +
                     "<div class='input-group'>" +
                     "<span class=\"input-group-btn\">" +
-                    "<button class=\"btn btn-default\" type=\"button\">-</button>" +
+                    "<button class=\"btn btn-default\" type=\"button\" onclick='decrease(\"" + name + "-" + section + "\")'>-</button>" +
                     "</span>" +
-                    "<input min='0' id='" + name + "-" + section + "' type='number' name='" + name + "[]' class='form-control'>" +
+                    "<input min='0' id='" + name + "-" + section + "' type='number' value='0' name='" + name + "[]' class='form-control'>" +
                     "<span class=\"input-group-btn\">" +
-                    "<button class=\"btn btn-default\" type=\"button\" onclick='increase(name, section)'>+</button>" +
+                    "<button class=\"btn btn-default\" type=\"button\" onclick='increase(\"" + name + "-" + section + "\")'>+</button>" +
                     "</span>" +
                     "</div>" +
                     "</div>"
                 );
             }
         }
-        function increase(name, section){
+
+        function crease(value, operation){
+            if (operation == inc){
+                $dvalue = document.getElementById(value).value;
+                $dvalue++;
+                document.getElementById(value).value = $dvalue;
+            }
+            else if (operation == dec){
+                $dvalue = document.getElementById(value).value;
+                $dvalue--;
+                document.getElementById(value).value = $dvalue;
+            }
+
+
+        }
+        function decrease(value){
+            if (document.getElementById(value).value == 0){
+
+            }
+            else {
+                $dvalue = document.getElementById(value).value;
+                $dvalue--;
+                document.getElementById(value).value = $dvalue;
+            }
+        }
+
+        function increase(value){
+            $dvalue = document.getElementById(value).value;
+            $dvalue++;
+            document.getElementById(value).value = $dvalue;
 
         }
 
