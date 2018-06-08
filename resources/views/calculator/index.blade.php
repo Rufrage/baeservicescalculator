@@ -581,7 +581,9 @@
 
         function addField(name, section, label) {
             if ($('#' + name + '-' + section).length > 0) {
-                $('#' + name + '-' + section).effect("shake", {distance: 5, times: 3});
+               // $('#' + name + '-' + section).toggle("bounce");
+                $('#' + name + '-' + section).css("border-color", "red");
+                setTimeout(function(){ $('#' + name + '-' + section).css("border-color", "white")}, 2000);
             } else {
                 $('#form-' + section).append(
                     "<div class='col-sm-6' style='margin-bottom: 16px;'>" +
@@ -598,6 +600,11 @@
                     "</div>"
                 );
             }
+        }
+        //{distance: 5, times: 3, direction: "right"}
+
+        function changeborder(value){
+            document.getElementById(value).css("border-color", "white");
         }
 
         function crease(value, operation){
