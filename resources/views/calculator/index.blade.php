@@ -406,7 +406,7 @@
                     </button>
                     <button class="btn btn-sm btn-block" onclick="addField('schlitten', 'sonstiges', 'Schlitten')">Schlitten
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('blumenkübel_kasten', 'sonstiges', 'Blumenkübel / Kasten')">MBlumenkübel / Kasten
+                    <button class="btn btn-sm btn-block" onclick="addField('blumenkübel_kasten', 'sonstiges', 'Blumenkübel / Kasten')">Blumenkübel / Kasten
                     </button>
                     <button class="btn btn-sm btn-block" onclick="addField('sonnenschirm', 'sonstiges', 'Sonnenschirm')">Sonnenschirm
                     </button>
