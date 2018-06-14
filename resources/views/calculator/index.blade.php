@@ -2,7 +2,6 @@
 
 @section('content')
     <h1 class="mb-4">Umzugsrechner</h1>
-
     <div class="row">
 
         <div class="col-3">
@@ -122,10 +121,10 @@
                             onclick="addField('tv_schrank', 'wohnzimmer', 'TV-Schrank')">TV-Schrank
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('umzugskarton_b80', 'wohnzimmer', 'Umzugskarton bis 80 l (gepackt)')">Umzugskarton bis 80 l
+                            onclick="addField('umzugskarton_b80', 'wohnzimmer', 'Umzugskarton bis 80 l')">Umzugskarton bis 80 l
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('umzugskarton_a80', 'wohnzimmer', 'Umzugskarton ab 80 l (gepackt)')">Umzugskarton ab 80 l
+                            onclick="addField('umzugskarton_a80', 'wohnzimmer', 'Umzugskarton ab 80 l')">Umzugskarton ab 80 l
                     </button>
 
                 </div>
@@ -197,11 +196,12 @@
                     <button class="btn btn-sm btn-block"
                             onclick="addField('umzugskarton_a80', 'schlafzimmer', 'Umzugskarton ab 80 l')">Umzugskarton ab 80 l
                     </button>
+                    <h6><br>Gepackt:</h6>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('umzugskarton_b80_gepackt', 'schlafzimmer', 'Umzugskarton bis 80 l (gepackt)')">Umzugskarton bis 80 l(gepackt)
+                            onclick="addField('umzugskarton_b80_gepackt', 'schlafzimmer', 'Umzugskarton bis 80 l')">Umzugskarton bis 80 l
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('umzugskarton_a80_gepackt', 'schlafzimmer', 'Umzugskarton ab 80 l (gepackt)')">Umzugskarton ab 80 l(gepackt)
+                            onclick="addField('umzugskarton_a80_gepackt', 'schlafzimmer', 'Umzugskarton ab 80 l')">Umzugskarton ab 80 l
                     </button>
                 </div>
                 <h3>Esszimmer</h3>
@@ -246,9 +246,10 @@
                     </button>
                     <button class="btn btn-sm btn-block" onclick="addField('bilder_a08', 'esszimmer', 'Bilder ab 0,8 m')">Bilder ab 0,8 m
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_b80_gepackt', 'esszimmer', 'Umzugskarton bis 80 l (gepackt)')">Umzugskarton bis 80 l (gepackt)
+                    <h6><br>Gepackt:</h6>
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_b80_gepackt', 'esszimmer', 'Umzugskarton bis 80 l')">Umzugskarton bis 80 l
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_a80_gepackt', 'esszimmer', 'Umzugskarton ab 80 l (gepackt)')">Umzugskarton ab 80 l (gepackt)
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_a80_gepackt', 'esszimmer', 'Umzugskarton ab 80 l')">Umzugskarton ab 80 l
                     </button>
                 </div>
                 <h3>Küche</h3>
@@ -269,7 +270,7 @@
                     </button>
                     <button class="btn btn-sm btn-block" onclick="addField('tisch_a12', 'küche', 'Tisch ab 1,2 m')">Tisch ab 1,2 m
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('stuhl', 'küche', 'Stuhl')">Stuhl
+                    <button class="btn btn-sm btn-block" onclick="addField('stuhl_ohne', 'küche', 'Stuhl')">Stuhl
                     </button>
                     <button class="btn btn-sm btn-block" onclick="addField('eckbank', 'küche', 'Eckbank je Sitz')">Eckbank je Sitz
                     </button>
@@ -293,9 +294,10 @@
                     </button>
                     <button class="btn btn-sm btn-block" onclick="addField('mikrowelle', 'küche', 'Mikrowelle')">Mikrowelle
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_b80_gepackt', 'küche', 'Umzugskarton bis 80 l (gepackt)')">Umzugskarton bis 80 l (gepackt)
+                    <h6><br>Gepackt:</h6>
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_b80_gepackt', 'küche', 'Umzugskarton bis 80 l')">Umzugskarton bis 80 l
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_a80_gepackt', 'küche', 'Umzugskarton ab 80 l (gepackt)')">Umzugskarton ab 80 l (gepackt)
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_a80_gepackt', 'küche', 'Umzugskarton ab 80 l')">Umzugskarton ab 80 l
                     </button>
                 </div>
                 <h3>Bad</h3>
@@ -318,7 +320,7 @@
                 <h3>Kinderzimmer</h3>
                 <div>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('schrank_bis_2_türen', 'kinderzimmer', 'Schrank bis 2 Türen nicht zerlegbar')">Schrank bis 2 Türen nicht zerlegb.
+                            onclick="addField('schrank_bis_2_türen', 'kinderzimmer', 'Schrank bis 2 Türen (nicht zerlegb.)')">Schrank bis 2 Türen
                     </button>
                     <button class="btn btn-sm btn-block" onclick="addField('schrank_zerlegbar', 'kinderzimmer', 'Schrank zerlegbar (je angef. m)')">Schrank zerlegbar
                     </button>
@@ -363,9 +365,10 @@
                     </button>
                     <button class="btn btn-sm btn-block" onclick="addField('kleiderbehältnis', 'kinderzimmer', 'Kleiderbehältnis')">Kleiderbehältnis
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_b80_gepackt', 'kinderzimmer', 'Umzugskarton bis 80 l (gepackt)')">Umzugskarton bis 80 l (gepackt)
+                    <h6><br>Gepackt:</h6>
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_b80_gepackt', 'kinderzimmer', 'Umzugskarton bis 80 l')">Umzugskarton bis 80 l
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_a80_gepackt', 'kinderzimmer', 'Umzugskarton ab 80 l (gepackt)')">Umzugskarton ab 80 l (gepackt)
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_a80_gepackt', 'kinderzimmer', 'Umzugskarton ab 80 l')">Umzugskarton ab 80 l
                     </button>
                 </div>
                 <h3>Sonstiges</h3>
@@ -422,9 +425,10 @@
                     </button>
                     <button class="btn btn-sm btn-block" onclick="addField('gartengrill', 'sonstiges', 'Gartengrill')">Gartengrill
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_b80_gepackt', 'sonstiges', 'Umzugskarton bis 80 l (gepackt)')">Umzugskarton bis 80 l (gepackt)
+                    <h6><br>Gepackt:</h6>
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_b80_gepackt', 'sonstiges', 'Umzugskarton bis 80 l')">Umzugskarton bis 80 l
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_a80_gepackt', 'sonstiges', 'Umzugskarton ab 80 l (gepackt)')">Umzugskarton ab 80 l (gepackt)
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_a80_gepackt', 'sonstiges', 'Umzugskarton ab 80 l')">Umzugskarton ab 80 l
                     </button>
                 </div>
                 <h3>Weitere Zimmer</h3>
@@ -441,7 +445,7 @@
                             onclick="addField('schreibtischstuhl', 'weitere_zimmer', 'Schreibtischstuhl')">Schreibtischstuhl
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('winkelkombination', 'weitere_zimmer', 'Winkelkombination')">SWinkelkombination
+                            onclick="addField('winkelkombination', 'weitere_zimmer', 'Winkelkombination')">Winkelkombination
                     </button>
                     <button class="btn btn-sm btn-block"
                             onclick="addField('regal_zerlegbar', 'weitere_zimmer', 'Bücherregal zerlegbar (je angef. m)')">Bücherregal zerlegbar
@@ -481,9 +485,10 @@
                     <button class="btn btn-sm btn-block"
                             onclick="addField('brücke', 'weitere_zimmer', 'Brücke')">Brücke
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_b80_gepackt', 'weitere_zimmer', 'Umzugskarton bis 80 l (gepackt)')">Umzugskarton bis 80 l (gepackt)
+                    <h6><br>Gepackt:</h6>
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_b80_gepackt', 'weitere_zimmer', 'Umzugskarton bis 80 l')">Umzugskarton bis 80 l
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_a80_gepackt', 'weitere_zimmer', 'Umzugskarton ab 80 l (gepackt)')">Umzugskarton ab 80 l (gepackt)
+                    <button class="btn btn-sm btn-block" onclick="addField('umzugskarton_a80_gepackt', 'weitere_zimmer', 'Umzugskarton ab 80 l')">Umzugskarton ab 80 l
                     </button>
                 </div>
 
@@ -494,16 +499,53 @@
             {!! Form::open(['id' => 'rechner', 'method'=>'POST', 'action'=>'CalculatorController@calculate']) !!}
 
             <div>
+
                 <div class="form-group row">
                     <div class="col-sm-6">
+                        <h3>Auszug</h3><br>
                         {!! Form::label('auszugsort', 'Auszugsort') !!}
                         {!! Form::text('auszugsort', null, ['class'=>'form-control', 'id'=>'auszug_autocomplete', 'placeholder'=>'Adresse eingeben']) !!}
                     </div>
                     <div class="col-sm-6">
+                        <h3>Einzug</h3><br>
                         {!! Form::label('einzugsort', 'Einzugsort') !!}
                         {!! Form::text('einzugsort', null, ['class'=>'form-control', 'id'=>'einzug_autocomplete', 'placeholder'=>'Adresse eingeben']) !!}
                     </div>
                 </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        {!! Form::label('etage_auszug', 'Etage') !!}
+                        {!! Form::number('etage_auszug', null, ['class'=>'form-control', 'id' => 'etage_auszug']) !!}
+                    </div>
+                    <div class="col-sm-6">
+                        {!! Form::label('etage_einzug', 'Etage') !!}
+                        {!! Form::number('etage_einzug', null, ['class'=>'form-control', 'id' => 'etage_einzug']) !!}
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        {!! Form::label('aussenaufzug_auszug', 'Außenaufzug') !!}
+                        {!! Form::select('size', ['J' => 'Ja', 'N' => 'Nein'], 'N')  !!}
+                    </div>
+                    <div class="col-sm-6">
+                        {!! Form::label('aussenaufzug_einzug', 'Außenaufzug') !!}
+                        {!! Form::select('size', ['J' => 'Ja', 'N' => 'Nein'], 'N')  !!}
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        {!! Form::label('halteverbot_auszug', 'Halteverbot') !!}
+                        {!! Form::select('size', ['J' => 'Ja', 'N' => 'Nein'], 'J')  !!}
+                    </div>
+                    <div class="col-sm-6">
+                        {!! Form::label('halteverbot_einzug', 'Halteverbot') !!}
+                        {!! Form::select('size', ['J' => 'Ja', 'N' => 'Nein'], 'J')  !!}
+                    </div>
+                </div>
+
 
                 <div class="form-group row">
                     <div class="col-sm-6">
@@ -582,7 +624,7 @@
             if ($('#' + name + '-' + section).length > 0) {
                // $('#' + name + '-' + section).toggle("bounce");
                 $('#' + name + '-' + section).css("border-color", "red");
-                setTimeout(function(){ $('#' + name + '-' + section).css("border-color", "white")}, 2000);
+                setTimeout(function(){ $('#' + name + '-' + section).css("border-color", "white")}, 1000);
             } else {
                 $('#form-' + section).append(
                     "<div class='col-sm-6' style='margin-bottom: 16px;'>" +
