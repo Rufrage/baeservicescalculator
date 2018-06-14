@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
     <h1 class="mb-4">Umzugsrechner</h1>
 
     <div class="row">
@@ -51,7 +50,7 @@
                             onclick="addField('anbauwand_a38', 'wohnzimmer', 'Anbauwand ab 38cm Tiefe (je angef. m)')">Anbauwand ab 38cm Tiefe
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('bücherregal_zerlegbar', 'wohnzimmer', 'Bücherregal zerlegb. (je angef. m)')">Bücherregal zerlegb.
+                            onclick="addField('regal_zerlegbar', 'wohnzimmer', 'Bücherregal zerlegb. (je angef. m)')">Bücherregal zerlegb.
                     </button>
                     <button class="btn btn-sm btn-block"
                             onclick="addField('buffet_mit', 'wohnzimmer', 'Buffet mit Aufsatz')">Buffet mit Aufsatz
@@ -255,7 +254,7 @@
                 <h3>Küche</h3>
                 <div>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('buffet', 'küche', 'Buffet mit Aufsätzen')">Buffet mit Aufsätzen
+                            onclick="addField('buffet_mit', 'küche', 'Buffet mit Aufsätzen')">Buffet mit Aufsätzen
                     </button>
                     <button class="btn btn-sm btn-block" onclick="addField('unterteil_tür', 'küche', 'Unterteil je Tür')">Unterteil je Tür
                     </button>
@@ -324,7 +323,7 @@
                     <button class="btn btn-sm btn-block" onclick="addField('schrank_zerlegbar', 'kinderzimmer', 'Schrank zerlegbar (je angef. m)')">Schrank zerlegbar
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('bett_komplett', 'kinderzimmer', 'Bett komplett')">Bett komplett
+                            onclick="addField('einzelbett', 'kinderzimmer', 'Bett komplett')">Bett komplett
                     </button>
                     <button class="btn btn-sm btn-block" onclick="addField('kinderbett_komplett', 'kinderzimmer', 'Kinderbett komplett')">Kinderbett komplett
                     </button>
@@ -407,7 +406,7 @@
                     </button>
                     <button class="btn btn-sm btn-block" onclick="addField('schlitten', 'sonstiges', 'Schlitten')">Schlitten
                     </button>
-                    <button class="btn btn-sm btn-block" onclick="addField('blumenkübel_kasten', 'sonstiges', 'Blumenkübel / Kasten')">MBlumenkübel / Kasten
+                    <button class="btn btn-sm btn-block" onclick="addField('blumenkübel_kasten', 'sonstiges', 'Blumenkübel / Kasten')">Blumenkübel / Kasten
                     </button>
                     <button class="btn btn-sm btn-block" onclick="addField('sonnenschirm', 'sonstiges', 'Sonnenschirm')">Sonnenschirm
                     </button>
@@ -445,7 +444,7 @@
                             onclick="addField('winkelkombination', 'weitere_zimmer', 'Winkelkombination')">SWinkelkombination
                     </button>
                     <button class="btn btn-sm btn-block"
-                            onclick="addField('bücherregal_zerlegbar', 'weitere_zimmer', 'Bücherregal zerlegbar (je angef. m)')">Bücherregal zerlegbar
+                            onclick="addField('regal_zerlegbar', 'weitere_zimmer', 'Bücherregal zerlegbar (je angef. m)')">Bücherregal zerlegbar
                     </button>
                     <button class="btn btn-sm btn-block"
                             onclick="addField('aktenschrank', 'weitere_zimmer', 'Aktenschrank (je angef. m)')">Aktenschrank
@@ -554,7 +553,7 @@
             </div>
 
             <div class="form-group">
-                {!! Form::submit('Weiter', ['class' => 'btn btn-primary']) !!}
+                {!! Form::submit('Weiter', ['class' => 'btn btn-primary', 'action'=>'CalculatorController@calculate']) !!}
             </div>
 
 
@@ -601,7 +600,7 @@
                 );
             }
         }
-        //{distance: 5, times: 3, direction: "right"}
+
 
         function changeborder(value){
             document.getElementById(value).css("border-color", "white");
