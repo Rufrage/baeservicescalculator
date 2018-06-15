@@ -516,33 +516,44 @@
                 <div class="form-group row">
                     <div class="col-sm-6">
                         {!! Form::label('etage_auszug', 'Etage') !!}
-                        {!! Form::number('etage_auszug', null, ['class'=>'form-control', 'id' => 'etage_auszug']) !!}
+                        {!! Form::number('etage_auszug', null, ['class'=>'form-control', 'id' => 'etage_auszug', 'min'=>0]) !!}
                     </div>
                     <div class="col-sm-6">
                         {!! Form::label('etage_einzug', 'Etage') !!}
-                        {!! Form::number('etage_einzug', null, ['class'=>'form-control', 'id' => 'etage_einzug']) !!}
+                        {!! Form::number('etage_einzug', null, ['class'=>'form-control', 'id' => 'etage_einzug', 'min'=>0]) !!}
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <div class="col-sm-6">
                         {!! Form::label('aussenaufzug_auszug', 'Außenaufzug') !!}
-                        {!! Form::select('size', ['J' => 'Ja', 'N' => 'Nein'], 'N')  !!}
+                        {!! Form::select('aussenaufzug_auszug', ['J' => 'Ja', 'N' => 'Nein'], 'N', ['class'=>'form-control', 'id'=>'aussenaufzug_auszug'])  !!}
                     </div>
                     <div class="col-sm-6">
                         {!! Form::label('aussenaufzug_einzug', 'Außenaufzug') !!}
-                        {!! Form::select('size', ['J' => 'Ja', 'N' => 'Nein'], 'N')  !!}
+                        {!! Form::select('aussenaufzug_einzug', ['J' => 'Ja', 'N' => 'Nein'], 'N', ['class'=>'form-control', 'id'=>'aussenaufzug_einzug'])  !!}
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <div class="col-sm-6">
                         {!! Form::label('halteverbot_auszug', 'Halteverbot') !!}
-                        {!! Form::select('size', ['J' => 'Ja', 'N' => 'Nein'], 'J')  !!}
+                        {!! Form::select('halteverbot_auszug', ['J' => 'Ja', 'N' => 'Nein'], 'J', ['class'=>'form-control', 'id'=>'halteverbot_auszug'])  !!}
                     </div>
                     <div class="col-sm-6">
                         {!! Form::label('halteverbot_einzug', 'Halteverbot') !!}
-                        {!! Form::select('size', ['J' => 'Ja', 'N' => 'Nein'], 'J')  !!}
+                        {!! Form::select('halteverbot_einzug', ['J' => 'Ja', 'N' => 'Nein'], 'J', ['class'=>'form-control', 'id'=>'halteverbot_einzug'])  !!}
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        {!! Form::label('abtrageweg_auszug', 'Abtrageweg') !!}
+                        {!! Form::number('abtrageweg_auszug', null, ['class'=>'form-control', 'id' => 'abtrageweg_auszug', 'min'=>0]) !!}
+                    </div>
+                    <div class="col-sm-6">
+                        {!! Form::label('abtrageweg_einzug', 'Abtrageweg') !!}
+                        {!! Form::number('abtrageweg_einzug', null, ['class'=>'form-control', 'min'=>0]) !!}
                     </div>
                 </div>
 
