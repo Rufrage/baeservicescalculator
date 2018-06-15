@@ -20,9 +20,9 @@ class CalculatorController extends Controller
             "sofa_couch" =>4,
             "sitzlandschaft"=>4,
             "sessel_mit"=> 8,
-                "sessel_ohne"=>4,
+            "sessel_ohne"=>4,
             "stuhl_ohne"=>2,
-           " stuhl_mit"=>3,
+            "stuhl_mit"=>3,
             "tisch_b06"=>4,
             "tisch_b10"=>5,
             "tisch_b12"=>6,
@@ -132,7 +132,8 @@ class CalculatorController extends Controller
         $newvar = $request->all();
         $kubikmeter = 0;
         foreach ($newvar as $key=>$value) {
-            if ($key == "_token" ||$key == "auszugsort" || $key == "einzugsort" || $key == "distanz_text" || $key == "distanz" || $key == "volumen"){
+            if ($key == "_token" ||$key == "auszugsort" || $key == "einzugsort" || $key == "distanz_text" || $key == "distanz" || $key == "volumen"
+            || $key == "etage_auszug" || $key == "etage_einzug" || $key == "size"){
                 continue;
             }
             else{
@@ -140,8 +141,10 @@ class CalculatorController extends Controller
             $kubikmeter += array_sum($value)* $recheneinheiten[$key];
             }
         }
-        return $kubikmeter;
-
+        $container_groß = floor($kubikmeter/60);
+        $container_klein = ceil(($kubikmeter % 60)/30);
+        //return $container_groß;
+        return view('calculator.berechnung');
 
     }
 }
