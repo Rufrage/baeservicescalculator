@@ -13,8 +13,35 @@ class CalculatorController extends Controller
 
     public function calculate(Request $request)
     {
+
+        //Variablen
+
+        $newvar = $request->all();
+        $kubikmeter = 0;
+        //Kosten pro Kubikmeter(120)
+        $volumen_pro_m3 = 120;
+        //Prozentsatz für Extra Material (10%)
+        $extra_material = 0.1;
+        //Kosten pro Meter Weg(10)
+        $abtrageweg = 10;
+        //Gesamtkosten Abtrageweg
+        $k_abtrageweg = 0;
+        //Kosten pro Etage
+        $etage = 100;
+        //Gesamtkosten Etagen
+        $k_etage = 0;
+        //Kosten für Außenaufzug
+        $aussenaufzug = 350;
+        //Gesamtkosten Außenaufzug
+        $k_aussenaufzug = 0;
+        //Kosten Halteverbot
+        $halteverbot = 150;
+        //Gesamtkosten Halteverbot
+        $k_halteverbot = 0;
+
+        //Gesamtsumme
+        $kosten = 0;
         //Array mit Recheneinheiten und key
-        //Mehrfach: schrank_zerlegbar, deckenlampe, fernseher, teppich, bilder, umzugskarton
 
         $recheneinheiten = array(
             "sofa_couch" =>4,
@@ -127,13 +154,9 @@ class CalculatorController extends Controller
             "tischkopierer"=>5,
         );
 
-
-
-        $newvar = $request->all();
-        $kubikmeter = 0;
         foreach ($newvar as $key=>$value) {
             if ($key == "_token" ||$key == "auszugsort" || $key == "einzugsort" || $key == "distanz_text" || $key == "distanz" || $key == "volumen"
-            || $key == "etage_auszug" || $key == "etage_einzug" || $key == "size"){
+            || $key == "etage_auszug" || $key == "etage_einzug" || $key == "size" || $key == "abtrageweg_einzug" || $key == "abtrageweg_auszug"){
                 continue;
             }
             else{
@@ -141,10 +164,34 @@ class CalculatorController extends Controller
             $kubikmeter += array_sum($value)* $recheneinheiten[$key];
             }
         }
+
+        //Berechnung große Container
         $container_groß = floor($kubikmeter/60);
-        $container_klein = ceil(($kubikmeter % 60)/30);
-        //return $container_groß;
-        return view('calculator.berechnung');
+        if (($kubikmeter % 60) >30){
+            $container_groß++;
+        }
+
+        //Berechnung kleine Container
+        $container_klein = 0;
+        if (($kubikmeter % 60) <= 30 && ($kubikmeter % 60) > 0){
+            $container_klein = 1;
+        }
+
+        //Berechnung Volumen pro m^3 und Extra Material
+        ($kubikmeter * $volumen_pro_m3) * $extra_material;
+
+        //Berechnung Kosten Abtrageweg
+        $k_abtrageweg = $abtrageweg * ($newvar['abtrageweg_einzug'] + $newvar['abtrageweg_auszug']);
+        //Berechnung Kosten Etage
+        $k_etage = $etage * ($newvar['etage_einzug'] + $newvar['etage_auszug']);
+        //Berechnung Kosten Aussenaufzug
+        //if ($newvar['aussenaufzug_einzug'])
+
+        //Berechnung Gesamtsumme
+        $kosten = $container_groß * 2000 + $container_klein * 1400 + $k_abtrageweg + $k_etage;
+
+            return $request;
+        return view('calculator.berechnung', compact('kubikmeter', 'kosten'));
 
     }
 }

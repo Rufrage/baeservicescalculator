@@ -527,22 +527,33 @@
                 <div class="form-group row">
                     <div class="col-sm-6">
                         {!! Form::label('aussenaufzug_auszug', 'Außenaufzug') !!}
-                        {!! Form::select('size', ['J' => 'Ja', 'N' => 'Nein'], 'N')  !!}
+                        {!! Form::select('size', ['J' => 'Ja', 'N' => 'Nein'], 'N', ['class'=>'form-control', 'id'=>'aussenaufzug_auszug'])  !!}
                     </div>
                     <div class="col-sm-6">
                         {!! Form::label('aussenaufzug_einzug', 'Außenaufzug') !!}
-                        {!! Form::select('size', ['J' => 'Ja', 'N' => 'Nein'], 'N')  !!}
+                        {!! Form::select('size', ['J' => 'Ja', 'N' => 'Nein'], 'N', ['class'=>'form-control', 'id'=>'aussenaufzug_einzug'])  !!}
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <div class="col-sm-6">
                         {!! Form::label('halteverbot_auszug', 'Halteverbot') !!}
-                        {!! Form::select('size', ['J' => 'Ja', 'N' => 'Nein'], 'J')  !!}
+                        {!! Form::select('size', ['J' => 'Ja', 'N' => 'Nein'], 'J', ['class'=>'form-control', 'id'=>'halteverbot_auszug'])  !!}
                     </div>
                     <div class="col-sm-6">
                         {!! Form::label('halteverbot_einzug', 'Halteverbot') !!}
-                        {!! Form::select('size', ['J' => 'Ja', 'N' => 'Nein'], 'J')  !!}
+                        {!! Form::select('size', ['J' => 'Ja', 'N' => 'Nein'], 'J', ['class'=>'form-control', 'id'=>'halteverbot_einzug'])  !!}
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        {!! Form::label('abtrageweg_auszug', 'Abtrageweg') !!}
+                        {!! Form::number('abtrageweg_auszug', null, ['class'=>'form-control', 'id' => 'abtrageweg_auszug']) !!}
+                    </div>
+                    <div class="col-sm-6">
+                        {!! Form::label('abtrageweg_einzug', 'Abtrageweg') !!}
+                        {!! Form::number('abtrageweg_einzug', null, ['class'=>'form-control']) !!}
                     </div>
                 </div>
 
