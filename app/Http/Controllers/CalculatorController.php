@@ -18,6 +18,13 @@ class CalculatorController extends Controller
 
         $newvar = $request->all();
         $kubikmeter = 0;
+        //Kosten für große und kleine Container
+        $container_klein = 1400;
+        $container_groß = 2000;
+
+
+
+        $k_volumen_m3 = 0;
         //Kosten pro Kubikmeter(120)
         $volumen_pro_m3 = 120;
         //Prozentsatz für Extra Material (10%)
@@ -156,7 +163,8 @@ class CalculatorController extends Controller
 
         foreach ($newvar as $key=>$value) {
             if ($key == "_token" ||$key == "auszugsort" || $key == "einzugsort" || $key == "distanz_text" || $key == "distanz" || $key == "volumen"
-            || $key == "etage_auszug" || $key == "etage_einzug" || $key == "size" || $key == "abtrageweg_einzug" || $key == "abtrageweg_auszug"){
+            || $key == "etage_auszug" || $key == "etage_einzug" || $key == "size" || $key == "abtrageweg_einzug" || $key == "abtrageweg_auszug"
+            || $key == "aussenaufzug_einzug" || $key == "aussenaufzug_auszug" || $key == "halteverbot_einzug" || $key == "halteverbot_auszug"){
                 continue;
             }
             else{
@@ -166,32 +174,51 @@ class CalculatorController extends Controller
         }
 
         //Berechnung große Container
-        $container_groß = floor($kubikmeter/60);
+        $k_container_groß = floor($kubikmeter/60);
         if (($kubikmeter % 60) >30){
-            $container_groß++;
+            $k_container_groß++;
         }
 
         //Berechnung kleine Container
-        $container_klein = 0;
+        $k_container_klein = 0;
         if (($kubikmeter % 60) <= 30 && ($kubikmeter % 60) > 0){
-            $container_klein = 1;
+            $k_container_klein = 1;
         }
 
         //Berechnung Volumen pro m^3 und Extra Material
-        ($kubikmeter * $volumen_pro_m3) * $extra_material;
+        $k_volumen_m3 = ($kubikmeter * $volumen_pro_m3) * (1 +$extra_material);
 
         //Berechnung Kosten Abtrageweg
         $k_abtrageweg = $abtrageweg * ($newvar['abtrageweg_einzug'] + $newvar['abtrageweg_auszug']);
         //Berechnung Kosten Etage
         $k_etage = $etage * ($newvar['etage_einzug'] + $newvar['etage_auszug']);
         //Berechnung Kosten Aussenaufzug
-        //if ($newvar['aussenaufzug_einzug'])
+        if ($newvar['aussenaufzug_einzug'] == 'J' && $newvar['aussenaufzug_auszug'] == 'J'){
+            $k_aussenaufzug = 2 * $aussenaufzug;
+        }
+        if ($newvar['aussenaufzug_einzug'] == 'J' && $newvar['aussenaufzug_auszug'] == 'N' ||$newvar['aussenaufzug_einzug'] == 'N' && $newvar['aussenaufzug_auszug'] == 'J' ){
+            $k_aussenaufzug = $aussenaufzug;
+        }
+        else{
+            $k_aussenaufzug = 0;
+        }
+        //Berechnung Halteverbot
+        if ($newvar['halteverbot_einzug'] == 'J' && $newvar['halteverbot_auszug'] == 'J'){
+            $k_halteverbot = 2 * $halteverbot;
+        }
+        if ($newvar['halteverbot_einzug'] == 'J' && $newvar['halteverbot_auszug'] == 'N' ||$newvar['halteverbot_einzug'] == 'N' && $newvar['halteverbot_auszug'] == 'J' ){
+            $k_halteverbot = $halteverbot;
+        }
+        else{
+            $k_halteverbot = 0;
+        }
 
-        //Berechnung Gesamtsumme
-        $kosten = $container_groß * 2000 + $container_klein * 1400 + $k_abtrageweg + $k_etage;
+        //Berechnung Kosten Gesamtsumme
 
-            return $request;
-        return view('calculator.berechnung', compact('kubikmeter', 'kosten'));
+        $kosten = $k_container_groß * $container_groß + $k_container_klein * $container_klein + $k_abtrageweg + $k_etage + $k_aussenaufzug + $k_halteverbot + $k_volumen_m3;
+
+
+        return view('calculator.berechnung', compact('kubikmeter', 'kosten', 'k_container_groß', 'k_container_klein', 'k_abtrageweg', 'k_etage', 'k_aussenaufzug', 'k_halteverbot', 'container_groß', 'k_etage', 'k_volumen_m3'));
 
     }
 }
