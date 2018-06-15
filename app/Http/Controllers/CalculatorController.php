@@ -192,33 +192,27 @@ class CalculatorController extends Controller
         $k_abtrageweg = $abtrageweg * ($newvar['abtrageweg_einzug'] + $newvar['abtrageweg_auszug']);
         //Berechnung Kosten Etage
         $k_etage = $etage * ($newvar['etage_einzug'] + $newvar['etage_auszug']);
+
         //Berechnung Kosten Aussenaufzug
-        if ($newvar['aussenaufzug_einzug'] == 'J' && $newvar['aussenaufzug_auszug'] == 'J'){
-            $k_aussenaufzug = 2 * $aussenaufzug;
-        }
-        if ($newvar['aussenaufzug_einzug'] == 'J' && $newvar['aussenaufzug_auszug'] == 'N' ||$newvar['aussenaufzug_einzug'] == 'N' && $newvar['aussenaufzug_auszug'] == 'J' ){
-            $k_aussenaufzug = $aussenaufzug;
-        }
-        else{
-            $k_aussenaufzug = 0;
-        }
+        $k_aussenaufzug = 0;
+        if ($newvar['aussenaufzug_einzug'] == 'J')
+            $k_aussenaufzug += $aussenaufzug;
+        if ($newvar['aussenaufzug_auszug'] == 'J')
+            $k_aussenaufzug += $aussenaufzug;
+
         //Berechnung Halteverbot
-        if ($newvar['halteverbot_einzug'] == 'J' && $newvar['halteverbot_auszug'] == 'J'){
-            $k_halteverbot = 2 * $halteverbot;
-        }
-        if ($newvar['halteverbot_einzug'] == 'J' && $newvar['halteverbot_auszug'] == 'N' ||$newvar['halteverbot_einzug'] == 'N' && $newvar['halteverbot_auszug'] == 'J' ){
-            $k_halteverbot = $halteverbot;
-        }
-        else{
-            $k_halteverbot = 0;
-        }
+        $k_halteverbot = 0;
+        if ($newvar['halteverbot_einzug'] == 'J' )
+            $k_halteverbot += $halteverbot;
+
+        if ($newvar['halteverbot_auszug'] == 'J')
+            $k_halteverbot += $halteverbot;
 
         //Berechnung Kosten Gesamtsumme
-
         $kosten = $k_container_groß * $container_groß + $k_container_klein * $container_klein + $k_abtrageweg + $k_etage + $k_aussenaufzug + $k_halteverbot + $k_volumen_m3;
 
 
-        return view('calculator.berechnung', compact('kubikmeter', 'kosten', 'k_container_groß', 'k_container_klein', 'k_abtrageweg', 'k_etage', 'k_aussenaufzug', 'k_halteverbot', 'container_groß', 'k_etage', 'k_volumen_m3'));
+        return view('calculator.berechnung', compact('kubikmeter', 'kosten'));
 
     }
 }

@@ -736,6 +736,6 @@
     </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0S1h8oYvT1KdHFbUGmHy8wTAo4FACNF0&libraries=places&callback=initAutocomplete"
-            async defer></script>
+             defer></script>
 
 @endsection
