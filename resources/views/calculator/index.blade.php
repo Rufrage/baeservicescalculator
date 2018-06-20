@@ -516,11 +516,11 @@
                 <div class="form-group row">
                     <div class="col-sm-6">
                         {!! Form::label('etage_auszug', 'Etage') !!}
-                        {!! Form::number('etage_auszug', null, ['class'=>'form-control', 'id' => 'etage_auszug', 'min'=>0]) !!}
+                        {!! Form::number('etage_auszug', 0, ['class'=>'form-control', 'id' => 'etage_auszug', 'min'=>0]) !!}
                     </div>
                     <div class="col-sm-6">
                         {!! Form::label('etage_einzug', 'Etage') !!}
-                        {!! Form::number('etage_einzug', null, ['class'=>'form-control', 'id' => 'etage_einzug', 'min'=>0]) !!}
+                        {!! Form::number('etage_einzug', 0, ['class'=>'form-control', 'id' => 'etage_einzug', 'min'=>0]) !!}
                     </div>
                 </div>
 
@@ -549,11 +549,11 @@
                 <div class="form-group row">
                     <div class="col-sm-6">
                         {!! Form::label('abtrageweg_auszug', 'Abtrageweg') !!}
-                        {!! Form::number('abtrageweg_auszug', null, ['class'=>'form-control', 'id' => 'abtrageweg_auszug', 'min'=>0]) !!}
+                        {!! Form::number('abtrageweg_auszug', 0, ['class'=>'form-control', 'id' => 'abtrageweg_auszug', 'min'=>0]) !!}
                     </div>
                     <div class="col-sm-6">
                         {!! Form::label('abtrageweg_einzug', 'Abtrageweg') !!}
-                        {!! Form::number('abtrageweg_einzug', null, ['class'=>'form-control', 'min'=>0]) !!}
+                        {!! Form::number('abtrageweg_einzug', 0, ['class'=>'form-control', 'min'=>0]) !!}
                     </div>
                 </div>
 
@@ -566,17 +566,21 @@
                     </div>
                     <div class="col-sm-6">
                         {!! Form::label('volumen', 'Volumen (m³)') !!}
-                        {!! Form::number('volumen', null, ['class'=>'form-control']) !!}
+                        {!! Form::number('volumen', 0, ['class'=>'form-control']) !!}
                     </div>
                 </div>
-
+                <hr>
                 <div class="form-group row">
                     <div class="col-sm-6">
                         {!! Form::label('versicherung', 'Versicherungssumme') !!}
-                        {!! Form::number('versicherung', null, ['class'=>'form-control', 'id' => 'versicherung', 'min' =>0, 'step'=>0.01]) !!}
+                        {!! Form::number('versicherung', 0, ['class'=>'form-control', 'id' => 'versicherung', 'min' =>0, 'step'=>0.01]) !!}
                     </div>
+
+                <div class="col-sm-6">
+                    {!! Form::label('übersee_lokal', 'Übersee/Lokal') !!}
+                    {!! Form::select('übersee_lokal', ['Ü' => 'Übersee', 'L' => 'Lokal'], 'L', ['class'=>'form-control', 'id'=>'übersee_lokal'])  !!}
                 </div>
-                <div class="col-sm-6"
+                </div>
 
                 <hr>
                 <div id="form-wohnzimmer" class="form-group row">
