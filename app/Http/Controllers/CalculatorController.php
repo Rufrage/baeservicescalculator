@@ -17,13 +17,12 @@ class CalculatorController extends Controller
 
         $newvar = $request->all();
         $kubikmeter = 0;
+        $k_grundkosten = 0;
         //Kosten für große und kleine Container
         $container_klein = 1400;
         $container_groß = 2000;
 
         $k_volumen_m3 = 0;
-        //Kosten pro Kubikmeter(120)
-        $volumen_pro_m3 = 120;
         //Prozentsatz für Extra Material (10%)
         $extra_material = 0.1;
         //Kosten pro Meter Weg(10)
@@ -163,42 +162,41 @@ class CalculatorController extends Controller
             "tischkopierer"=>5,
         );
 
-        foreach ($newvar as $key=>$value) {
-            if ($key == "_token" ||$key == "auszugsort" || $key == "einzugsort" || $key == "distanz_text" || $key == "distanz" || $key == "volumen"
-            || $key == "etage_auszug" || $key == "etage_einzug" || $key == "size" || $key == "abtrageweg_einzug" || $key == "abtrageweg_auszug"
-            || $key == "aussenaufzug_einzug" || $key == "aussenaufzug_auszug" || $key == "halteverbot_einzug" || $key == "halteverbot_auszug"
-                || $key == "versicherung" || $key == "übersee_lokal"){
-                continue;
-            }
-            else{
-                //print($value);
-            $kubikmeter += array_sum($value)* $recheneinheiten[$key];
-            }
+        if ($newvar['volumen'] != 0){
+            $kubikmeter = $newvar['volumen'];
         }
+        else {
+
+
+            foreach ($newvar as $key => $value) {
+                if ($key == "_token" || $key == "auszugsort" || $key == "einzugsort" || $key == "distanz_text" || $key == "distanz" || $key == "volumen"
+                    || $key == "etage_auszug" || $key == "etage_einzug" || $key == "size" || $key == "abtrageweg_einzug" || $key == "abtrageweg_auszug"
+                    || $key == "aussenaufzug_einzug" || $key == "aussenaufzug_auszug" || $key == "halteverbot_einzug" || $key == "halteverbot_auszug"
+                    || $key == "versicherung" || $key == "übersee_lokal") {
+                    continue;
+                } else {
+                    //print($value);
+                    $kubikmeter += array_sum($value) * $recheneinheiten[$key];
+                }
+            }
+            $kubikmeter /= 10;
+        }
+
         //Berechnung Grundkosten abhängig von Lokal oder Übersee
         if ($newvar['übersee_lokal'] == 'Ü'){
-            $this->calculate_übersee($kubikmeter, $newvar['distanz']);
+           $k_grundkosten = $this->calculate_übersee($kubikmeter, $newvar['distanz'], $container_groß, $container_klein, $extra_material);
+
+
         }
         if ($newvar['übersee_lokal'] == 'L'){
-            $this->calculate_local($kubikmeter, $newvar['distanz']);
-        }
-        //Berechnung große Container
-        $k_container_groß = floor($kubikmeter/60);
-        if (($kubikmeter % 60) >30){
-            $k_container_groß++;
+            $k_grundkosten = $this->calculate_local($kubikmeter, $newvar['distanz'], $extra_material);
+
         }
 
-        //Berechnung kleine Container
-        $k_container_klein = 0;
-        if (($kubikmeter % 60) <= 30 && ($kubikmeter % 60) > 0){
-            $k_container_klein = 1;
-        }
-
-        //Berechnung Volumen pro m^3 und Extra Material
-        $k_volumen_m3 = ($kubikmeter * $volumen_pro_m3) * (1 +$extra_material);
 
         //Berechnung Kosten Abtrageweg
         $k_abtrageweg = $abtrageweg * ($newvar['abtrageweg_einzug'] + $newvar['abtrageweg_auszug']);
+
         //Berechnung Kosten Etage
         $k_etage = $etage * ($newvar['etage_einzug'] + $newvar['etage_auszug']);
 
@@ -220,37 +218,47 @@ class CalculatorController extends Controller
         //Berechnung Versicherung
         $k_versicherung = $newvar['versicherung'] * $versicherung;
 
-        //Berechnung Kosten Gesamtsumme abhängig von Lokal oder Übersee
-        if ($newvar['übersee_lokal'] == 'Ü'){
-            //calculate
-        }
-        $kosten = $k_container_groß * $container_groß + $k_container_klein * $container_klein + $k_abtrageweg + $k_etage + $k_aussenaufzug + $k_halteverbot + $k_volumen_m3 + $k_versicherung;
+        //Berechnung Kosten Gesamtsumme
+
+        $kosten = $k_grundkosten + $k_etage + $k_aussenaufzug + $k_halteverbot + $k_versicherung + $abtrageweg;
 
 
         return view('calculator.berechnung', compact('kubikmeter', 'kosten'));
 
     }
 
-    public function calculate_übersee($kubikmeter, $distanz){
-        //Berechnung große Container
-        $k_container_groß = floor($kubikmeter/60);
-        if (($kubikmeter % 60) >30){
+    public function calculate_übersee($kubikmeter_ü, $distanz_ü, $container_groß_ü, $container_klein_ü, $extra_material_ü){
+        //Kosten pro Kubikmeter(120)
+        $volumen_pro_m3 = 120;
+         //Berechnung große Container
+            $k_container_groß = floor($kubikmeter_ü/60);
+            $grundkosten = 0;
+        if (($kubikmeter_ü % 60) >30){
             $k_container_groß++;
         }
 
         //Berechnung kleine Container
         $k_container_klein = 0;
-        if (($kubikmeter % 60) <= 30 && ($kubikmeter % 60) > 0){
+        if (($kubikmeter_ü % 60) <= 30 && ($kubikmeter_ü % 60) > 0){
             $k_container_klein = 1;
         }
-        return 'Übersee!';
+        $k_container_klein = $container_klein_ü * $k_container_klein;
+        $k_container_groß = $container_groß_ü * $k_container_groß;
+        $grundkosten = $k_container_groß + $k_container_klein + ($volumen_pro_m3 * $kubikmeter_ü);
 
-        //$kosten = $k_container_groß * $container_groß + $k_container_klein * $container_klein + $k_abtrageweg + $k_etage + $k_aussenaufzug + $k_halteverbot + $k_volumen_m3 + $k_versicherung;
-        //return $kosten;
+        //Materialprozentsatz einrechnen
+        $grundkosten *= (1 + $extra_material_ü);
+        return $grundkosten;
+
+
+
+        //$kosten =  $k_abtrageweg + $k_etage + $k_aussenaufzug + $k_halteverbot + $k_volumen_m3 + $k_versicherung;
+
     }
-    public function calculate_local($kubikmeter, $distanz){
-        $kosten = 0;
-        return $kosten;
-        //(distanz * kubikmeter) + 10% Extra Material
+    public function calculate_local($kubikmeter_l, $distanz_l, $extra_material_l){
+         $grundkosten = $kubikmeter_l * $distanz_l;
+        $grundkosten *= (1 + $extra_material_l);
+         return $grundkosten;
+
     }
 }
