@@ -570,6 +570,14 @@
                     </div>
                 </div>
 
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        {!! Form::label('versicherung', 'Versicherung') !!}
+                        {!! Form::number('versicherung', null, ['class'=>'form-control', 'id' => 'versicherung', 'min' =>0, 'step'=>0.01]) !!}
+                    </div>
+
+                </div>
+
                 <hr>
                 <div id="form-wohnzimmer" class="form-group row">
                     <h2 class="col-12">Wohnzimmer</h2>

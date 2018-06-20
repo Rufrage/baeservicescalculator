@@ -46,6 +46,11 @@ class CalculatorController extends Controller
         //Gesamtkosten Halteverbot
         $k_halteverbot = 0;
 
+        //Versicherungssatz
+        $versicherung = 0.025;
+        //Gesamtkosten Versicherung
+        $k_versicherung = 0;
+
         //Gesamtsumme
         $kosten = 0;
         //Array mit Recheneinheiten und key
@@ -164,7 +169,7 @@ class CalculatorController extends Controller
         foreach ($newvar as $key=>$value) {
             if ($key == "_token" ||$key == "auszugsort" || $key == "einzugsort" || $key == "distanz_text" || $key == "distanz" || $key == "volumen"
             || $key == "etage_auszug" || $key == "etage_einzug" || $key == "size" || $key == "abtrageweg_einzug" || $key == "abtrageweg_auszug"
-            || $key == "aussenaufzug_einzug" || $key == "aussenaufzug_auszug" || $key == "halteverbot_einzug" || $key == "halteverbot_auszug"){
+            || $key == "aussenaufzug_einzug" || $key == "aussenaufzug_auszug" || $key == "halteverbot_einzug" || $key == "halteverbot_auszug" || $key == "versicherung"){
                 continue;
             }
             else{
@@ -208,8 +213,11 @@ class CalculatorController extends Controller
         if ($newvar['halteverbot_auszug'] == 'J')
             $k_halteverbot += $halteverbot;
 
+        //Berechnung Versicherung
+        $k_versicherung = $newvar['versicherung'] * $versicherung;
+
         //Berechnung Kosten Gesamtsumme
-        $kosten = $k_container_groß * $container_groß + $k_container_klein * $container_klein + $k_abtrageweg + $k_etage + $k_aussenaufzug + $k_halteverbot + $k_volumen_m3;
+        $kosten = $k_container_groß * $container_groß + $k_container_klein * $container_klein + $k_abtrageweg + $k_etage + $k_aussenaufzug + $k_halteverbot + $k_volumen_m3 + $k_versicherung;
 
 
         return view('calculator.berechnung', compact('kubikmeter', 'kosten'));
