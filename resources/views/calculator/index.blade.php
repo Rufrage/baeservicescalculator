@@ -538,11 +538,11 @@
                 <div class="form-group row">
                     <div class="col-sm-6">
                         {!! Form::label('halteverbot_auszug', 'Halteverbot') !!}
-                        {!! Form::select('halteverbot_auszug', ['J' => 'Ja', 'N' => 'Nein'], 'J', ['class'=>'form-control', 'id'=>'halteverbot_auszug'])  !!}
+                        {!! Form::select('halteverbot_auszug', ['J' => 'Ja', 'N' => 'Nein'], 'N', ['class'=>'form-control', 'id'=>'halteverbot_auszug'])  !!}
                     </div>
                     <div class="col-sm-6">
                         {!! Form::label('halteverbot_einzug', 'Halteverbot') !!}
-                        {!! Form::select('halteverbot_einzug', ['J' => 'Ja', 'N' => 'Nein'], 'J', ['class'=>'form-control', 'id'=>'halteverbot_einzug'])  !!}
+                        {!! Form::select('halteverbot_einzug', ['J' => 'Ja', 'N' => 'Nein'], 'N', ['class'=>'form-control', 'id'=>'halteverbot_einzug'])  !!}
                     </div>
                 </div>
 
@@ -575,8 +575,8 @@
                         {!! Form::label('versicherung', 'Versicherung') !!}
                         {!! Form::number('versicherung', null, ['class'=>'form-control', 'id' => 'versicherung', 'min' =>0, 'step'=>0.01]) !!}
                     </div>
-
                 </div>
+                <div class="col-sm-6"
 
                 <hr>
                 <div id="form-wohnzimmer" class="form-group row">

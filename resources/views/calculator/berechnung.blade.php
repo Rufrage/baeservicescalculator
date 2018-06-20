@@ -2,10 +2,10 @@
 
 @section('content')
 <h1>Gesamtsumme:</h1>
-{{$kosten}}
+{{$kosten}} €
 
 <h3>Kubikmeter:</h3>
-{{$kubikmeter}}
+{{$kubikmeter}} m³
 
 
 @endsection
