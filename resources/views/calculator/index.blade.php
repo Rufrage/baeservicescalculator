@@ -572,7 +572,7 @@
 
                 <div class="form-group row">
                     <div class="col-sm-6">
-                        {!! Form::label('versicherung', 'Versicherung') !!}
+                        {!! Form::label('versicherung', 'Versicherungssumme') !!}
                         {!! Form::number('versicherung', null, ['class'=>'form-control', 'id' => 'versicherung', 'min' =>0, 'step'=>0.01]) !!}
                     </div>
                 </div>
