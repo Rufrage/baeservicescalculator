@@ -8,7 +8,9 @@ class CalculatorController extends Controller
 {
     public function index()
     {
-        return view('calculator.index');
+        // Starte mit Wohnzimmer
+        $currentroom = 'wohnzimmer';
+        return view('calculator.wohnzimmer', compact('currentroom'));
     }
 
     public function calculate(Request $request)
@@ -260,5 +262,26 @@ class CalculatorController extends Controller
         $grundkosten *= (1 + $extra_material_l);
          return $grundkosten;
 
+    }
+
+    public function switch(Request $request){
+
+        switch ($request->currentroom){
+            case "wohnzimmer":
+                //Wohnzimmer speichern
+                break;
+            case "kueche":
+                //Kueche speichern
+                break;
+        }
+
+        switch($request->switch){
+            case "wohnzimmer":
+                $currentroom = $request->switch;
+                return view('calculator.wohnzimmer', compact('currentroom'));
+            case "kueche":
+                $currentroom = $request->switch;
+                return view('calculator.kueche', compact('currentroom'));
+        }
     }
 }

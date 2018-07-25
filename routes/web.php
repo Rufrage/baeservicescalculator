@@ -17,10 +17,10 @@ Auth::routes();
  * Everything only accessible if logged in
  */
 Route::middleware(['auth'])->group(function() {
-    Route::get("/calculator", "CalculatorController@index");
-    Route::post("/calculator", "CalculatorController@calculate");
+    Route::resource('umzug', 'UmzugController');
+    Route::post('/umzug/switch', 'UmzugController@switch');
 });
 
 Route::get("/", function (){
-    return redirect("/calculator");
+    return redirect("/umzug");
 });
