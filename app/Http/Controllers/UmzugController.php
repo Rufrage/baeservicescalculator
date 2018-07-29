@@ -79,6 +79,8 @@ class UmzugController extends Controller
                 return view('umzug.kundendaten', compact('umzug'));
             case "wohnzimmer":
                 return view('umzug.wohnzimmer', compact('umzug'));
+            case "küche":
+                return view('umzug.küche', compact('umzug'));
         }
     }
 

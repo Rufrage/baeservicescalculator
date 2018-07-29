@@ -30,7 +30,7 @@
     <!-- Page -->
     <div class="form-group row">
         <div class="col-sm-6">
-            {!! Form::label('kueche', 'Küchensachen') !!}
+            {!! Form::label('kueche', 'Buffet mit Aufsätzen') !!}
             {!! Form::text('kueche', 0, ['class'=>'form-control', 'value' => 0]) !!}
         </div>
         <div class="col-sm-6">
