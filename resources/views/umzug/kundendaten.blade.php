@@ -15,6 +15,9 @@
                 <li class="nav-item">
                     {!! Form::button('Wohnzimmer', ['class' => 'nav-link', 'type' => 'submit', 'name' => 'switch', 'value' => 'wohnzimmer']) !!}
                 </li>
+                <li class="nav-item">
+                    {!! Form::button('Küche', ['class' => 'nav-link', 'type' => 'submit', 'name' => 'switch', 'value' => 'küche']) !!}
+                </li>
             </ul>
         </div>
     </div>
