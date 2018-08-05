@@ -81,6 +81,18 @@ class UmzugController extends Controller
                 return view('umzug.wohnzimmer', compact('umzug'));
             case "küche":
                 return view('umzug.küche', compact('umzug'));
+            case "schlafzimmer":
+                return view('umzug.schlafzimmer', compact('umzug'));
+            case "esszimmer":
+                return view('umzug.esszimmer', compact('umzug'));
+            case "bad":
+                return view('umzug.bad', compact('umzug'));
+            case "kinderzimmer":
+                return view('umzug.kinderzimmer', compact('umzug'));
+            case "weitere_zimmer":
+                return view('umzug.weitere_zimmer', compact('umzug'));
+            case "sonstiges":
+                return view('umzug.sonstiges', compact('umzug'));
         }
     }
 
