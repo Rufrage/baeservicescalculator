@@ -18,6 +18,23 @@ class CreateUmzugsTable extends Migration
             $table->timestamps();
             $table->string('vorname');
             $table->string('nachname');
+            $table->string('auszugsort')->nullable();
+            $table->string('einzugsort')->nullable();
+            $table->integer('etage_auszug')->default(0);
+            $table->integer('etage_einzug')->default(0);
+            $table->char('aussenaufzug_auszug')->default('N');
+            $table->char('aussenaufzug_einzug')->default('N');
+            $table->char('halteverbot_auszug')->default('N');
+            $table->char('halteverbot_einzug')->default('N');
+            $table->integer('abtrageweg_auszug')->default(0);
+            $table->integer('abtrageweg_einzug')->default(0);
+            $table->integer('volumen')->default(0);
+            $table->string('distanz_text')->nullable();
+            $table->integer('distanz')->nullable();
+            $table->char('übersee_lokal')->nullable();
+            $table->integer('versicherung')->default(0);
+
+
             $table->integer('wohnzimmer_sofa')->default(0);
             $table->integer('wohnzimmer_sitzlandschaft')->default(0);
             $table->integer('wohnzimmer_sessel_mit_armlehnen')->default(0);

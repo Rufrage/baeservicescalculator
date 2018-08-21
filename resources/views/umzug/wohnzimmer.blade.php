@@ -13,6 +13,9 @@
                     {!! Form::button('Kundendaten', ['class' => 'nav-link', 'type' => 'submit', 'name' => 'switch', 'value' => 'kundendaten']) !!}
                 </li>
                 <li class="nav-item">
+                    {!! Form::button('Allgemeines', ['class' => 'nav-link', 'type' => 'submit', 'name' => 'switch', 'value' => 'allgemeines']) !!}
+                </li>
+                <li class="nav-item">
                     {!! Form::button('Wohnzimmer', ['class' => 'nav-link active', 'type' => 'submit', 'name' => 'switch', 'value' => 'wohnzimmer']) !!}
                 </li>
                 <li class="nav-item">

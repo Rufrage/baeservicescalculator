@@ -13,6 +13,9 @@
                     {!! Form::button('Kundendaten', ['class' => 'nav-link', 'type' => 'submit', 'name' => 'switch', 'value' => 'kundendaten']) !!}
                 </li>
                 <li class="nav-item">
+                    {!! Form::button('Allgemeines', ['class' => 'nav-link', 'type' => 'submit', 'name' => 'switch', 'value' => 'allgemeines']) !!}
+                </li>
+                <li class="nav-item">
                     {!! Form::button('Wohnzimmer', ['class' => 'nav-link', 'type' => 'submit', 'name' => 'switch', 'value' => 'wohnzimmer']) !!}
                 </li>
                 <li class="nav-item">
@@ -158,7 +161,7 @@
     <div class="form-group row">
         <div class="col-12">
             <!-- Setzen des nächsten Zimmers als value -->
-            {!! Form::button('Weiter', ['class' => 'btn btn-primary float-right', 'type' => 'submit', 'name' => 'switch', 'value' => 'kundendaten']) !!}
+            {!! Form::button('Calculate', ['class' => 'btn btn-primary float-right', 'type' => 'submit', 'name' => 'switch', 'value' => 'calculate']) !!}
         </div>
     </div>
 

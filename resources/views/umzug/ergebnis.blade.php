@@ -10,7 +10,7 @@
             <ul class="nav nav-tabs">
                 <!-- Neues li pro Zimmer. Value muss entsprechend angepasst werden. Aktuelles zimmer bekommt klasse 'active' -->
                 <li class="nav-item">
-                    {!! Form::button('Kundendaten', ['class' => 'nav-link active', 'type' => 'submit', 'name' => 'switch', 'value' => 'kundendaten']) !!}
+                    {!! Form::button('Kundendaten', ['class' => 'nav-link', 'type' => 'submit', 'name' => 'switch', 'value' => 'kundendaten']) !!}
                 </li>
                 <li class="nav-item">
                     {!! Form::button('Allgemeines', ['class' => 'nav-link', 'type' => 'submit', 'name' => 'switch', 'value' => 'allgemeines']) !!}
@@ -47,21 +47,16 @@
     <br>
 
     <!-- Felder für dieses Zimmer-->
-    <div class="form-group row">
-        <div class="col-sm-6">
-            {!! Form::label('vorname', 'Vorname') !!}
-            {!! Form::text('vorname', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('nachname', 'Nachname') !!}
-            {!! Form::text('nachname', null, ['class'=>'form-control']) !!}
-        </div>
-    </div>
+    <h1>Gesamtsumme:</h1>
+    {{$ergebnis[0]}} €
+
+    <h3>Kubikmeter:</h3>
+    {{$ergebnis[1]}} m³
 
     <div class="form-group row">
         <div class="col-12">
             <!-- Setzen des nächsten Zimmers als value -->
-            {!! Form::button('Weiter', ['class' => 'btn btn-primary float-right', 'type' => 'submit', 'name' => 'switch', 'value' => 'allgemeines']) !!}
+            {!! Form::button('Weiter', ['class' => 'btn btn-primary float-right', 'type' => 'submit', 'name' => 'switch', 'value' => 'wohnzimmer']) !!}
         </div>
     </div>
 

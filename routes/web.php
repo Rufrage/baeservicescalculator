@@ -19,6 +19,7 @@ Auth::routes();
 Route::middleware(['auth'])->group(function() {
     Route::resource('umzug', 'UmzugController');
     Route::post('/umzug/switch', 'UmzugController@switch');
+    Route::post('/umzug/calculate', 'UmzugController@calculate');
 });
 
 Route::get("/", function (){
