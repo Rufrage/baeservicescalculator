@@ -1,4 +1,8 @@
 @extends('layouts.app')
+<head>
+    https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css
+    https://cdn.datatables.net/buttons/1.5.2/css/buttons.dataTables.min.css
+</head>
 
 @section('content')
 
@@ -53,6 +57,26 @@
     <h3>Kubikmeter:</h3>
     {{$ergebnis[1]}} m³
 
+    <table id="test" class="display nowrap" cellspacing="0" width="100%">
+        <thead>
+        <tr>
+            <th>Summe</th>
+            <th>Kubikmeter</th>
+            <th>Name</th>
+        </tr>
+
+        </thead>
+        <tbody>
+        <tr>
+            <td>{{$ergebnis[0]}} €</td>
+            <td>{{$ergebnis[1]}} m³</td>
+            <td>Janosch van Kann</td>
+        </tr>
+        </tbody>
+
+
+    </table>
+
     <div class="form-group row">
         <div class="col-12">
             <!-- Setzen des nächsten Zimmers als value -->
@@ -64,5 +88,14 @@
 
 
 
+
+@endsection
+
+@section('scripts')
+    <script src="FileSaver.js"></script>
+    <script src="tableexport.js"></script>
+    <script>
+        $("#test").tableExport();
+    </script>
 
 @endsection

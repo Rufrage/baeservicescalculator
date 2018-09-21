@@ -135,7 +135,11 @@ class UmzugController extends Controller
         $container_klein = 1400;
         $container_groß = 2000;
 
-        $k_volumen_m3 = 0;
+
+        //Kosten pro Kubikmeter Volumen
+        $k_volumen_m3 = 120;
+        //Kosten pro Kilometer Distanz
+        $k_distanz_km = 1;
         //Prozentsatz für Extra Material (10%)
         $extra_material = 0.1;
         //Kosten pro Meter Weg(10)
@@ -155,8 +159,10 @@ class UmzugController extends Controller
         //Gesamtkosten Halteverbot
         $k_halteverbot = 0;
 
-        //Versicherungssatz
-        $versicherung = 0.025;
+        //Versicherungssatz Lokal (0,05% --> * 0,0005)
+        $versicherung_l = 0.0005;
+        //Versicherungssatz Übersee (2,5% --> * 0,025)
+        $versicherung_ü = 0.025;
         //Gesamtkosten Versicherung
         $k_versicherung = 0;
 
@@ -387,8 +393,6 @@ class UmzugController extends Controller
             $kubikmeter /= 10;
         }
 
-        //   || $key == "distanz"  || $key == "size"
-
         //Berechnung Grundkosten abhängig von Lokal oder Übersee
         if ($newvar['übersee_lokal'] == 'Ü'){
             $k_grundkosten = $this->calculate_übersee($kubikmeter, $newvar['distanz'], $container_groß, $container_klein, $extra_material);
@@ -396,7 +400,8 @@ class UmzugController extends Controller
 
         }
         if ($newvar['übersee_lokal'] == 'L'){
-            $k_grundkosten = $this->calculate_local($kubikmeter, $newvar['distanz'], $extra_material);
+            $k_grundkosten = $this->calculate_local($kubikmeter, $newvar['distanz'], $extra_material, $k_volumen_m3, $k_distanz_km);
+
 
         }
 
@@ -423,11 +428,16 @@ class UmzugController extends Controller
             $k_halteverbot += $halteverbot;
 
         //Berechnung Versicherung
-        $k_versicherung = $newvar['versicherung'] * $versicherung;
+        if ($newvar['übersee_lokal'] == 'Ü'){
+            $k_versicherung = $newvar['versicherung'] * $versicherung_ü;
+        }
+        if ($newvar['übersee_lokal'] == 'L'){
+            $k_versicherung = $newvar['versicherung'] * $versicherung_l;
+        }
 
         //Berechnung Kosten Gesamtsumme
 
-        $kosten = $k_grundkosten + $k_etage + $k_aussenaufzug + $k_halteverbot + $k_versicherung + $abtrageweg;
+        $kosten = $k_grundkosten + $k_etage + $k_aussenaufzug + $k_halteverbot + $k_versicherung + $k_abtrageweg;
         $array = [$kosten, $kubikmeter];
         return $array;
 
@@ -452,10 +462,13 @@ class UmzugController extends Controller
         }
         $k_container_klein = $container_klein_ü * $k_container_klein;
         $k_container_groß = $container_groß_ü * $k_container_groß;
+
+
         $grundkosten = $k_container_groß + $k_container_klein + ($volumen_pro_m3 * $kubikmeter_ü);
 
         //Materialprozentsatz einrechnen
-        $grundkosten *= (1 + $extra_material_ü);
+        $extra_material = ($volumen_pro_m3 * $kubikmeter_ü) * $extra_material_ü;
+        $grundkosten += $extra_material;
         return $grundkosten;
 
 
@@ -463,8 +476,8 @@ class UmzugController extends Controller
         //$kosten =  $k_abtrageweg + $k_etage + $k_aussenaufzug + $k_halteverbot + $k_volumen_m3 + $k_versicherung;
 
     }
-    public function calculate_local($kubikmeter_l, $distanz_l, $extra_material_l){
-        $grundkosten = $kubikmeter_l * $distanz_l;
+    public function calculate_local($kubikmeter_l, $distanz_l, $extra_material_l, $k_volumen_m3, $k_distanz_km){
+        $grundkosten = ($kubikmeter_l * $k_volumen_m3) + ($distanz_l/1000 * $k_distanz_km);
         $grundkosten *= (1 + $extra_material_l);
         return $grundkosten;
 
