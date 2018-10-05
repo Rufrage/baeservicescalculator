@@ -11,7 +11,10 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
+
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/FileSaver.js') }}"></script>
+    <script src="{{ asset('js/tableexport.js') }}"></script>
     @yield('scripts')
 
     <!-- Fonts -->

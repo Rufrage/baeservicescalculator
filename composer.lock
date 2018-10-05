@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5108da9044dc9473e83e38f6881e1b2",
+    "content-hash": "1ed3e2e7a15a2d512f036e70854d89db",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -365,6 +365,24 @@
                 "trusted proxy"
             ],
             "time": "2018-02-07T20:20:57+00:00"
+        },
+        {
+            "name": "intelogie/tableexport",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/INTELOGIE/TableExport.git",
+                "reference": "1140a2943dbfd2deffcd85e59d1a1f8b90d329a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/INTELOGIE/TableExport/zipball/1140a2943dbfd2deffcd85e59d1a1f8b90d329a2",
+                "reference": "1140a2943dbfd2deffcd85e59d1a1f8b90d329a2",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2016-07-01T03:25:51+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -4053,7 +4071,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "intelogie/tableexport": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
