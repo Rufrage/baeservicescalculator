@@ -68,7 +68,8 @@
         <tr>
             <td>{{$ergebnis[0]}}</td>
             <td>{{$ergebnis[1]}}</td>
-            <td>Janosch van Kann</td>
+            <td>{{$ergebnis[2]}}</td>
+            <td>{{$ergebnis[3]}}</td>
         </tr>
         </tbody>
 

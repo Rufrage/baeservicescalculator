@@ -392,6 +392,8 @@ class UmzugController extends Controller
             }
             $kubikmeter /= 10;
         }
+        $kundenname_v = $newvar['vorname'];
+        $kundenname_n = $newvar['nachname'];
 
         //Berechnung Grundkosten abhängig von Lokal oder Übersee
         if ($newvar['übersee_lokal'] == 'Ü'){
@@ -438,7 +440,7 @@ class UmzugController extends Controller
         //Berechnung Kosten Gesamtsumme
 
         $kosten = $k_grundkosten + $k_etage + $k_aussenaufzug + $k_halteverbot + $k_versicherung + $k_abtrageweg;
-        $array = [$kosten, $kubikmeter];
+        $array = [$kosten, $kubikmeter, $kundenname_v, $kundenname_n];
         return $array;
 
 
