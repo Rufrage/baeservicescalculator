@@ -97,7 +97,7 @@ class UmzugController extends Controller
                 return view('umzug.sonstiges', compact('umzug'));
             case "calculate":
                 $ergebnis = $this->calculate($umzug);
-                return view('umzug.ergebnis', compact('ergebnis', 'umzug', 'kosten', 'kubikmeter'));
+                return view('umzug.ergebnis', compact('ergebnis', 'umzug'));
         }
     }
 
@@ -440,7 +440,7 @@ class UmzugController extends Controller
         //Berechnung Kosten Gesamtsumme
 
         $kosten = $k_grundkosten + $k_etage + $k_aussenaufzug + $k_halteverbot + $k_versicherung + $k_abtrageweg;
-        $array = [$kosten, $kubikmeter, $kundenname_v, $kundenname_n];
+        $array = [$kosten, $kubikmeter, $kundenname_v . " " . $kundenname_n];
         return $array;
 
 

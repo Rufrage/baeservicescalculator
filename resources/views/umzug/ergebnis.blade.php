@@ -46,44 +46,36 @@
     <br>
     <br>
 
-    <!-- Felder für dieses Zimmer-->
-    <h1>Gesamtsumme:</h1>
-    {{$ergebnis[0]}} €
-
-    <h3>Kubikmeter:</h3>
-    {{$ergebnis[1]}} m³
 
 
-
-    <table id="test" class="display nowrap" cellspacing="0" width="100%">
-        <thead>
-        <tr>
-            <th>Summe</th>
-            <th>Kubikmeter</th>
-            <th>Name</th>
-        </tr>
-
-        </thead>
+    <table id="result" class="table table-sm" style="border: none;">
         <tbody>
-        <tr>
-            <td>{{$ergebnis[0]}}</td>
-            <td>{{$ergebnis[1]}}</td>
-            <td>{{$ergebnis[2]}}</td>
-            <td>{{$ergebnis[3]}}</td>
-        </tr>
-        </tbody>
+            <!-- Kundendaten -->
+            <tr>
+                <td style="color: red;">{{$ergebnis[2]}}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>von {{$umzug->auszugsort}}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>nach {{$umzug->einzugsort}}</td>
+                <td></td>
+            </tr>
 
+            <tr style="height: 20px;"></tr>
+
+            <tr>
+                <td>Kubikmeter (gesamt)</td>
+                <td>{{$ergebnis[1]}}m³</td>
+            </tr>
+            <tr>
+                <td>Kosten (gesamt)</td>
+                <td>{{$ergebnis[0]}}€</td>
+            </tr>
 
     </table>
-
-
-
-    <div class="form-group row">
-        <div class="col-12">
-            <!-- Setzen des nächsten Zimmers als value -->
-            {!! Form::button('Weiter', ['class' => 'btn btn-primary float-right', 'type' => 'submit', 'name' => 'switch', 'value' => 'wohnzimmer']) !!}
-        </div>
-    </div>
 
     {!! Form::close() !!}
 
@@ -95,7 +87,14 @@
 @section('scripts')
     <script>
         $(document).ready(function (e) {
-           $("#test").tableExport();
+           $("#result").tableExport(
+               {
+                   filename: 'umzugexport',
+                   bootstrap: true,
+                   formats: ['xlsx'],
+                   position: 'bottom',
+               }
+           );
         });
 
     </script>
