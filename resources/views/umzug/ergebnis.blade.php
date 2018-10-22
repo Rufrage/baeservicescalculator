@@ -45,6 +45,7 @@
 
     <br>
     <br>
+        {{-- {{$newvar = $umzug->toArray()}}--}}
 
 
 
@@ -74,8 +75,28 @@
                 <td>Kosten (gesamt)</td>
                 <td>{{$ergebnis[0]}}€</td>
             </tr>
-
+            <tr>
+                <td>Door to Door</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Materialgestellung</td>
+                <td></td>
+            </tr>
+        @if($newvar['montage'] == 'J')
+            <tr>
+                <td>De- und Montage von teilbaren Möbeln</td>
+                <td></td>
+            </tr>
+        @endif
+            <tr>
+                <td>Überseemäßige Verpackung</td>
+                <td></td>
+            </tr>
     </table>
+    <p>{{$umzug->montage}}</p>
+    <p>{{$umzug->übersee_verpackung}}</p>
+    <p>{{$umzug->montage}}</p>
 
     {!! Form::close() !!}
 

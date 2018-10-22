@@ -128,6 +128,23 @@
             {!! Form::label('übersee_lokal', 'Übersee/Lokal') !!}
             {!! Form::select('übersee_lokal', ['Ü' => 'Übersee', 'L' => 'Lokal'], null, ['class'=>'form-control', 'id'=>'übersee_lokal'])  !!}
         </div>
+        <div class="col-sm-6">
+            {!! Form::label('materialgestellung', 'Materialgestellung') !!}
+            {!! Form::select('materialgestellung', ['J' => 'Ja', 'N' => 'Nein'], null, ['class'=>'form-control', 'id'=>'montage'])  !!}
+        </div>
+        <div class="col-sm-6">
+            {!! Form::label('montage', 'De- und Montage von teilbaren Möbeln') !!}
+            {!! Form::select('montage', ['J' => 'Ja', 'N' => 'Nein'], null, ['class'=>'form-control', 'id'=>'montage'])  !!}
+        </div>
+        <div class="col-sm-6">
+            {!! Form::label('übersee_verpackung', 'Überseemäßige Verpackung') !!}
+            {!! Form::select('übersee_verpackung', ['J' => 'Ja', 'N' => 'Nein'], null, ['class'=>'form-control', 'id'=>'übersee_verpackung'])  !!}
+        </div>
+        <div class="col-sm-6">
+            {!! Form::label('gestellung_container', 'Gestellung eines 20 Containers') !!}
+            {!! Form::select('gestellung_container', ['J' => 'Ja', 'N' => 'Nein'], null, ['class'=>'form-control', 'id'=>'gestellung_container'])  !!}
+        </div>
+
     </div>
 
 

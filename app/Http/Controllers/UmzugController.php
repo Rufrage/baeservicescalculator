@@ -73,6 +73,7 @@ class UmzugController extends Controller
     public function update(Request $request, Umzug $umzug)
     {
         $umzug->update($request->all());
+        $newvar = $umzug->toArray();
 
         switch($request->switch){
             case "kundendaten":
@@ -97,7 +98,7 @@ class UmzugController extends Controller
                 return view('umzug.sonstiges', compact('umzug'));
             case "calculate":
                 $ergebnis = $this->calculate($umzug);
-                return view('umzug.ergebnis', compact('ergebnis', 'umzug'));
+                return view('umzug.ergebnis', compact('ergebnis', 'umzug', 'newvar'));
         }
     }
 
@@ -160,7 +161,7 @@ class UmzugController extends Controller
         $k_halteverbot = 0;
 
         //Versicherungssatz Lokal (0,05% --> * 0,0005)
-        $versicherung_l = 0.0005;
+        $versicherung_l = 0.025;
         //Versicherungssatz Übersee (2,5% --> * 0,025)
         $versicherung_ü = 0.025;
         //Gesamtkosten Versicherung
@@ -382,7 +383,8 @@ class UmzugController extends Controller
                 if ($key == "id" || $key == "created_at" || $key == "updated_at" || $key =="vorname" || $key == "nachname" || $key == "auszugsort" ||
                     $key == "einzugsort" || $key == "etage_auszug" || $key == "etage_einzug" || $key == "aussenaufzug_einzug" || $key == "aussenaufzug_auszug" ||
                     $key == "halteverbot_einzug" || $key == "halteverbot_auszug" || $key == "abtrageweg_einzug" || $key == "abtrageweg_auszug" || $key == "volumen" ||
-                    $key == "distanz_text" || $key == "versicherung" || $key == "übersee_lokal" || $key == "distanz") {
+                    $key == "distanz_text" || $key == "versicherung" || $key == "übersee_lokal" || $key == "distanz" || $key == "montage" || $key == "übersee_verpackung" ||
+                    $key == "gestellung_container") {
                     continue;
                 } else {
                     //print($value);
@@ -441,6 +443,7 @@ class UmzugController extends Controller
 
         $kosten = $k_grundkosten + $k_etage + $k_aussenaufzug + $k_halteverbot + $k_versicherung + $k_abtrageweg;
         $array = [$kosten, $kubikmeter, $kundenname_v . " " . $kundenname_n];
+        //var_dump($k_grundkosten, $k_etage, $k_aussenaufzug, $k_halteverbot, $k_versicherung, $k_abtrageweg, $newvar['versicherung']);
         return $array;
 
 
@@ -479,8 +482,10 @@ class UmzugController extends Controller
 
     }
     public function calculate_local($kubikmeter_l, $distanz_l, $extra_material_l, $k_volumen_m3, $k_distanz_km){
-        $grundkosten = ($kubikmeter_l * $k_volumen_m3) + ($distanz_l/1000 * $k_distanz_km);
+        $grundkosten = ($kubikmeter_l * $k_volumen_m3);
         $grundkosten *= (1 + $extra_material_l);
+        $grundkosten += ($distanz_l/1000 * $k_distanz_km);
+
         return $grundkosten;
 
     }

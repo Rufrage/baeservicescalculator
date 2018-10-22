@@ -56,6 +56,35 @@
             {!! Form::label('nachname', 'Nachname') !!}
             {!! Form::text('nachname', null, ['class'=>'form-control']) !!}
         </div>
+        <div class="col-sm-6">
+            {!! Form::label('adresse', 'Adresse') !!}
+            {!! Form::text('adresse', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6">
+            {!! Form::label('telefon', 'Telefonnummer') !!}
+            {!! Form::number('telefon', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6">
+            {!! Form::label('email', 'Email') !!}
+            {!! Form::text('email', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6">
+            {!! Form::label('rechnungsempfänger', 'Rechnungsempfänger') !!}
+            {!! Form::text('rechnungsempfänger', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6">
+            {!! Form::label('ansprechpartner', 'Ansprechpartner') !!}
+            {!! Form::text('ansprechpartner', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6">
+            {!! Form::label('kakao_talk_id', 'Kakao Talk Id') !!}
+            {!! Form::text('kakao_talk_id', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6">
+            {!! Form::label('position', 'Position') !!}
+            {!! Form::text('position', null, ['class'=>'form-control']) !!}
+        </div>
+
     </div>
 
     <div class="form-group row">
