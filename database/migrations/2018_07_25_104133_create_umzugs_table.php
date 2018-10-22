@@ -34,7 +34,7 @@ class CreateUmzugsTable extends Migration
             $table->char('übersee_lokal')->nullable();
             $table->integer('versicherung')->default(0);
 
-            $table->char('montage')->default('J');
+            $table->char('montage')->default('N');
 
             $table->char('übersee_verpackung')->default('N');
             $table->char('gestellung_container')->default('N');

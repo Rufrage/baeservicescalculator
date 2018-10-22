@@ -133,7 +133,7 @@
             {!! Form::select('materialgestellung', ['J' => 'Ja', 'N' => 'Nein'], null, ['class'=>'form-control', 'id'=>'montage'])  !!}
         </div>
         <div class="col-sm-6">
-            {!! Form::label('montage', 'De- und Montage von teilbaren Möbeln') !!}
+            {!! Form::label('montage', 'De-/Montage') !!}
             {!! Form::select('montage', ['J' => 'Ja', 'N' => 'Nein'], null, ['class'=>'form-control', 'id'=>'montage'])  !!}
         </div>
         <div class="col-sm-6">
