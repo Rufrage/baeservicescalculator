@@ -129,7 +129,11 @@
             {!! Form::select('übersee_lokal', ['Ü' => 'Übersee', 'L' => 'Lokal'], null, ['class'=>'form-control', 'id'=>'übersee_lokal'])  !!}
         </div>
         <div class="col-sm-6">
-            {!! Form::label('montage', 'De- und Montage von teilbaren Möbeln') !!}
+            {!! Form::label('materialgestellung', 'Materialgestellung') !!}
+            {!! Form::select('materialgestellung', ['J' => 'Ja', 'N' => 'Nein'], null, ['class'=>'form-control', 'id'=>'montage'])  !!}
+        </div>
+        <div class="col-sm-6">
+            {!! Form::label('montage', 'De-/Montage von teilbaren Möbeln') !!}
             {!! Form::select('montage', ['J' => 'Ja', 'N' => 'Nein'], null, ['class'=>'form-control', 'id'=>'montage'])  !!}
         </div>
         <div class="col-sm-6">

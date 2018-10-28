@@ -37,6 +37,12 @@ class CreateUmzugsTable extends Migration
             $table->char('steuerbefreiung')->default('N');
 
 
+            $table->char('montage')->default('N');
+
+            $table->char('übersee_verpackung')->default('N');
+            $table->char('gestellung_container')->default('N');
+
+
 
             $table->integer('wohnzimmer_sofa')->default(0);
             $table->integer('wohnzimmer_sitzlandschaft')->default(0);
