@@ -53,7 +53,7 @@
         <tbody>
             <!-- Kundendaten -->
             <tr>
-                <td style="color: red;">{{$ergebnis[2]}}</td>
+                <td width="5000px">{{$ergebnis[2]}}</td>
                 <td></td>
             </tr>
             <tr>
@@ -72,10 +72,6 @@
                 <td>{{$ergebnis[1]}}m³</td>
             </tr>
             <tr>
-                <td>Kosten (gesamt)</td>
-                <td>{{$ergebnis[0]}}€</td>
-            </tr>
-            <tr>
                 <td>Door to Door</td>
                 <td></td>
             </tr>
@@ -83,20 +79,82 @@
                 <td>Materialgestellung</td>
                 <td></td>
             </tr>
-        @if($newvar['montage'] == 'J')
+        @if($umzug_array['montage'] == 'J')
             <tr>
                 <td>De- und Montage von teilbaren Möbeln</td>
                 <td></td>
             </tr>
         @endif
+            @if($umzug_array['übersee_lokal'] == 'Ü')
             <tr>
                 <td>Überseemäßige Verpackung</td>
                 <td></td>
             </tr>
+            <tr>
+                <td>Gestellung eines 20' Containers</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Verladung in den Container</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Transport von Bad Homburg nach Hamburg</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Seefracht von Hamburg nach Busan, Korea</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Transport von Busan Port nach Seoul, Door</td>
+                <td></td>
+            </tr>
+            @endif
+            <tr>
+                <td>Entladen, auspacken (Fullservice: inkl. Geschirr, Kleider, Küchenwaren, etc.)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Transportversicherung bis {{$umzug->versicherung}},- Euro</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Halt</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>shuttle charge</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Nettobetrag</td>
+                <td>{{$ergebnis[0]}} €</td>
+            </tr>
+            @if($umzug_array['steuerbefreiung'] == 'J')
+                <tr>
+                    <td>Steuerbefreiung nach § 4 Nr. 3 ff. UstG</td>
+                    <td></td>
+                </tr>
+            <tr>
+                <td>Summe</td>
+                <td>{{$ergebnis[0]}} €</td>
+            </tr>
+            @endif
+            @if($umzug_array['steuerbefreiung'] == 'N')
+                <tr>
+                    <td>Umsatzsteuer</td>
+                    <td>{{$ergebnis[3] - $ergebnis[0]}} €</td>
+                </tr>
+                <tr>
+                    <td>Summe</td>
+                    <td>{{$ergebnis[3]}} €</td>
+                </tr>
+            @endif
     </table>
-    <p>{{$umzug->montage}}</p>
-    <p>{{$umzug->übersee_verpackung}}</p>
-    <p>{{$umzug->montage}}</p>
+
+    {{--<a href="{{route("export")}}" class="btn">Download</a>--}}
+
 
     {!! Form::close() !!}
 
@@ -119,5 +177,7 @@
         });
 
     </script>
+
+
 
 @endsection

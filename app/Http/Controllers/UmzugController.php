@@ -73,7 +73,7 @@ class UmzugController extends Controller
     public function update(Request $request, Umzug $umzug)
     {
         $umzug->update($request->all());
-        $newvar = $umzug->toArray();
+        $umzug_array = $umzug->toArray();
 
         switch($request->switch){
             case "kundendaten":
@@ -98,7 +98,7 @@ class UmzugController extends Controller
                 return view('umzug.sonstiges', compact('umzug'));
             case "calculate":
                 $ergebnis = $this->calculate($umzug);
-                return view('umzug.ergebnis', compact('ergebnis', 'umzug', 'newvar'));
+                return view('umzug.ergebnis', compact('ergebnis', 'umzug', 'umzug_array'));
         }
     }
 
@@ -128,7 +128,7 @@ class UmzugController extends Controller
     {
         //Variablen
 
-        $newvar = $umzug->toArray();
+        $umzug_array = $umzug->toArray();
 
         $kubikmeter = 0;
         $k_grundkosten = 0;
@@ -373,76 +373,77 @@ class UmzugController extends Controller
 
         );
 
-        if ($newvar['volumen'] != 0){
-            $kubikmeter = $newvar['volumen'];
+        if ($umzug_array['volumen'] != 0){
+            $kubikmeter = $umzug_array['volumen'];
         }
         else {
 
 
-            foreach ($newvar as $key => $value) {
+            foreach ($umzug_array as $key => $value) {
                 if ($key == "id" || $key == "created_at" || $key == "updated_at" || $key =="vorname" || $key == "nachname" || $key == "auszugsort" ||
                     $key == "einzugsort" || $key == "etage_auszug" || $key == "etage_einzug" || $key == "aussenaufzug_einzug" || $key == "aussenaufzug_auszug" ||
                     $key == "halteverbot_einzug" || $key == "halteverbot_auszug" || $key == "abtrageweg_einzug" || $key == "abtrageweg_auszug" || $key == "volumen" ||
                     $key == "distanz_text" || $key == "versicherung" || $key == "übersee_lokal" || $key == "distanz" || $key == "montage" || $key == "übersee_verpackung" ||
-                    $key == "gestellung_container") {
+                    $key == "gestellung_container" || $key == "materialgestellung" || $key == "steuerbefreiung") {
                     continue;
                 } else {
                     //print($value);
                     $kubikmeter += $value * $recheneinheiten[$key];
-                    //array_sum nicht mehr nötig, da integer werte vorliegen
+
                 }
             }
             $kubikmeter /= 10;
         }
-        $kundenname_v = $newvar['vorname'];
-        $kundenname_n = $newvar['nachname'];
+        $kundenname_v = $umzug_array['vorname'];
+        $kundenname_n = $umzug_array['nachname'];
 
         //Berechnung Grundkosten abhängig von Lokal oder Übersee
-        if ($newvar['übersee_lokal'] == 'Ü'){
-            $k_grundkosten = $this->calculate_übersee($kubikmeter, $newvar['distanz'], $container_groß, $container_klein, $extra_material);
+        if ($umzug_array['übersee_lokal'] == 'Ü'){
+            $k_grundkosten = $this->calculate_übersee($kubikmeter, $umzug_array['distanz'], $container_groß, $container_klein, $extra_material);
 
 
         }
-        if ($newvar['übersee_lokal'] == 'L'){
-            $k_grundkosten = $this->calculate_local($kubikmeter, $newvar['distanz'], $extra_material, $k_volumen_m3, $k_distanz_km);
+        if ($umzug_array['übersee_lokal'] == 'L'){
+            $k_grundkosten = $this->calculate_local($kubikmeter, $umzug_array['distanz'], $extra_material, $k_volumen_m3, $k_distanz_km);
 
 
         }
 
 
         //Berechnung Kosten Abtrageweg
-        $k_abtrageweg = $abtrageweg * ($newvar['abtrageweg_einzug'] + $newvar['abtrageweg_auszug']);
+        $k_abtrageweg = $abtrageweg * ($umzug_array['abtrageweg_einzug'] + $umzug_array['abtrageweg_auszug']);
 
         //Berechnung Kosten Etage
-        $k_etage = $etage * ($newvar['etage_einzug'] + $newvar['etage_auszug']);
+        $k_etage = $etage * ($umzug_array['etage_einzug'] + $umzug_array['etage_auszug']);
 
         //Berechnung Kosten Aussenaufzug
         $k_aussenaufzug = 0;
-        if ($newvar['aussenaufzug_einzug'] == 'J')
+        if ($umzug_array['aussenaufzug_einzug'] == 'J')
             $k_aussenaufzug += $aussenaufzug;
-        if ($newvar['aussenaufzug_auszug'] == 'J')
+        if ($umzug_array['aussenaufzug_auszug'] == 'J')
             $k_aussenaufzug += $aussenaufzug;
 
         //Berechnung Halteverbot
         $k_halteverbot = 0;
-        if ($newvar['halteverbot_einzug'] == 'J' )
+        if ($umzug_array['halteverbot_einzug'] == 'J' )
             $k_halteverbot += $halteverbot;
 
-        if ($newvar['halteverbot_auszug'] == 'J')
+        if ($umzug_array['halteverbot_auszug'] == 'J')
             $k_halteverbot += $halteverbot;
 
         //Berechnung Versicherung
-        if ($newvar['übersee_lokal'] == 'Ü'){
-            $k_versicherung = $newvar['versicherung'] * $versicherung_ü;
+        if ($umzug_array['übersee_lokal'] == 'Ü'){
+            $k_versicherung = $umzug_array['versicherung'] * $versicherung_ü;
         }
-        if ($newvar['übersee_lokal'] == 'L'){
-            $k_versicherung = $newvar['versicherung'] * $versicherung_l;
+        if ($umzug_array['übersee_lokal'] == 'L'){
+            $k_versicherung = $umzug_array['versicherung'] * $versicherung_l;
         }
 
         //Berechnung Kosten Gesamtsumme
 
         $kosten = $k_grundkosten + $k_etage + $k_aussenaufzug + $k_halteverbot + $k_versicherung + $k_abtrageweg;
-        $array = [$kosten, $kubikmeter, $kundenname_v . " " . $kundenname_n];
+        $bruttokosten = $kosten * 1.19;
+        $array = [$kosten, $kubikmeter, $kundenname_v . " " . $kundenname_n, $bruttokosten];
         //var_dump($k_grundkosten, $k_etage, $k_aussenaufzug, $k_halteverbot, $k_versicherung, $k_abtrageweg, $newvar['versicherung']);
         return $array;
 

@@ -16,6 +16,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.0/xlsx.core.min.js" integrity="sha256-7rU/A3/LDH6MKKcrRRbN/GQquNWg2HHaKSVtpuu0GcI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js" integrity="sha256-FPJJt8nA+xL4RU6/gsriA8p8xAeLGatoyTjldvQKGdE=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/TableExport/5.0.2/js/tableexport.min.js" integrity="sha256-xqLIIDLeHPe6Mmnksf1sHPC+jxuS4wKCmLrj/4sKDTM=" crossorigin="anonymous"></script>
+
+
+
     @yield('scripts')
 
     <!-- Fonts -->
