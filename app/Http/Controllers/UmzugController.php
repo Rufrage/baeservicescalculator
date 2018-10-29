@@ -81,6 +81,7 @@ class UmzugController extends Controller
             case "allgemeines":
                 return view('umzug.allgemeines', compact('umzug'));
             case "wohnzimmer":
+                return var_dump($request);
                 return view('umzug.wohnzimmer', compact('umzug'));
             case "küche":
                 return view('umzug.küche', compact('umzug'));
@@ -384,7 +385,7 @@ class UmzugController extends Controller
                     $key == "einzugsort" || $key == "etage_auszug" || $key == "etage_einzug" || $key == "aussenaufzug_einzug" || $key == "aussenaufzug_auszug" ||
                     $key == "halteverbot_einzug" || $key == "halteverbot_auszug" || $key == "abtrageweg_einzug" || $key == "abtrageweg_auszug" || $key == "volumen" ||
                     $key == "distanz_text" || $key == "versicherung" || $key == "übersee_lokal" || $key == "distanz" || $key == "montage" || $key == "übersee_verpackung" ||
-                    $key == "gestellung_container" || $key == "materialgestellung" || $key == "steuerbefreiung") {
+                    $key == "gestellung_container" || $key == "materialgestellung" || $key == "steuerbefreiung" || $key == "übersee_lokal_2") {
                     continue;
                 } else {
                     //print($value);
