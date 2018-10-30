@@ -131,7 +131,6 @@
         </div>
         --}}
 
-        {{ $umzug->übersee_lokal_2 }}
         <div class="col-sm-6">
             {!! Form::label('übersee_lokal_2', 'Übersee / Lokal') !!}
             {{ $umzug->übersee_lokal_2 }}
