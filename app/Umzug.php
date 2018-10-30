@@ -44,8 +44,8 @@ class Umzug extends Model
         'sonstiges_tischtennisplatte', 'sonstiges_mülltonne', 'sonstiges_regal', 'sonstiges_gartengeräte', 'sonstiges_sonnenbank',
         'sonstiges_gartengrill', 'sonstiges_umzugskarton_b80', 'sonstiges_umzugskarton_a80',
 
-        'auszugsort','einzugsort', 'etage_auszug', 'etage_einzug', 'aussenaufzug_auszug', 'aussenaufzug_einzug', 'halteverbot_auszug', 'halteverbot_einzug', 'abtrageweg_auszug',
-        'abtrageweg_einzug', 'volumen', 'distanz_text', 'versicherung', 'übersee_lokal', 'distanz', 'montage','steuerbefreiung', 'umzug', 'übersee_lokal_2'
+        'übersee_lokal_2', 'auszugsort','einzugsort', 'etage_auszug', 'etage_einzug', 'aussenaufzug_auszug', 'aussenaufzug_einzug', 'halteverbot_auszug', 'halteverbot_einzug', 'abtrageweg_auszug',
+        'abtrageweg_einzug', 'volumen', 'distanz_text', 'versicherung', 'übersee_lokal', 'distanz', 'montage','steuerbefreiung', 'umzug',
 
     ];
 }
