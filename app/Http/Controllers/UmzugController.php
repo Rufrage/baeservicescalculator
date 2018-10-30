@@ -81,7 +81,7 @@ class UmzugController extends Controller
             case "allgemeines":
                 return view('umzug.allgemeines', compact('umzug'));
             case "wohnzimmer":
-                return var_dump($request);
+                return $request->all();
                 return view('umzug.wohnzimmer', compact('umzug'));
             case "küche":
                 return view('umzug.küche', compact('umzug'));
