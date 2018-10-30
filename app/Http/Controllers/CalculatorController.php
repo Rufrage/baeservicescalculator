@@ -266,6 +266,8 @@ class CalculatorController extends Controller
 
     public function switch(Request $request){
 
+        return "You should not be here";
+
         switch ($request->currentroom){
             case "wohnzimmer":
                 //Wohnzimmer speichern
