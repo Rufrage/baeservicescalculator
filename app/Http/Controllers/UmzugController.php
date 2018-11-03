@@ -386,6 +386,7 @@ class UmzugController extends Controller
         $kundenname_v = $umzug_array['vorname'];
         $kundenname_n = $umzug_array['nachname'];
 
+        var_dump($umzug_array['übersee_lokal']);
         //Berechnung Grundkosten abhängig von Lokal oder Übersee
         if ($umzug_array['übersee_lokal'] == 'Ü'){
             $k_grundkosten = $this->calculate_übersee($kubikmeter, $umzug_array['distanz'], $container_groß, $container_klein, $extra_material);
