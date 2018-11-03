@@ -126,7 +126,7 @@
 
        <div class="col-sm-6">
             {!! Form::label('übersee_lokal', 'Übersee/Lokal') !!}
-            {!! Form::select('übersee_lokal', ['Ü' => 'Übersee', 'L' => 'Lokal'], $umzug->übersee_lokal, ['class'=>'form-control', 'id'=>'übersee_lokal'])  !!}
+            {!! Form::select('übersee_lokal', [0 => 'Übersee', 1 => 'Lokal'], $umzug->übersee_lokal, ['class'=>'form-control', 'id'=>'übersee_lokal'])  !!}
         </div>
 
         <div class="col-sm-6">
