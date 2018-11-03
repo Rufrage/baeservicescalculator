@@ -37,6 +37,10 @@ class CreateUmzugsTable extends Migration
             $table->char('übersee_verpackung')->default('N');
             $table->char('gestellung_container')->default('N');
             $table->char('montage')->default('N');
+<<<<<<< HEAD
+=======
+
+>>>>>>> d119c7e4ab7e2110a87e03518ef10c333099150e
 
 
 

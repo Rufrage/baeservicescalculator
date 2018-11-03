@@ -85,7 +85,7 @@
                 <td></td>
             </tr>
         @endif
-            @if($umzug_array['übersee_lokal_2'] == 'Ü')
+            @if($umzug_array['übersee_lokal'] == 'Ü')
             <tr>
                 <td>Überseemäßige Verpackung</td>
                 <td></td>
