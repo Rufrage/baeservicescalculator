@@ -113,17 +113,6 @@ class UmzugController extends Controller
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Umzug  $umzug
-     * @return \Illuminate\Http\Response
-     */
-    public function switch(Request $request)
-    {
-
-    }
-
     public function calculate(Umzug $umzug)
     {
         //Variablen
@@ -398,12 +387,12 @@ class UmzugController extends Controller
         $kundenname_n = $umzug_array['nachname'];
 
         //Berechnung Grundkosten abhängig von Lokal oder Übersee
-        if ($umzug_array['übersee_lokal'] == 'Ü'){
+        if ($umzug_array['übersee_lokal_2'] == 'Ü'){
             $k_grundkosten = $this->calculate_übersee($kubikmeter, $umzug_array['distanz'], $container_groß, $container_klein, $extra_material);
 
 
         }
-        if ($umzug_array['übersee_lokal'] == 'L'){
+        if ($umzug_array['übersee_lokal_2'] == 'L'){
             $k_grundkosten = $this->calculate_local($kubikmeter, $umzug_array['distanz'], $extra_material, $k_volumen_m3, $k_distanz_km);
 
 
