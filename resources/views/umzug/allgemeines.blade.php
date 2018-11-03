@@ -124,18 +124,11 @@
             {!! Form::number('versicherung', null, ['class'=>'form-control', 'id' => 'versicherung', 'min' =>0, 'step'=>0.01]) !!}
         </div>
 
-       {{--
        <div class="col-sm-6">
             {!! Form::label('übersee_lokal', 'Übersee/Lokal') !!}
-            {!! Form::select('übersee_lokal', ['Ü' => 'Übersee', 'L' => 'Lokal'], null, ['class'=>'form-control', 'id'=>'übersee_lokal'])  !!}
+            {!! Form::select('übersee_lokal', ['Ü' => 'Übersee', 'L' => 'Lokal'], $umzug->übersee_lokal, ['class'=>'form-control', 'id'=>'übersee_lokal'])  !!}
         </div>
-        --}}
 
-        <div class="col-sm-6">
-            {!! Form::label('übersee_lokal_2', 'Übersee / Lokal') !!}
-            {{ $umzug->übersee_lokal_2 }}
-            {!! Form::select('übersee_lokal_2', [ 'L' => 'Lokal', 'Ü' => 'Übersee'], $umzug->übersee_lokal_2, ['class'=>'form-control', 'id'=>'übersee_lokal_2'])  !!}
-        </div>
 
         <div class="col-sm-6">
             {!! Form::label('materialgestellung', 'Materialgestellung') !!}

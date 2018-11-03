@@ -37,7 +37,6 @@ class CreateUmzugsTable extends Migration
             $table->char('übersee_verpackung')->default('N');
             $table->char('gestellung_container')->default('N');
             $table->char('montage')->default('N');
-            $table->char('übersee_lokal_2')->default('Ü');
 
 
 
