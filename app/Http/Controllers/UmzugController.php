@@ -373,7 +373,7 @@ class UmzugController extends Controller
                     $key == "einzugsort" || $key == "etage_auszug" || $key == "etage_einzug" || $key == "aussenaufzug_einzug" || $key == "aussenaufzug_auszug" ||
                     $key == "halteverbot_einzug" || $key == "halteverbot_auszug" || $key == "abtrageweg_einzug" || $key == "abtrageweg_auszug" || $key == "volumen" ||
                     $key == "distanz_text" || $key == "versicherung" || $key == "übersee_lokal" || $key == "distanz" || $key == "montage" || $key == "übersee_verpackung" ||
-                    $key == "gestellung_container" || $key == "materialgestellung" || $key == "steuerbefreiung" || $key == "übersee_lokal_2") {
+                    $key == "gestellung_container" || $key == "materialgestellung" || $key == "steuerbefreiung") {
                     continue;
                 } else {
                     //print($value);
@@ -387,12 +387,12 @@ class UmzugController extends Controller
         $kundenname_n = $umzug_array['nachname'];
 
         //Berechnung Grundkosten abhängig von Lokal oder Übersee
-        if ($umzug_array['übersee_lokal_2'] == 'Ü'){
+        if ($umzug_array['übersee_lokal'] == 'Ü'){
             $k_grundkosten = $this->calculate_übersee($kubikmeter, $umzug_array['distanz'], $container_groß, $container_klein, $extra_material);
 
 
         }
-        if ($umzug_array['übersee_lokal_2'] == 'L'){
+        if ($umzug_array['übersee_lokal'] == 'L'){
             $k_grundkosten = $this->calculate_local($kubikmeter, $umzug_array['distanz'], $extra_material, $k_volumen_m3, $k_distanz_km);
 
 
