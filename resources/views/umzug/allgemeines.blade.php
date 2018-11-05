@@ -75,22 +75,22 @@
         <div class="form-group row">
             <div class="col-sm-6">
                 {!! Form::label('aussenaufzug_auszug', 'Außenaufzug') !!}
-                {!! Form::select('aussenaufzug_auszug', ['J' => 'Ja', 'N' => 'Nein'], null, ['class'=>'form-control', 'id'=>'aussenaufzug_auszug'])  !!}
+                {!! Form::select('aussenaufzug_auszug', [1 => 'Ja', 0 => 'Nein'], null, ['class'=>'form-control', 'id'=>'aussenaufzug_auszug'])  !!}
             </div>
             <div class="col-sm-6">
                 {!! Form::label('aussenaufzug_einzug', 'Außenaufzug') !!}
-                {!! Form::select('aussenaufzug_einzug', ['J' => 'Ja', 'N' => 'Nein'], null, ['class'=>'form-control', 'id'=>'aussenaufzug_einzug'])  !!}
+                {!! Form::select('aussenaufzug_einzug', [1 => 'Ja', 0 => 'Nein'], null, ['class'=>'form-control', 'id'=>'aussenaufzug_einzug'])  !!}
             </div>
         </div>
 
         <div class="form-group row">
             <div class="col-sm-6">
                 {!! Form::label('halteverbot_auszug', 'Halteverbot') !!}
-                {!! Form::select('halteverbot_auszug', ['J' => 'Ja', 'N' => 'Nein'], null, ['class'=>'form-control', 'id'=>'halteverbot_auszug'])  !!}
+                {!! Form::select('halteverbot_auszug', [1 => 'Ja', 0 => 'Nein'], null, ['class'=>'form-control', 'id'=>'halteverbot_auszug'])  !!}
             </div>
             <div class="col-sm-6">
                 {!! Form::label('halteverbot_einzug', 'Halteverbot') !!}
-                {!! Form::select('halteverbot_einzug', ['J' => 'Ja', 'N' => 'Nein'], null, ['class'=>'form-control', 'id'=>'halteverbot_einzug'])  !!}
+                {!! Form::select('halteverbot_einzug', [1 => 'Ja', 0 => 'Nein'], null, ['class'=>'form-control', 'id'=>'halteverbot_einzug'])  !!}
             </div>
         </div>
 
@@ -114,7 +114,7 @@
             </div>
             <div class="col-sm-6">
                 {!! Form::label('volumen', 'Volumen (m³)') !!}
-                {!! Form::number('volumen', 0, ['class'=>'form-control']) !!}
+                {!! Form::number('volumen', null, ['class'=>'form-control']) !!}
             </div>
         </div>
 
@@ -131,15 +131,15 @@
 
         <div class="col-sm-6">
             {!! Form::label('materialgestellung', 'Materialgestellung') !!}
-            {!! Form::select('materialgestellung', ['J' => 'Ja', 'N' => 'Nein'], null, ['class'=>'form-control', 'id'=>'montage'])  !!}
+            {!! Form::select('materialgestellung', [1 => 'Ja', 0 => 'Nein'], null, ['class'=>'form-control', 'id'=>'montage'])  !!}
         </div>
         <div class="col-sm-6">
             {!! Form::label('montage', 'De-/Montage von teilbaren Möbeln') !!}
-            {!! Form::select('montage', ['J' => 'Ja', 'N' => 'Nein'], null, ['class'=>'form-control', 'id'=>'montage'])  !!}
+            {!! Form::select('montage', [1 => 'Ja', 0 => 'Nein'], null, ['class'=>'form-control', 'id'=>'montage'])  !!}
         </div>
         <div class="col-sm-6">
             {!! Form::label('steuerbefreiung', 'Steuerbefreiung nach § 4 Nr. 3 ff. UstG') !!}
-            {!! Form::select('steuerbefreiung', ['J' => 'Ja', 'N' => 'Nein'], null, ['class'=>'form-control', 'id'=>'steuerbefreiung'])  !!}
+            {!! Form::select('steuerbefreiung', [1 => 'Ja', 0 => 'Nein'], null, ['class'=>'form-control', 'id'=>'steuerbefreiung'])  !!}
         </div>
 
     </div>

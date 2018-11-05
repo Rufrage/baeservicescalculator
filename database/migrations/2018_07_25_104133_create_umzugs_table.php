@@ -22,10 +22,10 @@ class CreateUmzugsTable extends Migration
             $table->string('einzugsort')->nullable();
             $table->integer('etage_auszug')->default(0);
             $table->integer('etage_einzug')->default(0);
-            $table->char('aussenaufzug_auszug')->default('N');
-            $table->char('aussenaufzug_einzug')->default('N');
-            $table->char('halteverbot_auszug')->default('N');
-            $table->char('halteverbot_einzug')->default('N');
+            $table->integer('aussenaufzug_auszug')->default(0);
+            $table->integer('aussenaufzug_einzug')->default(0);
+            $table->integer('halteverbot_auszug')->default(0);
+            $table->integer('halteverbot_einzug')->default(0);
             $table->integer('abtrageweg_auszug')->default(0);
             $table->integer('abtrageweg_einzug')->default(0);
             $table->integer('volumen')->default(0);
@@ -33,10 +33,10 @@ class CreateUmzugsTable extends Migration
             $table->integer('distanz')->nullable();
             $table->integer('übersee_lokal')->default(0);
             $table->integer('versicherung')->default(0);
-            $table->char('steuerbefreiung')->default('N');
-            $table->char('übersee_verpackung')->default('N');
-            $table->char('gestellung_container')->default('N');
-            $table->char('montage')->default('N');
+            $table->integer('steuerbefreiung')->default(0);
+            $table->integer('übersee_verpackung')->default(0);
+            $table->integer('gestellung_container')->default(0);
+            $table->integer('montage')->default(0);
 
             $table->integer('wohnzimmer_sofa')->default(0);
             $table->integer('wohnzimmer_sitzlandschaft')->default(0);

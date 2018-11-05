@@ -403,17 +403,17 @@ class UmzugController extends Controller
 
         //Berechnung Kosten Aussenaufzug
         $k_aussenaufzug = 0;
-        if ($umzug_array['aussenaufzug_einzug'] == 'J')
+        if ($umzug_array['aussenaufzug_einzug'] == 1)
             $k_aussenaufzug += $aussenaufzug;
-        if ($umzug_array['aussenaufzug_auszug'] == 'J')
+        if ($umzug_array['aussenaufzug_auszug'] == 1)
             $k_aussenaufzug += $aussenaufzug;
 
         //Berechnung Halteverbot
         $k_halteverbot = 0;
-        if ($umzug_array['halteverbot_einzug'] == 'J' )
+        if ($umzug_array['halteverbot_einzug'] == 1 )
             $k_halteverbot += $halteverbot;
 
-        if ($umzug_array['halteverbot_auszug'] == 'J')
+        if ($umzug_array['halteverbot_auszug'] == 1)
             $k_halteverbot += $halteverbot;
 
         //Berechnung Versicherung
