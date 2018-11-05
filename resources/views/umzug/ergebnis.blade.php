@@ -53,7 +53,7 @@
         <tbody>
             <!-- Kundendaten -->
             <tr>
-                <td width="5000px">{{$ergebnis[2]}}</td>
+                <td >{{$ergebnis[2]}}</td>
                 <td></td>
             </tr>
             <tr>
@@ -69,7 +69,7 @@
 
             <tr>
                 <td>Kubikmeter (gesamt)</td>
-                <td>{{$ergebnis[1]}}m³</td>
+                    <td style="text-align: right;">{{$ergebnis[1]}}m³</td>
             </tr>
             <tr>
                 <td>Door to Door</td>
@@ -79,13 +79,13 @@
                 <td>Materialgestellung</td>
                 <td></td>
             </tr>
-        @if($umzug_array['montage'] == 'J')
+        @if($umzug_array['montage'] == 1)
             <tr>
                 <td>De- und Montage von teilbaren Möbeln</td>
                 <td></td>
             </tr>
         @endif
-            @if($umzug_array['übersee_lokal'] == 'Ü')
+            @if($umzug_array['übersee_lokal'] == 0)
             <tr>
                 <td>Überseemäßige Verpackung</td>
                 <td></td>
@@ -129,26 +129,27 @@
             </tr>
             <tr>
                 <td>Nettobetrag</td>
-                <td>{{$ergebnis[0]}} €</td>
+
+                <td style="text-align: right;">{{ number_format ( $ergebnis[0] , $decimals = 2 , $dec_point = "," , $thousands_sep = "." ) }}€</td>
             </tr>
-            @if($umzug_array['steuerbefreiung'] == 'J')
+            @if($umzug_array['steuerbefreiung'] == 1)
                 <tr>
                     <td>Steuerbefreiung nach § 4 Nr. 3 ff. UstG</td>
-                    <td></td>
+                    <td style="text-align: right;"></td>
                 </tr>
             <tr>
                 <td>Summe</td>
-                <td>{{$ergebnis[0]}} €</td>
+                <td style="text-align: right;"> {{ number_format ( $ergebnis[0] , $decimals = 2 , $dec_point = "," , $thousands_sep = "." ) }}€</td>
             </tr>
             @endif
-            @if($umzug_array['steuerbefreiung'] == 'N')
+            @if($umzug_array['steuerbefreiung'] == 0)
                 <tr>
                     <td>Umsatzsteuer</td>
-                    <td>{{$ergebnis[3] - $ergebnis[0]}} €</td>
+                    <td style="text-align: right;">{{ number_format ( $ergebnis[3]-$ergebnis[0] , $decimals = 2 , $dec_point = "," , $thousands_sep = "." ) }}€</td>
                 </tr>
                 <tr>
                     <td>Summe</td>
-                    <td>{{$ergebnis[3]}} €</td>
+                    <td style="text-align: right;">{{ number_format ( $ergebnis[3] , $decimals = 2 , $dec_point = "," , $thousands_sep = "." ) }}€</td>
                 </tr>
             @endif
     </table>
