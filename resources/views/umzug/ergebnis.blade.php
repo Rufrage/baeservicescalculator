@@ -154,9 +154,6 @@
             @endif
     </table>
 
-    {{--<a href="{{route("export")}}" class="btn">Download</a>--}}
-
-
     {!! Form::close() !!}
 
 
