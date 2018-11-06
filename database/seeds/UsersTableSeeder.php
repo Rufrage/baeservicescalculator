@@ -22,5 +22,11 @@ class UsersTableSeeder extends Seeder
         $janosch->email = "janosch@vankann.com";
         $janosch->password = bcrypt('password');
         $janosch->save();
+
+        $sunny = new \App\User();
+        $sunny->name = "Sunny";
+        $sunny->email = "sunny@mail.de";
+        $sunny->password = bcrypt('baeservice24');
+        $sunny->save();
     }
 }
