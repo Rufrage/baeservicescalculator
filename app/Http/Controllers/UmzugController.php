@@ -127,9 +127,9 @@ class UmzugController extends Controller
 
 
         //Kosten pro Kubikmeter Volumen
-        $k_volumen_m3 = 120;
+        $k_volumen_m3 = 20;
         //Kosten pro Kilometer Distanz
-        $k_distanz_km = 1;
+        $k_distanz_km = 0.65;
         //Prozentsatz für Extra Material (10%)
         $extra_material = 0.1;
         //Kosten pro Meter Weg(10)
@@ -137,7 +137,7 @@ class UmzugController extends Controller
         //Gesamtkosten Abtrageweg
         $k_abtrageweg = 0;
         //Kosten pro Etage
-        $etage = 100;
+        $etage = 75;
         //Gesamtkosten Etagen
         $k_etage = 0;
         //Kosten für Außenaufzug
