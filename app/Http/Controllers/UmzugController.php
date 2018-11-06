@@ -128,6 +128,7 @@ class UmzugController extends Controller
 
         //Kosten pro Kubikmeter Volumen
         $k_volumen_m3 = 20;
+        $k_volumen_m3_uebersee = 120;
         //Kosten pro Kilometer Distanz
         $k_distanz_km = 0.65;
         //Prozentsatz für Extra Material (10%)
@@ -388,7 +389,7 @@ class UmzugController extends Controller
 
         //Berechnung Grundkosten abhängig von Lokal oder Übersee
         if ($umzug_array['übersee_lokal'] == 0){
-            $k_grundkosten = $this->calculate_übersee($kubikmeter, $umzug_array['distanz'], $container_groß, $container_klein, $extra_material);
+            $k_grundkosten = $this->calculate_übersee($kubikmeter, $umzug_array['distanz'], $container_groß, $container_klein, $k_volumen_m3_uebersee, $extra_material);
         }
         if ($umzug_array['übersee_lokal'] == 1){
             $k_grundkosten = $this->calculate_local($kubikmeter, $umzug_array['distanz'], $extra_material, $k_volumen_m3, $k_distanz_km);
@@ -436,9 +437,7 @@ class UmzugController extends Controller
 
     }
 
-    public function calculate_übersee($kubikmeter_ü, $distanz_ü, $container_groß_ü, $container_klein_ü, $extra_material_ü){
-        //Kosten pro Kubikmeter(120)
-        $volumen_pro_m3 = 120;
+    public function calculate_übersee($kubikmeter_ü, $distanz_ü, $container_groß_ü, $container_klein_ü, $k_volumen_m3, $extra_material_ü){
         //Berechnung große Container
         $k_container_groß = floor($kubikmeter_ü/60);
         $grundkosten = 0;
@@ -455,10 +454,10 @@ class UmzugController extends Controller
         $k_container_groß = $container_groß_ü * $k_container_groß;
 
 
-        $grundkosten = $k_container_groß + $k_container_klein + ($volumen_pro_m3 * $kubikmeter_ü);
+        $grundkosten = $k_container_groß + $k_container_klein + ($k_volumen_m3 * $kubikmeter_ü);
 
         //Materialprozentsatz einrechnen
-        $extra_material = ($volumen_pro_m3 * $kubikmeter_ü) * $extra_material_ü;
+        $extra_material = ($k_volumen_m3 * $kubikmeter_ü) * $extra_material_ü;
         $grundkosten += $extra_material;
         return $grundkosten;
 
