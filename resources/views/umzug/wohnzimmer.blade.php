@@ -48,15 +48,18 @@
 
     <!-- Felder für dieses Zimmer-->
     <div class="form-group row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/sofa.svg') }}" alt="sofa" height="64px">
             {!! Form::label('wohnzimmer_sofa', 'Sofa') !!}
             {!! Form::number('wohnzimmer_sofa', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/sofa.svg') }}" alt="sofa" height="64px">
             {!! Form::label('wohnzimmer_sitzlandschaft', 'Sitzlandschaft (Element)') !!}
             {!! Form::number('wohnzimmer_sitzlandschaft', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/sofa.svg') }}" alt="sofa" height="64px">
             {!! Form::label('wohnzimmer_sessel_mit_armlehnen', 'Sessel mit Armlehnen') !!}
             {!! Form::number('wohnzimmer_sessel_mit_armlehnen', null, ['class'=>'form-control']) !!}
         </div>
