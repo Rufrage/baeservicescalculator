@@ -38,7 +38,8 @@ class CreateUmzugsTable extends Migration
             $table->integer('gestellung_container')->default(0);
             $table->integer('montage')->default(0);
 
-            $table->integer('wohnzimmer_sofa')->default(0);
+            $table->integer('wohnzimmer_sofa_3_sitze')->default(0);
+            $table->integer('wohnzimmer_sofa_2_sitze')->default(0);
             $table->integer('wohnzimmer_sitzlandschaft')->default(0);
             $table->integer('wohnzimmer_sessel_mit_armlehnen')->default(0);
             $table->integer('wohnzimmer_sessel_ohne_armlehnen')->default(0);

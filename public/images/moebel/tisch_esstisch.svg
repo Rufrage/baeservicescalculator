@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#1C1C1C;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st1{fill:#1C1C1C;}
+	.st2{fill:none;stroke:#1C1C1C;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#1C1C1C;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:2,11;}
+	.st4{fill:none;stroke:#1C1C1C;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g id="Designs">
+	<g>
+		<line class="st2" x1="4" y1="14" x2="4" y2="55"/>
+		<g>
+			<line class="st2" x1="1" y1="9" x2="63" y2="9"/>
+			<polyline class="st2" points="4,10 4,14 60,14 60,10 			"/>
+			<line class="st2" x1="60" y1="14" x2="60" y2="55"/>
+		</g>
+	</g>
+</g>
+<g id="Guides">
+</g>
+</svg>

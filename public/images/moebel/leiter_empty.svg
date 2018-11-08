@@ -1,0 +1,15 @@
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+ <style type="text/css">.st0{fill:none;stroke:#1C1C1C;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st1{fill:#1C1C1C;}
+	.st2{fill:none;stroke:#1C1C1C;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#1C1C1C;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:2,11;}
+	.st4{fill:none;stroke:#1C1C1C;stroke-width:2;stroke-miterlimit:10;}</style>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+ </g>
+</svg>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#1C1C1C;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#1C1C1C;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:#1C1C1C;}
+	.st3{fill:none;stroke:#1C1C1C;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#1C1C1C;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:6;}
+	.st5{fill:none;stroke:#1C1C1C;stroke-linecap:round;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#1C1C1C;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:4;}
+	.st7{fill:none;stroke:#1C1C1C;stroke-width:1.5;stroke-linecap:round;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#1C1C1C;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
+	.st9{fill:none;stroke:#1C1C1C;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+	.st10{fill:none;stroke:#161616;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st11{fill:none;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<g id="Designs">
+	<g>
+		<path class="st1" d="M5,26.1v-2.2V22c0-7.9,5-13,11-13h32c6,0,11,5.1,11,13l0,1.9V26"/>
+		<g>
+			<path class="st1" d="M32,40.9l0-3.9c0-1.9,2.1-4,4-4h15c2,0,4,2.1,4,4l0,4"/>
+			<path class="st1" d="M32,37c0-1.9-2.1-4-4-4H13c-2,0-4,2.1-4,4l0,3.9"/>
+			<line class="st1" x1="9.1" y1="41" x2="55" y2="41"/>
+		</g>
+		<line class="st1" x1="9" y1="55" x2="9" y2="52"/>
+		<line class="st1" x1="55" y1="52" x2="55" y2="55"/>
+		<path class="st1" d="M61,34.6v14.5c0,1.1-0.9,2-2,2L5.1,51c-1.1,0-2-0.9-2-2l0-14.4"/>
+		<path class="st1" d="M3,34.5c-1.2-0.7-2-2-2-3.5c0-2.2,1.8-4,4-4s4,1.8,4,4l0,5"/>
+		<path class="st1" d="M61.1,34.4c1.1-0.7,1.9-2,1.9-3.4c0-2.2-1.8-4-4-4s-4,1.8-4,4v5"/>
+	</g>
+</g>
+<g id="Guides">
+</g>
+</svg>
