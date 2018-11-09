@@ -40,19 +40,64 @@ class CreateUmzugsTable extends Migration
 
             $table->integer('wohnzimmer_sofa_3_sitze')->default(0);
             $table->integer('wohnzimmer_sofa_2_sitze')->default(0);
+            $table->integer('wohnzimmer_schlafcouch')->default(0);
             $table->integer('wohnzimmer_sitzlandschaft')->default(0);
+            $table->integer('wohnzimmer_ecksofa45')->default(0);
+            $table->integer('wohnzimmer_ecksofa56')->default(0);
             $table->integer('wohnzimmer_sessel_mit_armlehnen')->default(0);
             $table->integer('wohnzimmer_sessel_ohne_armlehnen')->default(0);
             $table->integer('wohnzimmer_stuhl')->default(0);
             $table->integer('wohnzimmer_stuhl_mit_armlehnen')->default(0);
+            $table->integer('wohnzimmer_klappstuhl')->default(0);
+            $table->integer('wohnzimmer_hocker')->default(0);
             $table->integer('wohnzimmer_tisch_06')->default(0);
             $table->integer('wohnzimmer_tisch_10')->default(0);
             $table->integer('wohnzimmer_tisch_b12')->default(0);
             $table->integer('wohnzimmer_tisch_a12')->default(0);
+            $table->integer('wohnzimmer_couchtisch')->default(0);
+            $table->integer('wohnzimmer_tvschrank')->default(0);
+            $table->integer('wohnzimmer_fernseher_mittel')->default(0);
+            $table->integer('wohnzimmer_fernseher_groß')->default(0);
+            $table->integer('wohnzimmer_fernseher_klein')->default(0);
+            $table->integer('wohnzimmer_wohnwand')->default(0);
+            $table->integer('wohnzimmer_staubsauger')->default(0);
+            $table->integer('wohnzimmer_buegelbrett')->default(0);
+            $table->integer('wohnzimmer_drucker')->default(0);
+            $table->integer('wohnzimmer_computer')->default(0);
+            $table->integer('wohnzimmer_computer_bildschirm')->default(0);
+            $table->integer('wohnzimmer_kommode_mittel')->default(0);
+            $table->integer('wohnzimmer_kommode_klein')->default(0);
+            $table->integer('wohnzimmer_kleiderschrank2')->default(0);
+            $table->integer('wohnzimmer_kleiderschrank3')->default(0);
+            $table->integer('wohnzimmer_schrank')->default(0);
+            $table->integer('wohnzimmer_schrank_hochschrank')->default(0);
+            $table->integer('wohnzimmer_vitrine_glasvitrine')->default(0);
+            $table->integer('wohnzimmer_schuhschrank2')->default(0);
+            $table->integer('wohnzimmer_sideboard_klein')->default(0);
+            $table->integer('wohnzimmer_sideboard_groß')->default(0);
+            $table->integer('wohnzimmer_bücherregal')->default(0);
+            $table->integer('wohnzimmer_bücherregal_mittel')->default(0);
+            $table->integer('wohnzimmer_regal_klein')->default(0);
+            $table->integer('wohnzimmer_regal_mittel')->default(0);
+            $table->integer('wohnzimmer_billy')->default(0);
+            $table->integer('wohnzimmer_stehlampe')->default(0);
+            $table->integer('wohnzimmer_deckenlampe')->default(0);
+            $table->integer('wohnzimmer_bodenlampe')->default(0);
+            $table->integer('wohnzimmer_lampe_nachttisch')->default(0);
+            $table->integer('wohnzimmer_tischlampe')->default(0);
+            $table->integer('wohnzimmer_teppich')->default(0);
+            $table->integer('wohnzimmer_teppich_groß')->default(0);
+            $table->integer('wohnzimmer_bilder_b08')->default(0);
+            $table->integer('wohnzimmer_bilder_a08')->default(0);
+            $table->integer('wohnzimmer_pflanze')->default(0);
+            $table->integer('wohnzimmer_spiegel')->default(0);
+            $table->integer('wohnzimmer_truhe')->default(0);
+            $table->integer('wohnzimmer_weinkiste')->default(0);
+
+
             $table->integer('wohnzimmer_wohnzimmerschrank')->default(0);
             $table->integer('wohnzimmer_anbauwand_b38')->default(0);
             $table->integer('wohnzimmer_anbauwand_a38')->default(0);
-            $table->integer('wohnzimmer_bücherregal')->default(0);
             $table->integer('wohnzimmer_buffet_mit_aufsatz')->default(0);
             $table->integer('wohnzimmer_buffet_ohne_aufsatz')->default(0);
             $table->integer('wohnzimmer_schreibtisch_b16')->default(0);
@@ -61,90 +106,137 @@ class CreateUmzugsTable extends Migration
             $table->integer('wohnzimmer_video_dvd_player')->default(0);
             $table->integer('wohnzimmer_musikschrank_turm')->default(0);
             $table->integer('wohnzimmer_stereoanlage')->default(0);
-            $table->integer('wohnzimmer_fernseher')->default(0);
             $table->integer('wohnzimmer_klavier')->default(0);
             $table->integer('wohnzimmer_flügel')->default(0);
             $table->integer('wohnzimmer_heimorgel')->default(0);
             $table->integer('wohnzimmer_nähmaschine')->default(0);
-            $table->integer('wohnzimmer_stehlampe')->default(0);
             $table->integer('wohnzimmer_brücke')->default(0);
-            $table->integer('wohnzimmer_deckenlampe')->default(0);
             $table->integer('wohnzimmer_lüster')->default(0);
-            $table->integer('wohnzimmer_teppich')->default(0);
-            $table->integer('wohnzimmer_bilder_b08')->default(0);
-            $table->integer('wohnzimmer_bilder_a08')->default(0);
-            $table->integer('wohnzimmer_sideboard_klein')->default(0);
-            $table->integer('wohnzimmer_sideboard_groß')->default(0);
-            $table->integer('wohnzimmer_tvschrank')->default(0);
             $table->integer('wohnzimmer_umzugskarton_b80')->default(0);
             $table->integer('wohnzimmer_umzugskarton_a80')->default(0);
 
-            $table->integer('küche_buffet_mit_aufsätzen')->default(0);
-            $table->integer('küche_unterteil_je_tür')->default(0);
-            $table->integer('küche_oberteil_je_tür')->default(0);
+
+            $table->integer('küche_herd')->default(0);
+            $table->integer('küche_geschirrspülmaschine')->default(0);
+            $table->integer('küche_küchenunterschrank')->default(0);
+            $table->integer('küche_kühlschrank')->default(0);
+            $table->integer('küche_mikrowelle')->default(0);
             $table->integer('küche_tisch_b_06')->default(0);
             $table->integer('küche_tisch_b_10')->default(0);
             $table->integer('küche_tisch_b_12')->default(0);
             $table->integer('küche_tisch_a_12')->default(0);
             $table->integer('küche_stuhl')->default(0);
+            $table->integer('küche_stuhl_mit_armlehnen')->default(0);
+            $table->integer('küche_hocker')->default(0);
+            $table->integer('küche_klappstuhl')->default(0);
+            $table->integer('küche_staubsauger')->default(0);
+            $table->integer('küche_buegelbrett')->default(0);
+            $table->integer('küche_truhe')->default(0);
+
+
+            $table->integer('küche_buffet_mit_aufsätzen')->default(0);
+            $table->integer('küche_unterteil_je_tür')->default(0);
+            $table->integer('küche_oberteil_je_tür')->default(0);
             $table->integer('küche_eckbank_je_sitz')->default(0);
             $table->integer('küche_besenschrank')->default(0);
-            $table->integer('küche_herd')->default(0);
-            $table->integer('küche_geschirrspülmaschine')->default(0);
             $table->integer('küche_waschmaschine_trockner')->default(0);
             $table->integer('küche_kühlschrank_truhe_b_120')->default(0);
             $table->integer('küche_kühlschrank_truhe_a_120')->default(0);
             $table->integer('küche_arbeitsplatte_nicht_unterb')->default(0);
             $table->integer('küche_deckenlampe')->default(0);
             $table->integer('küche_teppich')->default(0);
-            $table->integer('küche_mikrowelle')->default(0);
             $table->integer('küche_umzugskarton_b_80')->default(0);
             $table->integer('küche_umzugskarton_a_80')->default(0);
 
-            $table->integer('schlafzimmer_schrank_bis_zwei_türen')->default(0);
-            $table->integer('schlafzimmer_schrank_zerlegbar')->default(0);
+
             $table->integer('schlafzimmer_dopelbett_komplett')->default(0);
             $table->integer('schlafzimmer_einzelbett_komplett')->default(0);
+            $table->integer('schlafzimmer_matratze090')->default(0);
+            $table->integer('schlafzimmer_matratze140')->default(0);
+            $table->integer('schlafzimmer_lattenrost')->default(0);
+            $table->integer('schlafzimmer_stuhl')->default(0);
+            $table->integer('schlafzimmer_stuhl_mit_armlehnen')->default(0);
+            $table->integer('schlafzimmer_klappstuhl')->default(0);
+            $table->integer('schlafzimmer_hocker')->default(0);
+            $table->integer('schlafzimmer_tisch_06')->default(0);
+            $table->integer('schlafzimmer_tisch_10')->default(0);
+            $table->integer('schlafzimmer_couchtisch')->default(0);
+            $table->integer('schlafzimmer_tvschrank')->default(0);
+            $table->integer('schlafzimmer_fernseher_mittel')->default(0);
+            $table->integer('schlafzimmer_fernseher_groß')->default(0);
+            $table->integer('schlafzimmer_fernseher_klein')->default(0);
+            $table->integer('schlafzimmer_wohnwand')->default(0);
+            $table->integer('schlafzimmer_regal_mittel')->default(0);
+            $table->integer('schlafzimmer_regal_klein')->default(0);
+            $table->integer('schlafzimmer_bücherregal')->default(0);
+            $table->integer('schlafzimmer_bücherregal_mittel')->default(0);
+            $table->integer('schlafzimmer_billy')->default(0);
+            $table->integer('schlafzimmer_stehlampe')->default(0);
+            $table->integer('schlafzimmer_deckenlampe')->default(0);
+            $table->integer('schlafzimmer_bodenlampe')->default(0);
+            $table->integer('schlafzimmer_lampe_nachttisch')->default(0);
+            $table->integer('schlafzimmer_tischlampe')->default(0);
+            $table->integer('schlafzimmer_teppich')->default(0);
+            $table->integer('schlafzimmer_teppich_groß')->default(0);
+            $table->integer('schlafzimmer_bilder_b08')->default(0);
+            $table->integer('schlafzimmer_bilder_a08')->default(0);
+            $table->integer('schlafzimmer_pflanze')->default(0);
+            $table->integer('schlafzimmer_spiegel')->default(0);
+            $table->integer('schlafzimmer_truhe')->default(0);
+
+
+
+            $table->integer('schlafzimmer_schrank_bis_zwei_türen')->default(0);
+            $table->integer('schlafzimmer_schrank_zerlegbar')->default(0);
             $table->integer('schlafzimmer_französisches_bett_komplett')->default(0);
             $table->integer('schlafzimmer_bettzeug_je_betteinheit')->default(0);
-            $table->integer('schlafzimmer_nachttisch')->default(0);
             $table->integer('schlafzimmer_bettumbau')->default(0);
             $table->integer('schlafzimmer_kommode')->default(0);
             $table->integer('schlafzimmer_frisierkommode')->default(0);
             $table->integer('schlafzimmer_wäschetruhe')->default(0);
-            $table->integer('schlafzimmer_stuhl_hocker')->default(0);
-            $table->integer('schlafzimmer_spiegel_a_08')->default(0);
-            $table->integer('schlafzimmer_deckenlampe')->default(0);
-            $table->integer('schlafzimmer_fernseher')->default(0);
-            $table->integer('schlafzimmer_teppich')->default(0);
-            $table->integer('schlafzimmer_bilder_b08')->default(0);
-            $table->integer('schlafzimmer_bilder_a08')->default(0);
-            $table->integer('schlafzimmer_tv_schrank')->default(0);
             $table->integer('schlafzimmer_kleiderbehältnis')->default(0);
             $table->integer('schlafzimmer_umzugskarton_b80')->default(0);
             $table->integer('schlafzimmer_umzugskarton_a80')->default(0);
             $table->integer('schlafzimmer_umzugskarton_b80_gepackt')->default(0);
             $table->integer('schlafzimmer_umzugskarton_a80_gepackt')->default(0);
 
+
+
+
+
+
+
             $table->integer('esszimmer_stuhl')->default(0);
             $table->integer('esszimmer_stuhl_mit_armlehnen')->default(0);
-            $table->integer('esszimmer_eckbank_je_sitz')->default(0);
-            $table->integer('esszimmer_tisch_b06')->default(0);
-            $table->integer('esszimmer_tisch_b10')->default(0);
+            $table->integer('esszimmer_hocker')->default(0);
+            $table->integer('esszimmer_klappstuhl')->default(0);
+            $table->integer('esszimmer_tisch_06')->default(0);
+            $table->integer('esszimmer_tisch_10')->default(0);
             $table->integer('esszimmer_tisch_b12')->default(0);
             $table->integer('esszimmer_tisch_a12')->default(0);
+            $table->integer('esszimmer_teppich')->default(0);
+            $table->integer('esszimmer_deckenlampe')->default(0);
+            $table->integer('esszimmer_stehlampe')->default(0);
+            $table->integer('esszimmer_bilder_b08')->default(0);
+            $table->integer('esszimmer_bilder_a08')->default(0);
+            $table->integer('esszimmer_spiegel')->default(0);
+            $table->integer('esszimmer_teppich_groß')->default(0);
+            $table->integer('esszimmer_pflanze')->default(0);
+            $table->integer('esszimmer_bodenlampe')->default(0);
+            $table->integer('esszimmer_lampe_nachttisch')->default(0);
+            $table->integer('esszimmer_tischlampe')->default(0);
+            $table->integer('esszimmer_truhe')->default(0);
+
+
+
+            $table->integer('esszimmer_eckbank_je_sitz')->default(0);
             $table->integer('esszimmer_sekretär')->default(0);
             $table->integer('esszimmer_sideboard_klein')->default(0);
             $table->integer('esszimmer_sideboard_groß')->default(0);
             $table->integer('esszimmer_hausbar')->default(0);
             $table->integer('esszimmer_teewagen')->default(0);
-            $table->integer('esszimmer_teppich')->default(0);
             $table->integer('esszimmer_brücke')->default(0);
-            $table->integer('esszimmer_deckenlampe')->default(0);
-            $table->integer('esszimmer_stehlampe')->default(0);
             $table->integer('esszimmer_vitrine')->default(0);
-            $table->integer('esszimmer_bilder_b08')->default(0);
-            $table->integer('esszimmer_bilder_a08')->default(0);
             $table->integer('esszimmer_umzugskarton_b80')->default(0);
             $table->integer('esszimmer_umzugskarton_a80')->default(0);
 

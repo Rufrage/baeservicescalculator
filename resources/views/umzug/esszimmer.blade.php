@@ -48,87 +48,167 @@
 
     <!-- Felder für dieses Zimmer-->
     <div class="form-group row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/stuhl.svg') }}" alt="sofa" height="64px">
             {!! Form::label('esszimmer_stuhl', 'Stuhl') !!}
             {!! Form::number('esszimmer_stuhl', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/stuhl_buerostuhl.svg') }}" alt="hocker" height="64px">
             {!! Form::label('esszimmer_stuhl_mit_armlehnen', 'Stuhl mit Armlehnen') !!}
             {!! Form::number('esszimmer_stuhl_mit_armlehnen', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('esszimmer_eckbank_je_sitz', 'Eckbank je Sitz') !!}
-            {!! Form::number('esszimmer_eckbank_je_sitz', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/stuhl_klappstuhl.svg') }}" alt="klappstuhl" height="64px">
+            {!! Form::label('esszimmer_klappstuhl', 'Klappstuhl') !!}
+            {!! Form::number('esszimmer_klappstuhl', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('esszimmer_tisch_b06', 'Tisch bis 0,6 m') !!}
-            {!! Form::number('esszimmer_tisch_b06', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/hocker.svg') }}" alt="hocker" height="64px">
+            {!! Form::label('esszimmer_hocker', 'Hocker') !!}
+            {!! Form::number('esszimmer_hocker', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('esszimmer_tisch_b10', 'Tisch bis 1,0 m') !!}
-            {!! Form::number('esszimmer_tisch_b10', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/tisch_beistelltisch.svg') }}" alt="tisch_beistelltisch" height="64px">
+            {!! Form::label('esszimmer_tisch_06', 'Tisch, Beistelltisch') !!}
+            {!! Form::number('esszimmer_tisch_06', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('esszimmer_tisch_b12', 'Tisch bis 1,2 m') !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/tisch_nachttisch.svg') }}" alt="tisch_nachttisch" height="64px">
+            {!! Form::label('esszimmer_tisch_10', 'Tisch, Nachttisch') !!}
+            {!! Form::number('esszimmer_tisch_10', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/tisch_esstisch_mittel.svg') }}" alt="tisch_esstisch_mittel" height="64px">
+            {!! Form::label('esszimmer_tisch_b12', 'Tisch, Esstisch (mittel)') !!}
             {!! Form::number('esszimmer_tisch_b12', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('esszimmer_tisch_a12', 'Tisch über 1,2 m') !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/tisch_esstisch_groß.svg') }}" alt="tisch_esstisch_groß" height="64px">
+            {!! Form::label('esszimmer_tisch_a12', 'Tisch, Esstisch (groß)') !!}
             {!! Form::number('esszimmer_tisch_a12', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('esszimmer_sekretär', 'Sekretär') !!}
-            {!! Form::number('esszimmer_sekretär', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('esszimmer_sideboard_klein', 'Sideboard klein') !!}
-            {!! Form::number('esszimmer_sideboard_klein', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('esszimmer_sideboard_groß', 'Sideboard groß') !!}
-            {!! Form::number('esszimmer_sideboard_groß', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('esszimmer_hausbar', 'Hausbar') !!}
-            {!! Form::number('esszimmer_hausbar', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('esszimmer_teewagen', 'Teewagen (nicht zerlegbar)') !!}
-            {!! Form::number('esszimmer_teewagen', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('esszimmer_teppich', 'Teppich') !!}
-            {!! Form::number('esszimmer_teppich', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('esszimmer_brücke', 'Brücke') !!}
-            {!! Form::number('esszimmer_brücke', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('esszimmer_deckenlampe', 'Deckenlampe') !!}
-            {!! Form::number('esszimmer_deckenlampe', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/lampe_stehlampe.svg') }}" alt="computer_bildschirm" height="64px">
             {!! Form::label('esszimmer_stehlampe', 'Stehlampe') !!}
             {!! Form::number('esszimmer_stehlampe', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('esszimmer_vitrine', 'Vitrine (Glasschrank)') !!}
-            {!! Form::number('esszimmer_vitrine', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/lampe_deckenlampe.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('esszimmer_deckenlampe', 'Deckenlampe') !!}
+            {!! Form::number('esszimmer_deckenlampe', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/lampe_bodenlampe.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('esszimmer_bodenlampe', 'Bodenlampe') !!}
+            {!! Form::number('esszimmer_bodenlampe', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/lampe_nachttisch.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('esszimmer_lampe_nachttisch', 'Lampe, Nachttisch') !!}
+            {!! Form::number('esszimmer_lampe_nachttisch', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/lampe_tischlampe.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('esszimmer_tischlampe', 'Tischlampe') !!}
+            {!! Form::number('esszimmer_tischlampe', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/teppich_standard.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('esszimmer_teppich', 'Teppich') !!}
+            {!! Form::number('esszimmer_teppich', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/teppich_groß.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('esszimmer_teppich_groß', 'Teppich') !!}
+            {!! Form::number('esszimmer_teppich_groß', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/bild_groß.svg') }}" alt="computer_bildschirm" height="64px">
             {!! Form::label('esszimmer_bilder_b08', 'Bilder bis 0,8 m') !!}
             {!! Form::number('esszimmer_bilder_b08', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/bild_groß.svg') }}" alt="computer_bildschirm" height="64px">
             {!! Form::label('esszimmer_bilder_a08', 'Bilder über 0,8 m') !!}
             {!! Form::number('esszimmer_bilder_a08', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/pflanze_mittel.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('esszimmer_pflanze', 'Pflanze (mittel)') !!}
+            {!! Form::number('esszimmer_pflanze', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/spiegel_groß.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('esszimmer_spiegel', 'Spiegel (groß)') !!}
+            {!! Form::number('esszimmer_spiegel', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/truhe_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('esszimmer_truhe', 'Truhe (klein)') !!}
+            {!! Form::number('esszimmer_truhe', null, ['class'=>'form-control']) !!}
+        </div>
+
+
+
+
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('esszimmer_eckbank_je_sitz', 'Eckbank je Sitz') !!}
+            {!! Form::number('esszimmer_eckbank_je_sitz', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('esszimmer_sekretär', 'Sekretär') !!}
+            {!! Form::number('esszimmer_sekretär', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('esszimmer_sideboard_klein', 'Sideboard klein') !!}
+            {!! Form::number('esszimmer_sideboard_klein', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('esszimmer_sideboard_groß', 'Sideboard groß') !!}
+            {!! Form::number('esszimmer_sideboard_groß', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('esszimmer_hausbar', 'Hausbar') !!}
+            {!! Form::number('esszimmer_hausbar', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('esszimmer_teewagen', 'Teewagen (nicht zerlegbar)') !!}
+            {!! Form::number('esszimmer_teewagen', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('esszimmer_teppich', 'Teppich') !!}
+            {!! Form::number('esszimmer_teppich', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('esszimmer_brücke', 'Brücke') !!}
+            {!! Form::number('esszimmer_brücke', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('esszimmer_deckenlampe', 'Deckenlampe') !!}
+            {!! Form::number('esszimmer_deckenlampe', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('esszimmer_stehlampe', 'Stehlampe') !!}
+            {!! Form::number('esszimmer_stehlampe', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('esszimmer_vitrine', 'Vitrine (Glasschrank)') !!}
+            {!! Form::number('esszimmer_vitrine', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('esszimmer_bilder_b08', 'Bilder bis 0,8 m') !!}
+            {!! Form::number('esszimmer_bilder_b08', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('esszimmer_bilder_a08', 'Bilder über 0,8 m') !!}
+            {!! Form::number('esszimmer_bilder_a08', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('esszimmer_umzugskarton_b80', 'Umzugskarton bis 80 l (gepackt)') !!}
             {!! Form::number('esszimmer_umzugskarton_b80', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('esszimmer_umzugskarton_a80', 'Umzugskarton über 80 l (gepackt)') !!}
             {!! Form::number('esszimmer_umzugskarton_a80', null, ['class'=>'form-control']) !!}
         </div>

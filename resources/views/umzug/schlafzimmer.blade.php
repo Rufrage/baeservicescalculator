@@ -48,99 +48,243 @@
 
     <!-- Felder für dieses Zimmer-->
     <div class="form-group row">
-        <div class="col-sm-6">
-            {!! Form::label('schlafzimmer_schrank_bis_zwei_türen', 'Schrank bis 2 Türen, nicht zerlegbar') !!}
-            {!! Form::number('schlafzimmer_schrank_bis_zwei_türen', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('schlafzimmer_schrank_zerlegbar', 'Schrank zerlegbar je angefang. m') !!}
-            {!! Form::number('schlafzimmer_schrank_zerlegbar', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/bett_doppelbett.svg') }}" alt="computer_bildschirm" height="64px">
             {!! Form::label('schlafzimmer_dopelbett_komplett', 'Doppelbett komplett') !!}
             {!! Form::number('schlafzimmer_dopelbett_komplett', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/bett_140.svg') }}" alt="computer_bildschirm" height="64px">
             {!! Form::label('schlafzimmer_einzelbett_komplett', 'Einzelbett komplett') !!}
             {!! Form::number('schlafzimmer_einzelbett_komplett', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('schlafzimmer_französisches_bett_komplett', 'Französisches Bett komplett') !!}
-            {!! Form::number('schlafzimmer_französisches_bett_komplett', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/matratze140.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('schlafzimmer_matratze140', 'Matratze, 1.40m') !!}
+            {!! Form::number('schlafzimmer_matratze140', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('schlafzimmer_bettzeug_je_betteinheit', 'Bettzeug je Betteinheit') !!}
-            {!! Form::number('schlafzimmer_bettzeug_je_betteinheit', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/matraze090.svg') }}" alt="matratze" height="64px">
+            {!! Form::label('schlafzimmer_matratze090', 'Matratze 0.90m') !!}
+            {!! Form::number('schlafzimmer_matratze090', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('schlafzimmer_nachttisch', 'Nachttisch') !!}
-            {!! Form::number('schlafzimmer_nachttisch', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/lattenrost090.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('schlafzimmer_lattenrost', 'Lattenrost 0.90m') !!}
+            {!! Form::number('schlafzimmer_lattenrost', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('schlafzimmer_bettumbau', 'Bettumbau') !!}
-            {!! Form::number('schlafzimmer_bettumbau', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/stuhl.svg') }}" alt="sofa" height="64px">
+            {!! Form::label('schlafzimmer_stuhl', 'Stuhl') !!}
+            {!! Form::number('schlafzimmer_stuhl', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('schlafzimmer_kommode', 'Kommode') !!}
-            {!! Form::number('schlafzimmer_kommode', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/stuhl_buerostuhl.svg') }}" alt="hocker" height="64px">
+            {!! Form::label('schlafzimmer_stuhl_mit_armlehnen', 'Stuhl mit Armlehnen') !!}
+            {!! Form::number('schlafzimmer_stuhl_mit_armlehnen', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('schlafzimmer_frisierkommode', 'Frisierkommode (mit Spiegel)') !!}
-            {!! Form::number('schlafzimmer_frisierkommode', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/stuhl_klappstuhl.svg') }}" alt="klappstuhl" height="64px">
+            {!! Form::label('schlafzimmer_klappstuhl', 'Klappstuhl') !!}
+            {!! Form::number('schlafzimmer_klappstuhl', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('schlafzimmer_wäschetruhe', 'Wäschetruhe') !!}
-            {!! Form::number('schlafzimmer_wäschetruhe', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/hocker.svg') }}" alt="hocker" height="64px">
+            {!! Form::label('schlafzimmer_hocker', 'Hocker') !!}
+            {!! Form::number('schlafzimmer_hocker', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('schlafzimmer_stuhl_hocker', 'Stuhl, Hocker') !!}
-            {!! Form::number('schlafzimmer_stuhl_hocker', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/tisch_beistelltisch.svg') }}" alt="tisch_beistelltisch" height="64px">
+            {!! Form::label('schlafzimmer_tisch_06', 'Tisch, Beistelltisch') !!}
+            {!! Form::number('schlafzimmer_tisch_06', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('schlafzimmer_spiegel_a_08', 'Spiegel über 0,8 m') !!}
-            {!! Form::number('schlafzimmer_spiegel_a_08', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/tisch_nachttisch.svg') }}" alt="tisch_nachttisch" height="64px">
+            {!! Form::label('schlafzimmer_tisch_10', 'Tisch, Nachttisch') !!}
+            {!! Form::number('schlafzimmer_tisch_10', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+
+
+
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/couchtisch.svg') }}" alt="couchtisch" height="64px">
+            {!! Form::label('schlafzimmer_couchtisch', 'Couchtisch (medium)') !!}
+            {!! Form::number('schlafzimmer_couchtisch', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/tv_schrank_tv_bank.svg') }}" alt="tv_schrank" height="64px">
+            {!! Form::label('schlafzimmer_tvschrank', 'TV-Schrank') !!}
+            {!! Form::number('schlafzimmer_tvschrank', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/fernseher_flachbild_mittel.svg') }}" alt="fernseher" height="64px">
+            {!! Form::label('schlafzimmer_fernseher_mittel', 'Fernseher, Flachbild (mittel)') !!}
+            {!! Form::number('schlafzimmer_fernseher_mittel', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/fernseher_flachbild_mittel.svg') }}" alt="fernseher" height="64px">
+            {!! Form::label('schlafzimmer_fernseher_groß', 'Fernseher, Flachbild (groß)') !!}
+            {!! Form::number('schlafzimmer_fernseher_groß', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/fernseher_flachbild_mittel.svg') }}" alt="fernseher" height="64px">
+            {!! Form::label('schlafzimmer_fernseher_klein', 'Fernseher, Flachbild (klein)') !!}
+            {!! Form::number('schlafzimmer_fernseher_klein', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/wohnwand_klein.svg') }}" alt="Wohnwand" height="64px">
+            {!! Form::label('schlafzimmer_wohnwand', 'Wohnwand (klein)') !!}
+            {!! Form::number('schlafzimmer_wohnwand', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/regal_buecherregal_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('schlafzimmer_bücherregal', 'Bücherregal, klein') !!}
+            {!! Form::number('schlafzimmer_bücherregal', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/regal_buecherregal_mittel.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('schlafzimmer_bücherregal_mittel', 'Bücherregal, mittel') !!}
+            {!! Form::number('schlafzimmer_bücherregal_mittel', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/regal_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('schlafzimmer_regal_klein', 'Regal, klein') !!}
+            {!! Form::number('schlafzimmer_regal_klein', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/regal_mittel.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('schlafzimmer_regal_mittel', 'Regal, mittel') !!}
+            {!! Form::number('schlafzimmer_regal_mittel', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/regal_billy.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('schlafzimmer_billy', 'Billy Regal') !!}
+            {!! Form::number('schlafzimmer_billy', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/lampe_stehlampe.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('schlafzimmer_stehlampe', 'Stehlampe') !!}
+            {!! Form::number('schlafzimmer_stehlampe', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/lampe_deckenlampe.svg') }}" alt="computer_bildschirm" height="64px">
             {!! Form::label('schlafzimmer_deckenlampe', 'Deckenlampe') !!}
             {!! Form::number('schlafzimmer_deckenlampe', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('schlafzimmer_fernseher', 'Fernseher') !!}
-            {!! Form::number('schlafzimmer_fernseher', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/lampe_bodenlampe.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('schlafzimmer_bodenlampe', 'Bodenlampe') !!}
+            {!! Form::number('schlafzimmer_bodenlampe', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/lampe_nachttisch.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('schlafzimmer_lampe_nachttisch', 'Lampe, Nachttisch') !!}
+            {!! Form::number('schlafzimmer_lampe_nachttisch', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/lampe_tischlampe.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('schlafzimmer_tischlampe', 'Tischlampe') !!}
+            {!! Form::number('schlafzimmer_tischlampe', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/teppich_standard.svg') }}" alt="computer_bildschirm" height="64px">
             {!! Form::label('schlafzimmer_teppich', 'Teppich') !!}
             {!! Form::number('schlafzimmer_teppich', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/teppich_groß.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('schlafzimmer_teppich_groß', 'Teppich') !!}
+            {!! Form::number('schlafzimmer_teppich_groß', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/bild_groß.svg') }}" alt="computer_bildschirm" height="64px">
             {!! Form::label('schlafzimmer_bilder_b08', 'Bilder bis 0,8 m') !!}
             {!! Form::number('schlafzimmer_bilder_b08', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/bild_groß.svg') }}" alt="computer_bildschirm" height="64px">
             {!! Form::label('schlafzimmer_bilder_a08', 'Bilder über 0,8 m') !!}
             {!! Form::number('schlafzimmer_bilder_a08', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('schlafzimmer_tv_schrank', 'TV-Schrank') !!}
-            {!! Form::number('schlafzimmer_tv_schrank', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/pflanze_mittel.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('schlafzimmer_pflanze', 'Pflanze (mittel)') !!}
+            {!! Form::number('schlafzimmer_pflanze', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/spiegel_groß.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('schlafzimmer_spiegel', 'Spiegel (groß)') !!}
+            {!! Form::number('schlafzimmer_spiegel', null, ['class'=>'form-control']) !!}
+        </div>
+
+
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/karton_umzugskarton_m.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('schlafzimmer_umzugskarton_b80', 'Umzugskarton bis 80 l (gepackt)') !!}
+            {!! Form::number('schlafzimmer_umzugskarton_b80', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/karton_umzugskarton_m.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('schlafzimmer_umzugskarton_a80', 'Umzugskarton über 80 l (gepackt)') !!}
+            {!! Form::number('schlafzimmer_umzugskarton_a80', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/truhe_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('schlafzimmer_truhe', 'Truhe (klein)') !!}
+            {!! Form::number('schlafzimmer_truhe', null, ['class'=>'form-control']) !!}
+        </div>
+
+
+
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('schlafzimmer_schrank_bis_zwei_türen', 'Schrank bis 2 Türen, nicht zerlegbar') !!}
+            {!! Form::number('schlafzimmer_schrank_bis_zwei_türen', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('schlafzimmer_schrank_zerlegbar', 'Schrank zerlegbar je angefang. m') !!}
+            {!! Form::number('schlafzimmer_schrank_zerlegbar', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('schlafzimmer_französisches_bett_komplett', 'Französisches Bett komplett') !!}
+            {!! Form::number('schlafzimmer_französisches_bett_komplett', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('schlafzimmer_bettzeug_je_betteinheit', 'Bettzeug je Betteinheit') !!}
+            {!! Form::number('schlafzimmer_bettzeug_je_betteinheit', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('schlafzimmer_bettumbau', 'Bettumbau') !!}
+            {!! Form::number('schlafzimmer_bettumbau', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('schlafzimmer_kommode', 'Kommode') !!}
+            {!! Form::number('schlafzimmer_kommode', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('schlafzimmer_frisierkommode', 'Frisierkommode (mit Spiegel)') !!}
+            {!! Form::number('schlafzimmer_frisierkommode', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('schlafzimmer_wäschetruhe', 'Wäschetruhe') !!}
+            {!! Form::number('schlafzimmer_wäschetruhe', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('schlafzimmer_kleiderbehältnis', 'Kleiderbehältnis') !!}
             {!! Form::number('schlafzimmer_kleiderbehältnis', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('schlafzimmer_umzugskarton_b80', 'Umzugskarton bis 80 l') !!}
             {!! Form::number('schlafzimmer_umzugskarton_b80', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('schlafzimmer_umzugskarton_a80', 'Umzugskarton über 80 l') !!}
             {!! Form::number('schlafzimmer_umzugskarton_a80', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('schlafzimmer_umzugskarton_b80_gepackt', 'Umzugskarton bis 80 l (gepackt)') !!}
             {!! Form::number('schlafzimmer_umzugskarton_b80_gepackt', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('schlafzimmer_umzugskarton_a80_gepackt', 'Umzugskarton über 80 l (gepackt)') !!}
             {!! Form::number('schlafzimmer_umzugskarton_a80_gepackt', null, ['class'=>'form-control']) !!}
         </div>
