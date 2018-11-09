@@ -75,32 +75,33 @@
         </div>
 
         <div class="col-sm-6 col-lg-4">
-            {!! Form::label('bad_wäschekorb', 'Wäschekorb') !!}
-            {!! Form::number('bad_wäschekorb', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('bad_wäschekorb', 'Wäschekorb') !!}
-            {!! Form::number('bad_wäschekorb', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/stuhl.svg') }}" alt="computer_bildschirm" height="64px">
             {!! Form::label('bad_stuhl_hocker', 'Stuhl, Hocker') !!}
             {!! Form::number('bad_stuhl_hocker', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/truhe_klein.svg') }}" alt="computer_bildschirm" height="64px">
             {!! Form::label('bad_truhe_kommode', 'Truhe, Kommode') !!}
             {!! Form::number('bad_truhe_kommode', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/kommode_klein.svg') }}" alt="computer_bildschirm" height="64px">
             {!! Form::label('bad_kleiderablage', 'Kleiderablage') !!}
             {!! Form::number('bad_kleiderablage', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            {!! Form::label('bad_toilettenschrank', 'Toilettenschrank') !!}
-            {!! Form::number('bad_toilettenschrank', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/lampe_deckenlampe.svg') }}" alt="computer_bildschirm" height="64px">
             {!! Form::label('bad_deckenlampe', 'Deckenlampe') !!}
             {!! Form::number('bad_deckenlampe', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/spiegel_groß.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('bad_spiegel', 'Spiegel') !!}
+            {!! Form::number('bad_spiegel', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('bad_toilettenschrank', 'Toilettenschrank') !!}
+            {!! Form::number('bad_toilettenschrank', null, ['class'=>'form-control']) !!}
         </div>
     </div>
 

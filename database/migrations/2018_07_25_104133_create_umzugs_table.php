@@ -240,21 +240,29 @@ class CreateUmzugsTable extends Migration
             $table->integer('esszimmer_umzugskarton_b80')->default(0);
             $table->integer('esszimmer_umzugskarton_a80')->default(0);
 
+            $table->integer('bad_waschmaschine')->default(0);
+            $table->integer('bad_wäschetrockner')->default(0);
+            $table->integer('bad_wäscheständer')->default(0);
+            $table->integer('bad_waeschekorb')->default(0);
+            $table->integer('bad_waschbeckenunterschrank')->default(0);
             $table->integer('bad_truhe_kommode')->default(0);
             $table->integer('bad_kleiderablage')->default(0);
             $table->integer('bad_stuhl_hocker')->default(0);
             $table->integer('bad_toilettenschrank')->default(0);
             $table->integer('bad_wäschekorb')->default(0);
             $table->integer('bad_deckenlampe')->default(0);
+            $table->integer('bad_spiegel')->default(0);
 
             $table->integer('kinderzimmer_schrank_bis_zwei_türen')->default(0);
             $table->integer('kinderzimmer_schrank_zerlegbar')->default(0);
             $table->integer('kinderzimmer_bett_komplett')->default(0);
-            $table->integer('kinderzimmer_kinderbett_komplett')->default(0);
+            $table->integer('kinderzimmer_babybett')->default(0);
+            $table->integer('kinderzimmer_wickeltisch')->default(0);
             $table->integer('kinderzimmer_etagenbett_komplett')->default(0);
             $table->integer('kinderzimmer_bettzeug_je_betteinheit')->default(0);
             $table->integer('kinderzimmer_nachttisch')->default(0);
-            $table->integer('kinderzimmer_kommode')->default(0);
+            $table->integer('kinderzimmer_kommode_mittel')->default(0);
+            $table->integer('kinderzimmer_kommode_klein')->default(0);
             $table->integer('kinderzimmer_schreibpult')->default(0);
             $table->integer('kinderzimmer_spielzeugkiste')->default(0);
             $table->integer('kinderzimmer_tisch_b06')->default(0);

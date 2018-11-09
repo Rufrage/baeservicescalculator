@@ -48,45 +48,65 @@
 
     <!-- Felder für dieses Zimmer-->
     <div class="form-group row">
-        <div class="col-sm-6">
-            {!! Form::label('kinderzimmer_schrank_bis_zwei_türen', 'Schrank bis 2 Türen, nicht zerlegbar') !!}
-            {!! Form::number('kinderzimmer_schrank_bis_zwei_türen', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('kinderzimmer_schrank_zerlegbar', 'Schrank zerlegbar je angef. m') !!}
-            {!! Form::number('kinderzimmer_schrank_zerlegbar', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('kinderzimmer_bett_komplett', 'Bett komplett') !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/babybed.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_bett_komplett', 'Bett, Kinderbett') !!}
             {!! Form::number('kinderzimmer_bett_komplett', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('kinderzimmer_kinderbett_komplett', 'Kinderbett komplett') !!}
-            {!! Form::number('kinderzimmer_kinderbett_komplett', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/babybed.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_babybett', 'Bett, Babybett') !!}
+            {!! Form::number('kinderzimmer_babybett', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/wickeltisch.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_wickeltisch', 'Bett, Babybett') !!}
+            {!! Form::number('kinderzimmer_wickeltisch', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/bett_140.svg') }}" alt="computer_bildschirm" height="64px">
             {!! Form::label('kinderzimmer_etagenbett_komplett', 'Etagenbett komplett') !!}
             {!! Form::number('kinderzimmer_etagenbett_komplett', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/kommode_mittel.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_kommode_mittel', 'Kommode (mittel)') !!}
+            {!! Form::number('kinderzimmer_kommode_mittel', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/kommode_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_kommode_klein', 'Kommode (klein)') !!}
+            {!! Form::number('kinderzimmer_kommode_klein', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/spielzeugkiste.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_spielzeugkiste', 'Spielzeugkiste') !!}
+            {!! Form::number('kinderzimmer_spielzeugkiste', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/hochstuhl.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_stuhl_hocker', 'Hochstuhl') !!}
+            {!! Form::number('kinderzimmer_stuhl_hocker', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('kinderzimmer_schrank_bis_zwei_türen', 'Schrank bis 2 Türen, nicht zerlegbar') !!}
+            {!! Form::number('kinderzimmer_schrank_bis_zwei_türen', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('kinderzimmer_schrank_zerlegbar', 'Schrank zerlegbar je angef. m') !!}
+            {!! Form::number('kinderzimmer_schrank_zerlegbar', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('kinderzimmer_bettzeug_je_betteinheit', 'Bettzeug je Betteinheit') !!}
             {!! Form::number('kinderzimmer_bettzeug_je_betteinheit', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('kinderzimmer_nachttisch', 'Nachttisch') !!}
             {!! Form::number('kinderzimmer_nachttisch', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6">
-            {!! Form::label('kinderzimmer_kommode', 'Kommode') !!}
-            {!! Form::number('kinderzimmer_kommode', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
             {!! Form::label('kinderzimmer_schreibpult', 'Schreibpult') !!}
             {!! Form::number('kinderzimmer_schreibpult', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('kinderzimmer_spielzeugkiste', 'Spielzeugkiste') !!}
-            {!! Form::number('kinderzimmer_spielzeugkiste', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6">
             {!! Form::label('kinderzimmer_tisch_b06', 'Tisch bis 0,6 m') !!}
@@ -107,10 +127,6 @@
         <div class="col-sm-6">
             {!! Form::label('kinderzimmer_laufgitter', 'Laufgitter') !!}
             {!! Form::number('kinderzimmer_laufgitter', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('kinderzimmer_stuhl_hocker', 'Stuhl, Hocker') !!}
-            {!! Form::number('kinderzimmer_stuhl_hocker', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6">
             {!! Form::label('kinderzimmer_teppich', 'Teppich') !!}

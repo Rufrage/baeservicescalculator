@@ -39,10 +39,10 @@ class Umzug extends Model
 
 
 
-        'bad_truhe_kommode', 'bad_kleiderablage', 'bad_stuhl_hocker', 'bad_toilettenschrank', 'bad_wäschekorb', 'bad_deckenlampe',
+        'bad_waschmaschine', 'bad_wäschetrockner', 'bad_wäscheständer', 'bad_waeschekorb', 'bad_waschbeckenunterschrank', 'bad_truhe_kommode', 'bad_kleiderablage', 'bad_stuhl_hocker', 'bad_toilettenschrank', 'bad_wäschekorb', 'bad_deckenlampe', 'bad_spiegel',
 
-        'kinderzimmer_schrank_bis_zwei_türen', 'kinderzimmer_schrank_zerlegbar', 'kinderzimmer_bett_komplett', 'kinderzimmer_kinderbett_komplett', 'kinderzimmer_etagenbett_komplett', 'kinderzimmer_bettzeug_je_betteinheit', 'kinderzimmer_nachttisch',
-        'kinderzimmer_kommode', 'kinderzimmer_schreibpult', 'kinderzimmer_spielzeugkiste', 'kinderzimmer_tisch_b06', 'kinderzimmer_tisch_b10', 'kinderzimmer_tisch_b12', 'kinderzimmer_tisch_a12', 'kinderzimmer_laufgitter', 'kinderzimmer_stuhl_hocker',
+        'kinderzimmer_schrank_bis_zwei_türen', 'kinderzimmer_schrank_zerlegbar', 'kinderzimmer_babybett', 'kinderzimmer_wickeltisch', 'kinderzimmer_kinderbett_komplett', 'kinderzimmer_etagenbett_komplett', 'kinderzimmer_bettzeug_je_betteinheit', 'kinderzimmer_nachttisch',
+        'kinderzimmer_kommode_mittel', 'kinderzimmer_kommode_klein', 'kinderzimmer_schreibpult', 'kinderzimmer_spielzeugkiste', 'kinderzimmer_tisch_b06', 'kinderzimmer_tisch_b10', 'kinderzimmer_tisch_b12', 'kinderzimmer_tisch_a12', 'kinderzimmer_laufgitter', 'kinderzimmer_stuhl_hocker',
         'kinderzimmer_teppich', 'kinderzimmer_brücke', 'kinderzimmer_anbauwand_b38', 'kinderzimmer_anbauwand_a38', 'kinderzimmer_deckenlampe', 'kinderzimmer_kleiderbehältnis', 'kinderzimmer_umzugskarton_b80', 'kinderzimmer_umzugskarton_a80',
 
         'weitere_zimmer_schreibtisch_b16', 'weitere_zimmer_schreibtisch_a16', 'weitere_zimmer_schreibtischcontainer',
