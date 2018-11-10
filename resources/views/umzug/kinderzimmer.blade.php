@@ -60,7 +60,7 @@
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/wickeltisch.svg') }}" alt="computer_bildschirm" height="64px">
-            {!! Form::label('kinderzimmer_wickeltisch', 'Bett, Babybett') !!}
+            {!! Form::label('kinderzimmer_wickeltisch', 'Bett, Wickeltisch') !!}
             {!! Form::number('kinderzimmer_wickeltisch', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
@@ -89,8 +89,64 @@
             {!! Form::number('kinderzimmer_stuhl_hocker', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            {!! Form::label('kinderzimmer_schrank_bis_zwei_türen', 'Schrank bis 2 Türen, nicht zerlegbar') !!}
-            {!! Form::number('kinderzimmer_schrank_bis_zwei_türen', null, ['class'=>'form-control']) !!}
+            <img src="{{ asset('images/moebel/schrank_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_schrank_klein', 'Schrank (klein)') !!}
+            {!! Form::number('kinderzimmer_schrank_klein', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/kleiderschrank_2_türen.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_schrank2', 'Kleiderschrank 2 Türen') !!}
+            {!! Form::number('kinderzimmer_schrank2', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/kleiderschrank_3_türen.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_schrank3', 'Kleiderschrank 3 Türen') !!}
+            {!! Form::number('kinderzimmer_schrank3', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/schrank_hochschrank.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_hochschrank', 'Schrank, Hochschrank') !!}
+            {!! Form::number('kinderzimmer_hochschrank', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/regal_buecherregal_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_buecherregal', 'Bücherregal, klein') !!}
+            {!! Form::number('kinderzimmer_buecherregal', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/regal_buecherregal_mittel.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_buecherregal_mittel', 'Bücherregal, mittel') !!}
+            {!! Form::number('kinderzimmer_buecherregal_mittel', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/regal_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_regal_klein', 'Regal, klein') !!}
+            {!! Form::number('kinderzimmer_regal_klein', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/regal_mittel.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_regal_mittel', 'Regal, mittel') !!}
+            {!! Form::number('kinderzimmer_regal_mittel', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/regal_billy.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_billy', 'Billy Regal') !!}
+            {!! Form::number('kinderzimmer_billy', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/lampe_stehlampe.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_stehlampe', 'Stehlampe') !!}
+            {!! Form::number('kinderzimmer_stehlampe', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/lampe_deckenlampe.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_deckenlampe', 'Deckenlampe') !!}
+            {!! Form::number('kinderzimmer_deckenlampe', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/truhe_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_truhe', 'Truhe (klein)') !!}
+            {!! Form::number('kinderzimmer_truhe', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
             {!! Form::label('kinderzimmer_schrank_zerlegbar', 'Schrank zerlegbar je angef. m') !!}
@@ -104,59 +160,55 @@
             {!! Form::label('kinderzimmer_nachttisch', 'Nachttisch') !!}
             {!! Form::number('kinderzimmer_nachttisch', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('kinderzimmer_schreibpult', 'Schreibpult') !!}
             {!! Form::number('kinderzimmer_schreibpult', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('kinderzimmer_tisch_b06', 'Tisch bis 0,6 m') !!}
             {!! Form::number('kinderzimmer_tisch_b06', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('kinderzimmer_tisch_b10', 'Tisch bis 1,0 m') !!}
             {!! Form::number('kinderzimmer_tisch_b10', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('kinderzimmer_tisch_b12', 'Tisch bis 1,2 m') !!}
             {!! Form::number('kinderzimmer_tisch_b12', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('kinderzimmer_tisch_a12', 'Tisch über 1,2 m') !!}
             {!! Form::number('kinderzimmer_tisch_a12', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('kinderzimmer_laufgitter', 'Laufgitter') !!}
             {!! Form::number('kinderzimmer_laufgitter', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('kinderzimmer_teppich', 'Teppich') !!}
             {!! Form::number('kinderzimmer_teppich', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('kinderzimmer_brücke', 'Brücke') !!}
             {!! Form::number('kinderzimmer_brücke', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('kinderzimmer_anbauwand_b38', 'Anbauwand b.38cm Tiefe je ang. m') !!}
             {!! Form::number('kinderzimmer_anbauwand_b38', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('kinderzimmer_anbauwand_a38', 'Anbauwand ü.38cm Tiefe je ang. m') !!}
             {!! Form::number('kinderzimmer_anbauwand_a38', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('kinderzimmer_deckenlampe', 'Deckenlampe') !!}
-            {!! Form::number('kinderzimmer_deckenlampe', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('kinderzimmer_kleiderbehältnis', 'Kleiderbehältnis') !!}
             {!! Form::number('kinderzimmer_kleiderbehältnis', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('kinderzimmer_umzugskarton_b80', 'Umzugskarton bis 80 l (gepackt)') !!}
             {!! Form::number('kinderzimmer_umzugskarton_b80', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             {!! Form::label('kinderzimmer_umzugskarton_a80', 'Umzugskarton über 80 l (gepackt)') !!}
             {!! Form::number('kinderzimmer_umzugskarton_a80', null, ['class'=>'form-control']) !!}
         </div>

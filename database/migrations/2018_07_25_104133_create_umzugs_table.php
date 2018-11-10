@@ -253,18 +253,32 @@ class CreateUmzugsTable extends Migration
             $table->integer('bad_deckenlampe')->default(0);
             $table->integer('bad_spiegel')->default(0);
 
-            $table->integer('kinderzimmer_schrank_bis_zwei_türen')->default(0);
-            $table->integer('kinderzimmer_schrank_zerlegbar')->default(0);
+
+
             $table->integer('kinderzimmer_bett_komplett')->default(0);
             $table->integer('kinderzimmer_babybett')->default(0);
             $table->integer('kinderzimmer_wickeltisch')->default(0);
             $table->integer('kinderzimmer_etagenbett_komplett')->default(0);
+            $table->integer('kinderzimmer_spielzeugkiste')->default(0);
+            $table->integer('kinderzimmer_schrank_klein')->default(0);
+            $table->integer('kinderzimmer_schrank2')->default(0);
+            $table->integer('kinderzimmer_schrank3')->default(0);
+            $table->integer('kinderzimmer_hochschrank')->default(0);
+            $table->integer('kinderzimmer_buecherregal')->default(0);
+            $table->integer('kinderzimmer_buecherregal_mittel')->default(0);
+            $table->integer('kinderzimmer_regal_mittel')->default(0);
+            $table->integer('kinderzimmer_regal_klein')->default(0);
+            $table->integer('kinderzimmer_billy')->default(0);
+            $table->integer('kinderzimmer_stehlampe')->default(0);
+            $table->integer('kinderzimmer_deckenlampe')->default(0);
+            $table->integer('kinderzimmer_truhe')->default(0);
+
+            $table->integer('kinderzimmer_schrank_zerlegbar')->default(0);
             $table->integer('kinderzimmer_bettzeug_je_betteinheit')->default(0);
             $table->integer('kinderzimmer_nachttisch')->default(0);
             $table->integer('kinderzimmer_kommode_mittel')->default(0);
             $table->integer('kinderzimmer_kommode_klein')->default(0);
             $table->integer('kinderzimmer_schreibpult')->default(0);
-            $table->integer('kinderzimmer_spielzeugkiste')->default(0);
             $table->integer('kinderzimmer_tisch_b06')->default(0);
             $table->integer('kinderzimmer_tisch_b10')->default(0);
             $table->integer('kinderzimmer_tisch_b12')->default(0);
@@ -275,7 +289,6 @@ class CreateUmzugsTable extends Migration
             $table->integer('kinderzimmer_brücke')->default(0);
             $table->integer('kinderzimmer_anbauwand_b38')->default(0);
             $table->integer('kinderzimmer_anbauwand_a38')->default(0);
-            $table->integer('kinderzimmer_deckenlampe')->default(0);
             $table->integer('kinderzimmer_kleiderbehältnis')->default(0);
             $table->integer('kinderzimmer_umzugskarton_b80')->default(0);
             $table->integer('kinderzimmer_umzugskarton_a80')->default(0);

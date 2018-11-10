@@ -43,7 +43,9 @@ class Umzug extends Model
 
         'kinderzimmer_schrank_bis_zwei_türen', 'kinderzimmer_schrank_zerlegbar', 'kinderzimmer_babybett', 'kinderzimmer_wickeltisch', 'kinderzimmer_kinderbett_komplett', 'kinderzimmer_etagenbett_komplett', 'kinderzimmer_bettzeug_je_betteinheit', 'kinderzimmer_nachttisch',
         'kinderzimmer_kommode_mittel', 'kinderzimmer_kommode_klein', 'kinderzimmer_schreibpult', 'kinderzimmer_spielzeugkiste', 'kinderzimmer_tisch_b06', 'kinderzimmer_tisch_b10', 'kinderzimmer_tisch_b12', 'kinderzimmer_tisch_a12', 'kinderzimmer_laufgitter', 'kinderzimmer_stuhl_hocker',
-        'kinderzimmer_teppich', 'kinderzimmer_brücke', 'kinderzimmer_anbauwand_b38', 'kinderzimmer_anbauwand_a38', 'kinderzimmer_deckenlampe', 'kinderzimmer_kleiderbehältnis', 'kinderzimmer_umzugskarton_b80', 'kinderzimmer_umzugskarton_a80',
+        'kinderzimmer_teppich', 'kinderzimmer_brücke', 'kinderzimmer_anbauwand_b38', 'kinderzimmer_anbauwand_a38', 'kinderzimmer_kleiderbehältnis', 'kinderzimmer_umzugskarton_b80', 'kinderzimmer_umzugskarton_a80',
+        'kinderzimmer_schrank_klein','kinderzimmer_schrank2', 'kinderzimmer_schrank3','kinderzimmer_hochschrank','kinderzimmer_truhe', 'kinderzimmer_stehlampe', 'kinderzimmer_deckenlampe', 'kinderzimmer_billy', 'kinderzimmer_buecherregal', 'kinderzimmer_buecherregal_mittel',
+        'kinderzimmer_regal_mittel', 'kinderzimmer_regal_klein',
 
         'weitere_zimmer_schreibtisch_b16', 'weitere_zimmer_schreibtisch_a16', 'weitere_zimmer_schreibtischcontainer',
         'weitere_zimmer_schreibtischstuhl', 'weitere_zimmer_winkelkombination', 'weitere_zimmer_bücherregal', 'weitere_zimmer_aktenschrank',
