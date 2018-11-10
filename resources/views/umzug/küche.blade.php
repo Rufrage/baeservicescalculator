@@ -142,22 +142,7 @@
             {!! Form::label('küche_oberteil_je_tür', 'Oberteil je Tür') !!}
             {!! Form::number('küche_oberteil_je_tür', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('küche_tisch_b_06', 'Tisch bis 0,6 m') !!}
-            {!! Form::number('küche_tisch_b_06', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('küche_tisch_b_10', 'Tisch bis 1,0 m') !!}
-            {!! Form::number('küche_tisch_b_10', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('küche_tisch_b_12', 'Tisch bis 1,2 m') !!}
-            {!! Form::number('küche_tisch_b_12', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('küche_tisch_a_12', 'Tisch über 1,2 m') !!}
-            {!! Form::number('küche_tisch_a_12', null, ['class'=>'form-control']) !!}
-        </div>
+
         <div class="col-sm-6 col-lg-4">
             {!! Form::label('küche_stuhl', 'Stuhl') !!}
             {!! Form::number('küche_stuhl', null, ['class'=>'form-control']) !!}
