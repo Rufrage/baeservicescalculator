@@ -251,6 +251,7 @@ class UmzugController extends Controller
              "bad_toilettenschrank"=>2,
              "bad_wäschekorb"=>2,
              "bad_deckenlampe"=>2,
+             "bad_spiegel"=>0.3,
 
              //Felder Esszimmer
             "esszimmer_stuhl"=>2.9,
@@ -391,6 +392,7 @@ class UmzugController extends Controller
             "schlafzimmer_pflanze"=>1.7,
             "schlafzimmer_spiegel"=>0.3,
             "schlafzimmer_truhe"=>2.5,
+            "schlafzimmer_tvschrank"=>2.3,
 
 
 

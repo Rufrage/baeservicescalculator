@@ -21,7 +21,7 @@ class Umzug extends Model
 
         'küche_buffet_mit_aufsätzen', 'küche_unterteil_je_tür', 'küche_oberteil_je_tür', 'küche_tisch_06', 'küche_tisch_10', 'küche_tisch_b12', 'küche_tisch_a12', 'küche_stuhl',
         'küche_eckbank_je_sitz', 'küche_besenschrank', 'küche_herd', 'küche_geschirrspülmaschine', 'küche_waschmaschine_trockner', 'küche_kühlschrank_truhe_b_120', 'küche_kühlschrank_truhe_a_120',
-        'küche_arbeitsplatte_nicht_unterb', 'küche_deckenlampe', 'küche_teppich', 'küche_mikrowelle', 'küche_umzugskarton_b_80', 'küche_umzugskarton_a_80','küche_kühlschrank', 'küche_küchenunterschrank',
+        'küche_arbeitsplatte_nicht_unterb', 'küche_deckenlampe', 'küche_teppich', 'küche_mikrowelle', 'küche_umzugskarton_b_80', 'küche_umzugskarton_a_80','küche_küchenunterschrank',
         'küche_stuhl_mit_armlehnen', 'küche_hocker', 'küche_klappstuhl','küche_buegelbrett','küche_staubsauger', 'küche_truhe', 'küche_kuehlschrank',
 
         'schlafzimmer_schrank_bis_zwei_türen', 'schlafzimmer_schrank_zerlegbar', 'schlafzimmer_dopelbett_komplett', 'schlafzimmer_einzelbett_komplett', 'schlafzimmer_französisches_bett_komplett', 'schlafzimmer_bettzeug_je_betteinheit',
