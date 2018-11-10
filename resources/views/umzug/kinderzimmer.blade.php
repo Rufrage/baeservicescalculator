@@ -49,92 +49,92 @@
     <!-- Felder für dieses Zimmer-->
     <div class="form-group row">
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/babybed.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/babybed.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_bett_komplett', 'Bett, Kinderbett') !!}
             {!! Form::number('kinderzimmer_bett_komplett', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/babybed.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/babybed.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_babybett', 'Bett, Babybett') !!}
             {!! Form::number('kinderzimmer_babybett', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/wickeltisch.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/wickeltisch.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_wickeltisch', 'Bett, Wickeltisch') !!}
             {!! Form::number('kinderzimmer_wickeltisch', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/bett_140.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/bett_140.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_etagenbett_komplett', 'Etagenbett komplett') !!}
             {!! Form::number('kinderzimmer_etagenbett_komplett', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/kommode_mittel.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/kommode_mittel.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_kommode_mittel', 'Kommode (mittel)') !!}
             {!! Form::number('kinderzimmer_kommode_mittel', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/kommode_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/kommode_klein.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_kommode_klein', 'Kommode (klein)') !!}
             {!! Form::number('kinderzimmer_kommode_klein', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/spielzeugkiste.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/spielzeugkiste.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_spielzeugkiste', 'Spielzeugkiste') !!}
             {!! Form::number('kinderzimmer_spielzeugkiste', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/hochstuhl.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/hochstuhl.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_stuhl_hocker', 'Hochstuhl') !!}
             {!! Form::number('kinderzimmer_stuhl_hocker', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/kleiderschrank_2_türen.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/kleiderschrank_2_türen.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_schrank2', 'Kleiderschrank 2 Türen') !!}
             {!! Form::number('kinderzimmer_schrank2', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/kleiderschrank_3_türen.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/kleiderschrank_3_türen.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_schrank3', 'Kleiderschrank 3 Türen') !!}
             {!! Form::number('kinderzimmer_schrank3', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/regal_buecherregal_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/regal_buecherregal_klein.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_buecherregal', 'Bücherregal, klein') !!}
             {!! Form::number('kinderzimmer_buecherregal', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/regal_buecherregal_mittel.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/regal_buecherregal_mittel.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_buecherregal_mittel', 'Bücherregal, mittel') !!}
             {!! Form::number('kinderzimmer_buecherregal_mittel', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/regal_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/regal_klein.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_regal_klein', 'Regal, klein') !!}
             {!! Form::number('kinderzimmer_regal_klein', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/regal_mittel.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/regal_mittel.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_regal_mittel', 'Regal, mittel') !!}
             {!! Form::number('kinderzimmer_regal_mittel', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/regal_billy.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/regal_billy.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_billy', 'Billy Regal') !!}
             {!! Form::number('kinderzimmer_billy', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/lampe_stehlampe.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/lampe_stehlampe.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_stehlampe', 'Stehlampe') !!}
             {!! Form::number('kinderzimmer_stehlampe', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/lampe_deckenlampe.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/lampe_deckenlampe.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_deckenlampe', 'Deckenlampe') !!}
             {!! Form::number('kinderzimmer_deckenlampe', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/truhe_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/truhe_klein.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_truhe', 'Truhe (klein)') !!}
             {!! Form::number('kinderzimmer_truhe', null, ['class'=>'form-control']) !!}
         </div>
@@ -144,7 +144,7 @@
             {!! Form::number('kinderzimmer_schrank_klein', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/schrank_hochschrank.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/schrank_hochschrank.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_hochschrank', 'Schrank, Hochschrank') !!}
             {!! Form::number('kinderzimmer_hochschrank', null, ['class'=>'form-control']) !!}
         </div>

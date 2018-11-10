@@ -179,134 +179,134 @@
             {!! Form::number('wohnzimmer_computer', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/computer_bildschirm.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/computer_bildschirm.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_computer_bildschirm', 'Computer-Bildschirm') !!}
             {!! Form::number('wohnzimmer_computer_bildschirm', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/kommode_mittel.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/kommode_mittel.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_kommode_mittel', 'Kommode (mittel)') !!}
             {!! Form::number('wohnzimmer_kommode_mittel', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/kommode_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/kommode_klein.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_kommode_klein', 'Kommode (klein)') !!}
             {!! Form::number('wohnzimmer_kommode_klein', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/kleiderschrank_2_türen.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/kleiderschrank_2_türen.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_kleiderschrank2', 'Kleiderschrank, 2 Türen') !!}
             {!! Form::number('wohnzimmer_kleiderschrank2', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/kleiderschrank_3_türen.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/kleiderschrank_3_türen.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_kleiderschrank3', 'Kleiderschrank, 3 Türen') !!}
             {!! Form::number('wohnzimmer_kleiderschrank3', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/sideboard_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/sideboard_klein.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_sideboard_klein', 'Sideboard klein') !!}
             {!! Form::number('wohnzimmer_sideboard_klein', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/schuhschrank_2_klappensvg.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/schuhschrank_2_klappensvg.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_schuhschrank2', 'Schuhschrank, 2 Klappen') !!}
             {!! Form::number('wohnzimmer_schuhschrank2', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/regal_buecherregal_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/regal_buecherregal_klein.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_bücherregal', 'Bücherregal, klein') !!}
             {!! Form::number('wohnzimmer_bücherregal', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/regal_buecherregal_mittel.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/regal_buecherregal_mittel.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_bücherregal_mittel', 'Bücherregal, mittel') !!}
             {!! Form::number('wohnzimmer_bücherregal_mittel', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/regal_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/regal_klein.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_regal_klein', 'Regal, klein') !!}
             {!! Form::number('wohnzimmer_regal_klein', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/regal_mittel.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/regal_mittel.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_regal_mittel', 'Regal, mittel') !!}
             {!! Form::number('wohnzimmer_regal_mittel', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/regal_billy.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/regal_billy.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_billy', 'Billy Regal') !!}
             {!! Form::number('wohnzimmer_billy', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/lampe_stehlampe.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/lampe_stehlampe.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_stehlampe', 'Stehlampe') !!}
             {!! Form::number('wohnzimmer_stehlampe', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/lampe_deckenlampe.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/lampe_deckenlampe.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_deckenlampe', 'Deckenlampe') !!}
             {!! Form::number('wohnzimmer_deckenlampe', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/lampe_bodenlampe.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/lampe_bodenlampe.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_bodenlampe', 'Bodenlampe') !!}
             {!! Form::number('wohnzimmer_bodenlampe', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/lampe_nachttisch.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/lampe_nachttisch.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_lampe_nachttisch', 'Lampe, Nachttisch') !!}
             {!! Form::number('wohnzimmer_lampe_nachttisch', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/lampe_tischlampe.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/lampe_tischlampe.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_tischlampe', 'Tischlampe') !!}
             {!! Form::number('wohnzimmer_tischlampe', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/teppich_standard.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/teppich_standard.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_teppich', 'Teppich') !!}
             {!! Form::number('wohnzimmer_teppich', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/teppich_groß.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/teppich_groß.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_teppich_groß', 'Teppich') !!}
             {!! Form::number('wohnzimmer_teppich_groß', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/bild_groß.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/bild_groß.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_bilder_b08', 'Bilder bis 0,8 m') !!}
             {!! Form::number('wohnzimmer_bilder_b08', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/bild_groß.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/bild_groß.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_bilder_a08', 'Bilder über 0,8 m') !!}
             {!! Form::number('wohnzimmer_bilder_a08', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/pflanze_mittel.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/pflanze_mittel.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_pflanze', 'Pflanze (mittel)') !!}
             {!! Form::number('wohnzimmer_pflanze', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/spiegel_groß.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/spiegel_groß.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_spiegel', 'Spiegel (groß)') !!}
             {!! Form::number('wohnzimmer_spiegel', null, ['class'=>'form-control']) !!}
         </div>
 
 
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/karton_umzugskarton_m.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/karton_umzugskarton_m.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_umzugskarton_b80', 'Umzugskarton bis 80 l (gepackt)') !!}
             {!! Form::number('wohnzimmer_umzugskarton_b80', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/karton_umzugskarton_m.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/karton_umzugskarton_m.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_umzugskarton_a80', 'Umzugskarton über 80 l (gepackt)') !!}
             {!! Form::number('wohnzimmer_umzugskarton_a80', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/truhe_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/truhe_klein.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_truhe', 'Truhe (klein)') !!}
             {!! Form::number('wohnzimmer_truhe', null, ['class'=>'form-control']) !!}
         </div>
@@ -316,22 +316,22 @@
         </div>
 
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/sideboard_mittel.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/sideboard_mittel.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_sideboard_groß', 'Sideboard groß') !!}
             {!! Form::number('wohnzimmer_sideboard_groß', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/schrank_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/schrank_klein.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_schrank', 'Schrank (klein)') !!}
             {!! Form::number('wohnzimmer_schrank', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/schrank_hochschrank.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/schrank_hochschrank.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_schrank_hochschrank', 'Schrank, Hochschrank') !!}
             {!! Form::number('wohnzimmer_schrank_hochschrank', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/vitrine_glasvitrine.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/vitrine_glasvitrine.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_vitrine_glasvitrine', 'Vitrine, Glasvitrine (mittel)') !!}
             {!! Form::number('wohnzimmer_vitrine_glasvitrine', null, ['class'=>'form-control']) !!}
         </div>
