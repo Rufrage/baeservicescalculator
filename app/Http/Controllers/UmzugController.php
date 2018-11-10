@@ -415,7 +415,7 @@ class UmzugController extends Controller
             "küche_herd"=>3,
             "küche_geschirrspülmaschine"=>3.4,
             "küche_küchenunterschrank"=>3.2,
-            "küche_kühlschrank"=>9,
+            "küche_kuehlschrank"=>9,
             "küche_tisch_b_06"=>0.8,
             "küche_tisch_b_10"=>1.3,
             "küche_tisch_b_12"=>14.2,

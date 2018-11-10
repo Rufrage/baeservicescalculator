@@ -89,7 +89,7 @@
             {!! Form::number('kinderzimmer_stuhl_hocker', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/schrank_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            <img src="{{ asset('images/moebel/schrank_klein.svg') }}" alt="schrank_klein" height="64px">
             {!! Form::label('kinderzimmer_schrank_klein', 'Schrank (klein)') !!}
             {!! Form::number('kinderzimmer_schrank_klein', null, ['class'=>'form-control']) !!}
         </div>
