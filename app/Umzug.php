@@ -22,15 +22,15 @@ class Umzug extends Model
         'küche_buffet_mit_aufsätzen', 'küche_unterteil_je_tür', 'küche_oberteil_je_tür', 'küche_tisch_b_06', 'küche_tisch_b_10', 'küche_tisch_b_12', 'küche_tisch_a_12', 'küche_stuhl',
         'küche_eckbank_je_sitz', 'küche_besenschrank', 'küche_herd', 'küche_geschirrspülmaschine', 'küche_waschmaschine_trockner', 'küche_kühlschrank_truhe_b_120', 'küche_kühlschrank_truhe_a_120',
         'küche_arbeitsplatte_nicht_unterb', 'küche_deckenlampe', 'küche_teppich', 'küche_mikrowelle', 'küche_umzugskarton_b_80', 'küche_umzugskarton_a_80','küche_kühlschrank', 'küche_küchenunterschrank',
-        'küche_stuhl_mit_armlehnen', 'küche_hocker', 'küche_klappstuhl'.'küche_buegelbrett','küche_staubsauger', 'küche_truhe',
+        'küche_stuhl_mit_armlehnen', 'küche_hocker', 'küche_klappstuhl','küche_buegelbrett','küche_staubsauger', 'küche_truhe', 'küche_kühlschrank',
 
         'schlafzimmer_schrank_bis_zwei_türen', 'schlafzimmer_schrank_zerlegbar', 'schlafzimmer_dopelbett_komplett', 'schlafzimmer_einzelbett_komplett', 'schlafzimmer_französisches_bett_komplett', 'schlafzimmer_bettzeug_je_betteinheit',
         'schlafzimmer_bettumbau', 'schlafzimmer_kommode', 'schlafzimmer_frisierkommode', 'schlafzimmer_wäschetruhe',  'schlafzimmer_spiegel_a_08',
-        'schlafzimmer_bilder_b08', 'schlafzimmer_bilder_a08', 'schlafzimmer_kleiderbehältnis', 'schlafzimmer_umzugskarton_b80', 'schlafzimmer_umzugskarton_a80',
+        'schlafzimmer_bilder_b08', 'schlafzimmer_bilder_a08', 'schlafzimmer_kleiderbehältnis', 'schlafzimmer_umzugskarton_b80', 'schlafzimmer_umzugskarton_a80', 'schlafzimmer_umzugskarton_a80_gepackt',
         'schlafzimmer_umzugskarton_b80_gepackt', 'schlafzimmer_umzugskarton_b80_gepackt','schlafzimmer_matratze140', 'schlafzimmer_matratze090', 'schlafzimmer_lattenrost','schlafzimmer_stuhl', 'schlafzimmer_stuhl_mit_armlehnen', 'schlafzimmer_klappsthul', 'schlafzimmer_hocker', 'schlafzimmer_tisch_06',
         'schlafzimmer_tisch_10','schlafzimmer_couchtisch', 'schlafzimmer_tvschrank', 'schlafzimmer_fernseher_mittel', 'schlafzimmer_fernseher_klein', 'schlafzimmer_fernseher_groß', 'schlafzimmer_wohnwand','schlafzimmer_stehlampe',
         'schlafzimmer_deckenlampe', 'schlafzimmer_bodenlampe', 'schlafzimmer_lampe_nachttisch', 'schlafzimmer_tischlampe', 'schlafzimmer_billy', 'schlafzimmer_bücherregal', 'schlafzimmer_bücherregal_mittel', 'schlafzimmer_regal_mittel', 'schlafzimmer_regal_klein',
-        'schlafzimmer_teppich', 'schlafzimmer_teppich_groß', 'schlafzimmer_bilder_b08', 'schlafzimmer_bilder_a08', 'schlafzimmer_spiegel', 'schlafzimmer_pflanze', 'schlafzimmer_truhe',
+        'schlafzimmer_teppich', 'schlafzimmer_teppich_groß', 'schlafzimmer_bilder_b08', 'schlafzimmer_bilder_a08', 'schlafzimmer_spiegel', 'schlafzimmer_pflanze', 'schlafzimmer_truhe','schlafzimmer_klappstuhl',
 
         'esszimmer_stuhl', 'esszimmer_stuhl_mit_armlehnen', 'esszimmer_eckbank_je_sitz', 'esszimmer_tisch_06', 'esszimmer_tisch_10', 'esszimmer_tisch_b12', 'esszimmer_tisch_a12', 'esszimmer_sekretär', 'esszimmer_sideboard_klein', 'esszimmer_sideboard_groß',
         'esszimmer_hausbar', 'esszimmer_teewagen', 'esszimmer_teppich', 'esszimmer_brücke', 'esszimmer_deckenlampe', 'esszimmer_stehlampe', 'esszimmer_vitrine', 'esszimmer_bilder_b08', 'esszimmer_bilder_a08', 'esszimmer_umzugskarton_b80', 'esszimmer_umzugskarton_a80',
