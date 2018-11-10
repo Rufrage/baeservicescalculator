@@ -19,7 +19,7 @@ class Umzug extends Model
         'wohnzimmer_bücherregal_mittel', 'wohnzimmer_regal_klein', 'wohnzimmer_regal_mittel','wohnzimmer_bodenlampe', 'wohnzimmer_lampe_nachttisch', 'wohnzimmer_tischlampe', 'wohnzimmer_buegelbrett',
         'wohnzimmer_teppich_groß', 'wohnzimmer_pflanze', 'wohnzimmer_spiegel','wohnzimmer_truhe', 'wohnzimmer_weinkiste',
 
-        'küche_buffet_mit_aufsätzen', 'küche_unterteil_je_tür', 'küche_oberteil_je_tür', 'küche_tisch_b_06', 'küche_tisch_b_10', 'küche_tisch_b_12', 'küche_tisch_a_12', 'küche_stuhl',
+        'küche_buffet_mit_aufsätzen', 'küche_unterteil_je_tür', 'küche_oberteil_je_tür', 'küche_tisch_06', 'küche_tisch_10', 'küche_tisch_b12', 'küche_tisch_a12', 'küche_stuhl',
         'küche_eckbank_je_sitz', 'küche_besenschrank', 'küche_herd', 'küche_geschirrspülmaschine', 'küche_waschmaschine_trockner', 'küche_kühlschrank_truhe_b_120', 'küche_kühlschrank_truhe_a_120',
         'küche_arbeitsplatte_nicht_unterb', 'küche_deckenlampe', 'küche_teppich', 'küche_mikrowelle', 'küche_umzugskarton_b_80', 'küche_umzugskarton_a_80','küche_kühlschrank', 'küche_küchenunterschrank',
         'küche_stuhl_mit_armlehnen', 'küche_hocker', 'küche_klappstuhl','küche_buegelbrett','küche_staubsauger', 'küche_truhe', 'küche_kuehlschrank',

@@ -121,10 +121,10 @@ class CreateUmzugsTable extends Migration
             $table->integer('küche_küchenunterschrank')->default(0);
             $table->integer('küche_kuehlschrank')->default(0);
             $table->integer('küche_mikrowelle')->default(0);
-            $table->integer('küche_tisch_b_06')->default(0);
-            $table->integer('küche_tisch_b_10')->default(0);
-            $table->integer('küche_tisch_b_12')->default(0);
-            $table->integer('küche_tisch_a_12')->default(0);
+            $table->integer('küche_tisch_06')->default(0);
+            $table->integer('küche_tisch_10')->default(0);
+            $table->integer('küche_tisch_b12')->default(0);
+            $table->integer('küche_tisch_a12')->default(0);
             $table->integer('küche_stuhl')->default(0);
             $table->integer('küche_stuhl_mit_armlehnen')->default(0);
             $table->integer('küche_hocker')->default(0);
