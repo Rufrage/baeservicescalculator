@@ -16,7 +16,7 @@ class Umzug extends Model
         'wohnzimmer_fernseher_klein', 'wohnzimmer_fernseher_groß', 'wohnzimmer_fernseher_mittel', 'wohnzimmer_wohnwand','wohnzimmer_staubsauger', 'wohnzimmer_bügelbrett', 'wohnzimmer_drucker', 'wohnzimmer_computer', 'wohnzimmer_computer_bildschirm',
         'wohnzimmer_kommode_mittel', 'wohnzimmer_kommode_klein', 'wohnzimmer_kleiderschrank2', 'wohnzimmer_kleiderschrank3', 'wohnzimmer_schrank',
         'wohnzimmer_schrank_hochschrank', 'wohnzimmer_vitrine_glasvitrine', 'wohnzimmer_schuhschrank2','wohnzimmer_billy',
-        'wohnzimmer_bücherregal_mittel', 'wohnzimmer_regal_klein', 'wohnzimmer_regal_mittel','wohnzimmer_bodenlampe', 'wohnzimmer_lampe_nachttisch', 'wohnzimmer_tischlampe',
+        'wohnzimmer_bücherregal_mittel', 'wohnzimmer_regal_klein', 'wohnzimmer_regal_mittel','wohnzimmer_bodenlampe', 'wohnzimmer_lampe_nachttisch', 'wohnzimmer_tischlampe', 'wohnzimmer_buegelbrett',
         'wohnzimmer_teppich_groß', 'wohnzimmer_pflanze', 'wohnzimmer_spiegel','wohnzimmer_truhe', 'wohnzimmer_weinkiste',
 
         'küche_buffet_mit_aufsätzen', 'küche_unterteil_je_tür', 'küche_oberteil_je_tür', 'küche_tisch_b_06', 'küche_tisch_b_10', 'küche_tisch_b_12', 'küche_tisch_a_12', 'küche_stuhl',
