@@ -204,29 +204,9 @@
             {!! Form::number('wohnzimmer_kleiderschrank3', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/schrank_klein.svg') }}" alt="computer_bildschirm" height="64px">
-            {!! Form::label('wohnzimmer_schrank', 'Schrank (klein)') !!}
-            {!! Form::number('wohnzimmer_schrank', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/sideboard_klein.svg') }}" alt="computer_bildschirm" height="64px">
             {!! Form::label('wohnzimmer_sideboard_klein', 'Sideboard klein') !!}
             {!! Form::number('wohnzimmer_sideboard_klein', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/sideboard_mittel.svg') }}" alt="computer_bildschirm" height="64px">
-            {!! Form::label('wohnzimmer_sideboard_groß', 'Sideboard groß') !!}
-            {!! Form::number('wohnzimmer_sideboard_groß', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/schrank_hochschrank.svg') }}" alt="computer_bildschirm" height="64px">
-            {!! Form::label('wohnzimmer_schrank_hochschrank', 'Schrank, Hochschrank') !!}
-            {!! Form::number('wohnzimmer_schrank_hochschrank', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/vitrine_glasvitrine.svg') }}" alt="computer_bildschirm" height="64px">
-            {!! Form::label('wohnzimmer_vitrine_glasvitrine', 'Vitrine, Glasvitrine (mittel)') !!}
-            {!! Form::number('wohnzimmer_vitrine_glasvitrine', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/schuhschrank_2_klappensvg.svg') }}" alt="computer_bildschirm" height="64px">
@@ -333,6 +313,27 @@
         <div class="col-sm-6 col-lg-4">
             {!! Form::label('wohnzimmer_weinkiste', 'Truhe Weinkiste') !!}
             {!! Form::number('wohnzimmer_weinkiste', null, ['class'=>'form-control']) !!}
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/sideboard_mittel.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('wohnzimmer_sideboard_groß', 'Sideboard groß') !!}
+            {!! Form::number('wohnzimmer_sideboard_groß', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/schrank_klein.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('wohnzimmer_schrank', 'Schrank (klein)') !!}
+            {!! Form::number('wohnzimmer_schrank', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/schrank_hochschrank.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('wohnzimmer_schrank_hochschrank', 'Schrank, Hochschrank') !!}
+            {!! Form::number('wohnzimmer_schrank_hochschrank', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/vitrine_glasvitrine.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('wohnzimmer_vitrine_glasvitrine', 'Vitrine, Glasvitrine (mittel)') !!}
+            {!! Form::number('wohnzimmer_vitrine_glasvitrine', null, ['class'=>'form-control']) !!}
         </div>
 
 

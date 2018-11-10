@@ -89,11 +89,6 @@
             {!! Form::number('kinderzimmer_stuhl_hocker', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/schrank_klein.svg') }}" alt="schrank_klein" height="64px">
-            {!! Form::label('kinderzimmer_schrank_klein', 'Schrank (klein)') !!}
-            {!! Form::number('kinderzimmer_schrank_klein', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/kleiderschrank_2_türen.svg') }}" alt="computer_bildschirm" height="64px">
             {!! Form::label('kinderzimmer_schrank2', 'Kleiderschrank 2 Türen') !!}
             {!! Form::number('kinderzimmer_schrank2', null, ['class'=>'form-control']) !!}
@@ -102,11 +97,6 @@
             <img src="{{ asset('images/moebel/kleiderschrank_3_türen.svg') }}" alt="computer_bildschirm" height="64px">
             {!! Form::label('kinderzimmer_schrank3', 'Kleiderschrank 3 Türen') !!}
             {!! Form::number('kinderzimmer_schrank3', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/schrank_hochschrank.svg') }}" alt="computer_bildschirm" height="64px">
-            {!! Form::label('kinderzimmer_hochschrank', 'Schrank, Hochschrank') !!}
-            {!! Form::number('kinderzimmer_hochschrank', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/regal_buecherregal_klein.svg') }}" alt="computer_bildschirm" height="64px">
@@ -147,6 +137,16 @@
             <img src="{{ asset('images/moebel/truhe_klein.svg') }}" alt="computer_bildschirm" height="64px">
             {!! Form::label('kinderzimmer_truhe', 'Truhe (klein)') !!}
             {!! Form::number('kinderzimmer_truhe', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/schrank_klein.svg') }}" alt="schrank_klein" height="64px">
+            {!! Form::label('kinderzimmer_schrank_klein', 'Schrank (klein)') !!}
+            {!! Form::number('kinderzimmer_schrank_klein', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/schrank_hochschrank.svg') }}" alt="computer_bildschirm" height="64px">
+            {!! Form::label('kinderzimmer_hochschrank', 'Schrank, Hochschrank') !!}
+            {!! Form::number('kinderzimmer_hochschrank', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
             {!! Form::label('kinderzimmer_schrank_zerlegbar', 'Schrank zerlegbar je angef. m') !!}
