@@ -32,7 +32,7 @@ class CreateUmzugsTable extends Migration
             $table->string('distanz_text')->nullable();
             $table->integer('distanz')->nullable();
             $table->integer('übersee_lokal')->default(0);
-            $table->integer('versicherung')->default(0);
+            $table->integer('versicherung')->nullable();
             $table->integer('steuerbefreiung')->default(0);
             $table->integer('übersee_verpackung')->default(0);
             $table->integer('gestellung_container')->default(0);
