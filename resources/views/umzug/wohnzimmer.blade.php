@@ -210,7 +210,7 @@
             {!! Form::number('wohnzimmer_schrank_hochschrank', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/Vitrine_glasvitrine.svg') }}" alt="" height="64px">
+            <img src="{{ asset('images/moebel/vitrine.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_vitrine_glasvitrine', 'Vitrine, Glasvitrine (mittel)') !!}
             {!! Form::number('wohnzimmer_vitrine_glasvitrine', null, ['class'=>'form-control']) !!}
         </div>

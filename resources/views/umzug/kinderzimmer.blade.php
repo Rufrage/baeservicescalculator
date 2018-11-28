@@ -120,7 +120,7 @@
             {!! Form::number('kinderzimmer_schuhschrank2', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/Vitrine_glasvitrine.svg') }}" alt="" height="64px">
+            <img src="{{ asset('images/moebel/vitrine.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_vitrine', 'Vitrine, Glasvitrine (mittel)') !!}
             {!! Form::number('kinderzimmer_vitrine', null, ['class'=>'form-control']) !!}
         </div>
