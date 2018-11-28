@@ -80,12 +80,12 @@
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/stuhl_buerostuhl.svg') }}" alt="hocker" height="64px">
-            {!! Form::label('küche_stuhl_mit_armlehnen', 'Stuhl mit Armlehnen') !!}
+            {!! Form::label('küche_stuhl_mit_armlehnen', 'Stuhl, Bürostuhl') !!}
             {!! Form::number('küche_stuhl_mit_armlehnen', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/stuhl_klappstuhl.svg') }}" alt="klappstuhl" height="64px">
-            {!! Form::label('küche_klappstuhl', 'Klappstuhl') !!}
+            {!! Form::label('küche_klappstuhl', 'Stuhl, Klappstuhl') !!}
             {!! Form::number('küche_klappstuhl', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
@@ -125,65 +125,19 @@
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/truhe_klein.svg') }}" alt="buegelbrett" height="64px">
-            {!! Form::label('küche_truhe', 'Bügelbrett') !!}
+            {!! Form::label('küche_truhe', 'Truhe (klein)') !!}
             {!! Form::number('küche_truhe', null, ['class'=>'form-control']) !!}
         </div>
 
 
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('küche_buffet_mit_aufsätzen', 'Buffet mit Aufsätzen') !!}
-            {!! Form::number('küche_buffet_mit_aufsätzen', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('küche_unterteil_je_tür', 'Unterteil je Tür') !!}
-            {!! Form::number('küche_unterteil_je_tür', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('küche_oberteil_je_tür', 'Oberteil je Tür') !!}
-            {!! Form::number('küche_oberteil_je_tür', null, ['class'=>'form-control']) !!}
-        </div>
 
         <div class="col-sm-6 col-lg-4">
-            {!! Form::label('küche_stuhl', 'Stuhl') !!}
-            {!! Form::number('küche_stuhl', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('küche_eckbank_je_sitz', 'Eckbank je Sitz') !!}
-            {!! Form::number('küche_eckbank_je_sitz', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('küche_besenschrank', 'Besenschrank') !!}
-            {!! Form::number('küche_besenschrank', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('küche_waschmaschine_trockner', 'Waschmaschine / Trockner') !!}
-            {!! Form::number('küche_waschmaschine_trockner', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('küche_kühlschrank_truhe_b_120', 'Kühlschrank / Truhe bis 120 l') !!}
-            {!! Form::number('küche_kühlschrank_truhe_b_120', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('küche_kühlschrank_truhe_a_120', 'Kühlschrank / Truhe über 120 l') !!}
-            {!! Form::number('küche_kühlschrank_truhe_a_120', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('küche_arbeitsplatte_nicht_unterb', 'Arbeitsplatte nicht unterb. (je angef. m)') !!}
-            {!! Form::number('küche_arbeitsplatte_nicht_unterb', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('küche_deckenlampe', 'Deckenlampe') !!}
-            {!! Form::number('küche_deckenlampe', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('küche_teppich', 'Teppich') !!}
-            {!! Form::number('küche_teppich', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/karton_umzugskarton_m.svg') }}" alt="" height="64px">
             {!! Form::label('küche_umzugskarton_b_80', 'Umzugskarton bis 80 l (gepackt)') !!}
             {!! Form::number('küche_umzugskarton_b_80', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/karton_umzugskarton_m.svg') }}" alt="" height="64px">
             {!! Form::label('küche_umzugskarton_a_80', 'Umzugskarton über 80 l (gepackt)') !!}
             {!! Form::number('küche_umzugskarton_a_80', null, ['class'=>'form-control']) !!}
         </div>

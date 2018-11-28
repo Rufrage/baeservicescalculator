@@ -48,114 +48,146 @@
 
     <!-- Felder für dieses Zimmer-->
     <div class="form-group row">
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_fahrrad_moped', 'Fahrrad / Moped') !!}
-            {!! Form::number('sonstiges_fahrrad_moped', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_motorrad', 'Motorrad') !!}
-            {!! Form::number('sonstiges_motorrad', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_dreirad_kinderrad', 'Dreirad / Kinderrad') !!}
-            {!! Form::number('sonstiges_dreirad_kinderrad', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_bügelbrett', 'Bügelbrett') !!}
-            {!! Form::number('sonstiges_bügelbrett', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_staubsauger', 'Staubsauger') !!}
-            {!! Form::number('sonstiges_staubsauger', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_autoreifen', 'Autoreifen') !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/reifen.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_autoreifen', 'Reifen') !!}
             {!! Form::number('sonstiges_autoreifen', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/leiter_empty.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_trittleiter', 'Leiter / Trittleiter') !!}
+            {!! Form::number('sonstiges_trittleiter', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/muellsack_groß_gefüllt.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_muellsack', 'Müllsack (groß), gefüllt') !!}
+            {!! Form::number('sonstiges_muellsack', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/schirm_sonnenschirm.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_sonnenschirm', 'Schirm, Sonnenschirm') !!}
+            {!! Form::number('sonstiges_sonnenschirm', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/leiter_empty.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_weinkiste', 'Kiste, Weinkiste') !!}
+            {!! Form::number('sonstiges_weinkiste', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/rasenmäher.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_rasenmäher_hand', 'Rasenmäher') !!}
+            {!! Form::number('sonstiges_rasenmäher_hand', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/gartentisch.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_tisch_gartentisch', 'Tisch, Gartentisch') !!}
+            {!! Form::number('sonstiges_tisch_gartentisch', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/gartenstuhl.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_gartenstuhl', 'Gartenstuhl') !!}
+            {!! Form::number('sonstiges_gartenstuhl', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/grill.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_gartengrill', 'Grill') !!}
+            {!! Form::number('sonstiges_gartengrill', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/werkzeug.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_werkzeug', 'Werkzeug, Gartengeräte') !!}
+            {!! Form::number('sonstiges_werkzeug', null, ['class'=>'form-control']) !!}
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/leiter_empty.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_katzenkratzbaum_groß', 'Katzenkratzbaum (groß)') !!}
+            {!! Form::number('sonstiges_katzenkratzbaum_groß', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/leiter_empty.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_katzenkratzbaum_mittel', 'Katzenkratzbaum (mittel)') !!}
+            {!! Form::number('sonstiges_katzenkratzbaum_mittel', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/leiter_empty.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_katzenkratzbaum_klein', 'Katzenkratzbaum (klein)') !!}
+            {!! Form::number('sonstiges_katzenkratzbaum_klein', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/aquarium.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_aquarium_200', 'Aquarium, 200 Liter') !!}
+            {!! Form::number('sonstiges_aquarium_200', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/aquarium.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_aquarium_75', 'Aquarium, 75 Liter') !!}
+            {!! Form::number('sonstiges_aquarium_75', null, ['class'=>'form-control']) !!}
+        </div>
+
+
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/fahrrad_erwachsene.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_fahrrad_moped', 'Fahrrad (Erwachsene)') !!}
+            {!! Form::number('sonstiges_fahrrad_moped', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/koffer.svg') }}" alt="" height="64px">
             {!! Form::label('sonstiges_koffer', 'Koffer') !!}
             {!! Form::number('sonstiges_koffer', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_klapptisch_klappstuhl', 'Klapptisch / Klappstuhl') !!}
-            {!! Form::number('sonstiges_klapptisch_klappstuhl', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/koffer.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_dreirad_kinderrad', 'Fahrrad (Kind)') !!}
+            {!! Form::number('sonstiges_dreirad_kinderrad', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_kinderwagen', 'Kinderwagen') !!}
-            {!! Form::number('sonstiges_kinderwagen', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/fahrrad_kind.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_koffer_groß', 'Koffer (groß)') !!}
+            {!! Form::number('sonstiges_koffer_groß', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_leiter', 'Leiter je angef. m') !!}
-            {!! Form::number('sonstiges_leiter', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/klavier.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_klavier', 'Klavier') !!}
+            {!! Form::number('sonstiges_klavier', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_rasenmäher_motor', 'Rasenmäher Motor') !!}
-            {!! Form::number('sonstiges_rasenmäher_motor', null, ['class'=>'form-control']) !!}
+
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/werkzeuge.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_werkzeuge', 'Werkzeuge') !!}
+            {!! Form::number('sonstiges_werkzeuge', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_rasenmäher_hand', 'Rasenmäher Hand') !!}
-            {!! Form::number('sonstiges_rasenmäher_hand', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/bohrmaschine.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_bohrmaschine', 'Bohrmaschine') !!}
+            {!! Form::number('sonstiges_bohrmaschine', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_schubkarre', 'Schubkarre') !!}
-            {!! Form::number('sonstiges_schubkarre', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_werkzeugschrank', 'Werkzeugschrank') !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/bohrmaschine.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_werkzeugschrank', 'Werkzeugschrank/Werkzeugkasten') !!}
             {!! Form::number('sonstiges_werkzeugschrank', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_werkzeugkoffer', 'Werkzeugkoffer') !!}
-            {!! Form::number('sonstiges_werkzeugkoffer', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/hochdruckreiniger.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_hochdruckreiniger', 'Hochdruckreiniger') !!}
+            {!! Form::number('sonstiges_hochdruckreiniger', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_ski', 'Ski') !!}
-            {!! Form::number('sonstiges_ski', null, ['class'=>'form-control']) !!}
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/werkzeuge.svg') }}" alt="" height="64px">
+            {!! Form::label('sonstiges_rasenmäher_motor', 'Rasentraktor, Sitzrasenmäher') !!}
+            {!! Form::number('sonstiges_rasenmäher_motor', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_schlitten', 'Schlitten') !!}
-            {!! Form::number('sonstiges_schlitten', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_blumenkübel_kasten', 'Blumenkübel / Kasten') !!}
-            {!! Form::number('sonstiges_blumenkübel_kasten', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_sonnenschirm', 'Sonnenschirm') !!}
-            {!! Form::number('sonstiges_sonnenschirm', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_tischtennisplatte', 'Tischtennisplatte') !!}
-            {!! Form::number('sonstiges_tischtennisplatte', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_mülltonne', 'Mülltonne') !!}
-            {!! Form::number('sonstiges_mülltonne', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_regal', 'Regal zerlegbar je angef. m') !!}
-            {!! Form::number('sonstiges_regal', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_gartengeräte', 'Gartengeräte') !!}
-            {!! Form::number('sonstiges_gartengeräte', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_sonnenbank', 'Sonnenbank') !!}
-            {!! Form::number('sonstiges_sonnenbank', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
-            {!! Form::label('sonstiges_gartengrill', 'Gartengrill') !!}
-            {!! Form::number('sonstiges_gartengrill', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/karton_umzugskarton_m.svg') }}" alt="" height="64px">
             {!! Form::label('sonstiges_umzugskarton_b80', 'Umzugskarton bis 80 l (gepackt)') !!}
             {!! Form::number('sonstiges_umzugskarton_b80', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/karton_umzugskarton_m.svg') }}" alt="" height="64px">
             {!! Form::label('sonstiges_umzugskarton_a80', 'Umzugskarton über 80 l (gepackt)') !!}
             {!! Form::number('sonstiges_umzugskarton_a80', null, ['class'=>'form-control']) !!}
         </div>
+
     </div>
 
     <div class="form-group row">

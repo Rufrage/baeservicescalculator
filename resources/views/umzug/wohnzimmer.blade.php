@@ -58,11 +58,7 @@
             {!! Form::label('wohnzimmer_sofa_2_sitze', 'Sofa, 2 Sitze') !!}
             {!! Form::number('wohnzimmer_sofa_2_sitze', null, ['class'=>'form-control']) !!}
         </div>
-        <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/sofa.svg') }}" alt="sofa" height="64px">
-            {!! Form::label('wohnzimmer_sitzlandschaft', 'Sitzlandschaft (Element)') !!}
-            {!! Form::number('wohnzimmer_sitzlandschaft', null, ['class'=>'form-control']) !!}
-        </div>
+
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/couch_schlafcouch.svg') }}" alt="couch" height="64px">
             {!! Form::label('wohnzimmer_schlafcouch', 'Couch, Schlafcouch') !!}
@@ -80,13 +76,8 @@
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/sessel.svg') }}" alt="sofa" height="64px">
-            {!! Form::label('wohnzimmer_sessel_mit_armlehnen', 'Sessel mit Armlehnen') !!}
+            {!! Form::label('wohnzimmer_sessel_mit_armlehnen', 'Sessel') !!}
             {!! Form::number('wohnzimmer_sessel_mit_armlehnen', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/sessel.svg') }}" alt="sofa" height="64px">
-            {!! Form::label('wohnzimmer_sessel_ohne_armlehnen', 'Sessel ohne Armlehnen') !!}
-            {!! Form::number('wohnzimmer_sessel_ohne_armlehnen', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/stuhl.svg') }}" alt="sofa" height="64px">
@@ -95,12 +86,12 @@
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/stuhl_buerostuhl.svg') }}" alt="hocker" height="64px">
-            {!! Form::label('wohnzimmer_stuhl_mit_armlehnen', 'Stuhl mit Armlehnen') !!}
+            {!! Form::label('wohnzimmer_stuhl_mit_armlehnen', 'Stuhl, Bürostuhl') !!}
             {!! Form::number('wohnzimmer_stuhl_mit_armlehnen', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/stuhl_klappstuhl.svg') }}" alt="klappstuhl" height="64px">
-            {!! Form::label('wohnzimmer_klappstuhl', 'Klappstuhl') !!}
+            {!! Form::label('wohnzimmer_klappstuhl', 'Stuhl, Klappstuhl') !!}
             {!! Form::number('wohnzimmer_klappstuhl', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
@@ -135,7 +126,7 @@
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/tv_schrank_tv_bank.svg') }}" alt="tv_schrank" height="64px">
-            {!! Form::label('wohnzimmer_tvschrank', 'TV-Schrank') !!}
+            {!! Form::label('wohnzimmer_tvschrank', 'TV-Schrank/TV Bank') !!}
             {!! Form::number('wohnzimmer_tvschrank', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
@@ -194,6 +185,11 @@
             {!! Form::number('wohnzimmer_kommode_klein', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/schrank_klein.svg') }}" alt="" height="64px">
+            {!! Form::label('wohnzimmer_schrank', 'Schrank (klein)') !!}
+            {!! Form::number('wohnzimmer_schrank', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/kleiderschrank_2_türen.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_kleiderschrank2', 'Kleiderschrank, 2 Türen') !!}
             {!! Form::number('wohnzimmer_kleiderschrank2', null, ['class'=>'form-control']) !!}
@@ -204,8 +200,23 @@
             {!! Form::number('wohnzimmer_kleiderschrank3', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/sideboard_mittel.svg') }}" alt="" height="64px">
+            {!! Form::label('wohnzimmer_sideboard_groß', 'Sideboard (mittel)') !!}
+            {!! Form::number('wohnzimmer_sideboard_groß', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/schrank_hochschrank.svg') }}" alt="" height="64px">
+            {!! Form::label('wohnzimmer_schrank_hochschrank', 'Schrank, Hochschrank') !!}
+            {!! Form::number('wohnzimmer_schrank_hochschrank', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <img src="{{ asset('images/moebel/vitrine_glasvitrine.svg') }}" alt="" height="64px">
+            {!! Form::label('wohnzimmer_vitrine_glasvitrine', 'Vitrine, Glasvitrine (mittel)') !!}
+            {!! Form::number('wohnzimmer_vitrine_glasvitrine', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/sideboard_klein.svg') }}" alt="" height="64px">
-            {!! Form::label('wohnzimmer_sideboard_klein', 'Sideboard klein') !!}
+            {!! Form::label('wohnzimmer_sideboard_klein', 'Sideboard (klein)') !!}
             {!! Form::number('wohnzimmer_sideboard_klein', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
@@ -215,22 +226,22 @@
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/regal_buecherregal_klein.svg') }}" alt="" height="64px">
-            {!! Form::label('wohnzimmer_bücherregal', 'Bücherregal, klein') !!}
+            {!! Form::label('wohnzimmer_bücherregal', 'Regal, Bücherregal (klein)') !!}
             {!! Form::number('wohnzimmer_bücherregal', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/regal_buecherregal_mittel.svg') }}" alt="" height="64px">
-            {!! Form::label('wohnzimmer_bücherregal_mittel', 'Bücherregal, mittel') !!}
+            {!! Form::label('wohnzimmer_bücherregal_mittel', 'Regal, Bücherregal (mittel)') !!}
             {!! Form::number('wohnzimmer_bücherregal_mittel', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/regal_klein.svg') }}" alt="" height="64px">
-            {!! Form::label('wohnzimmer_regal_klein', 'Regal, klein') !!}
+            {!! Form::label('wohnzimmer_regal_klein', 'Regal (klein)') !!}
             {!! Form::number('wohnzimmer_regal_klein', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/regal_mittel.svg') }}" alt="" height="64px">
-            {!! Form::label('wohnzimmer_regal_mittel', 'Regal, mittel') !!}
+            {!! Form::label('wohnzimmer_regal_mittel', 'Regal (mittel)') !!}
             {!! Form::number('wohnzimmer_regal_mittel', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
@@ -240,17 +251,17 @@
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/lampe_stehlampe.svg') }}" alt="" height="64px">
-            {!! Form::label('wohnzimmer_stehlampe', 'Stehlampe') !!}
+            {!! Form::label('wohnzimmer_stehlampe', 'Lampe, Stehlampe') !!}
             {!! Form::number('wohnzimmer_stehlampe', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/lampe_deckenlampe.svg') }}" alt="" height="64px">
-            {!! Form::label('wohnzimmer_deckenlampe', 'Deckenlampe') !!}
+            {!! Form::label('wohnzimmer_deckenlampe', 'Lampe, Deckenlampe') !!}
             {!! Form::number('wohnzimmer_deckenlampe', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/lampe_bodenlampe.svg') }}" alt="" height="64px">
-            {!! Form::label('wohnzimmer_bodenlampe', 'Bodenlampe') !!}
+            {!! Form::label('wohnzimmer_bodenlampe', 'Lampe, Bodenlampe') !!}
             {!! Form::number('wohnzimmer_bodenlampe', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
@@ -260,28 +271,23 @@
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/lampe_tischlampe.svg') }}" alt="" height="64px">
-            {!! Form::label('wohnzimmer_tischlampe', 'Tischlampe') !!}
+            {!! Form::label('wohnzimmer_tischlampe', 'Lampe, Tischlampe') !!}
             {!! Form::number('wohnzimmer_tischlampe', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/teppich_standard.svg') }}" alt="" height="64px">
-            {!! Form::label('wohnzimmer_teppich', 'Teppich') !!}
+            {!! Form::label('wohnzimmer_teppich', 'Teppich (Standard)') !!}
             {!! Form::number('wohnzimmer_teppich', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/teppich_groß.svg') }}" alt="" height="64px">
-            {!! Form::label('wohnzimmer_teppich_groß', 'Teppich') !!}
+            {!! Form::label('wohnzimmer_teppich_groß', 'Teppich (groß)') !!}
             {!! Form::number('wohnzimmer_teppich_groß', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/bild_groß.svg') }}" alt="" height="64px">
-            {!! Form::label('wohnzimmer_bilder_b08', 'Bilder bis 0,8 m') !!}
+            {!! Form::label('wohnzimmer_bilder_b08', 'Bild (groß)') !!}
             {!! Form::number('wohnzimmer_bilder_b08', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/bild_groß.svg') }}" alt="" height="64px">
-            {!! Form::label('wohnzimmer_bilder_a08', 'Bilder über 0,8 m') !!}
-            {!! Form::number('wohnzimmer_bilder_a08', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/pflanze_mittel.svg') }}" alt="" height="64px">
@@ -311,100 +317,18 @@
             {!! Form::number('wohnzimmer_truhe', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_weinkiste', 'Truhe Weinkiste') !!}
-            {!! Form::number('wohnzimmer_weinkiste', null, ['class'=>'form-control']) !!}
-        </div>
-
-        <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/sideboard_mittel.svg') }}" alt="" height="64px">
-            {!! Form::label('wohnzimmer_sideboard_groß', 'Sideboard groß') !!}
-            {!! Form::number('wohnzimmer_sideboard_groß', null, ['class'=>'form-control']) !!}
+            {!! Form::label('wohnzimmer_trittleiter', 'Leiter, Trittleiter') !!}
+            {!! Form::number('wohnzimmer_trittleiter', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/schrank_klein.svg') }}" alt="" height="64px">
-            {!! Form::label('wohnzimmer_schrank', 'Schrank (klein)') !!}
-            {!! Form::number('wohnzimmer_schrank', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/schrank_hochschrank.svg') }}" alt="" height="64px">
-            {!! Form::label('wohnzimmer_schrank_hochschrank', 'Schrank, Hochschrank') !!}
-            {!! Form::number('wohnzimmer_schrank_hochschrank', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/vitrine_glasvitrine.svg') }}" alt="" height="64px">
-            {!! Form::label('wohnzimmer_vitrine_glasvitrine', 'Vitrine, Glasvitrine (mittel)') !!}
-            {!! Form::number('wohnzimmer_vitrine_glasvitrine', null, ['class'=>'form-control']) !!}
+            <img src="{{ asset('images/moebel/muellsack_groß_gefüllt.svg') }}" alt="" height="64px">
+            {!! Form::label('wohnzimmer_muellsack', 'Müllsack (groß), gefüllt') !!}
+            {!! Form::number('wohnzimmer_muellsack', null, ['class'=>'form-control']) !!}
         </div>
 
 
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_wohnzimmerschrank', 'Wohnz.-Schrank zerlegb. je angef. m') !!}
-            {!! Form::number('wohnzimmer_wohnzimmerschrank', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_anbauwand_b38', 'Anbauwand b. 38cm Tiefe je angef. m') !!}
-            {!! Form::number('wohnzimmer_anbauwand_b38', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_anbauwand_a38', 'Anbauwand ü. 38cm Tiefe je angef. m') !!}
-            {!! Form::number('wohnzimmer_anbauwand_a38', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_buffet_mit_aufsatz', 'Buffet mit Aufsatz') !!}
-            {!! Form::number('wohnzimmer_buffet_mit_aufsatz', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_buffet_ohne_aufsatz', 'Buffet ohne Aufsatz') !!}
-            {!! Form::number('wohnzimmer_buffet_ohne_aufsatz', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_schreibtisch_b16', 'Schreibtisch bis 1,6m') !!}
-            {!! Form::number('wohnzimmer_schreibtisch_b16', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_schreibtisch_a16', 'Schreibtisch über 1,6m') !!}
-            {!! Form::number('wohnzimmer_schreibtisch_a16', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_standuhr', 'Standuhr') !!}
-            {!! Form::number('wohnzimmer_standuhr', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_video_dvd_player', 'Video/DVD-Player') !!}
-            {!! Form::number('wohnzimmer_video_dvd_player', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_musikschrank_turm', 'Musikschrank/Turm') !!}
-            {!! Form::number('wohnzimmer_musikschrank_turm', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_stereoanlage', 'Stereoanlage') !!}
-            {!! Form::number('wohnzimmer_stereoanlage', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_klavier', 'Klavier') !!}
-            {!! Form::number('wohnzimmer_klavier', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_flügel', 'Flügel') !!}
-            {!! Form::number('wohnzimmer_flügel', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_heimorgel', 'Heimorgel') !!}
-            {!! Form::number('wohnzimmer_heimorgel', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_nähmaschine', 'Nähmaschine (Schrank)') !!}
-            {!! Form::number('wohnzimmer_nähmaschine', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_brücke', 'Brücke') !!}
-            {!! Form::number('wohnzimmer_brücke', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_lüster', 'Lüster') !!}
-            {!! Form::number('wohnzimmer_lüster', null, ['class'=>'form-control']) !!}
-        </div>
+
+
     </div>
 
     <div class="form-group row">

@@ -17,7 +17,7 @@ class Umzug extends Model
         'wohnzimmer_kommode_mittel', 'wohnzimmer_kommode_klein', 'wohnzimmer_kleiderschrank2', 'wohnzimmer_kleiderschrank3', 'wohnzimmer_schrank',
         'wohnzimmer_schrank_hochschrank', 'wohnzimmer_vitrine_glasvitrine', 'wohnzimmer_schuhschrank2','wohnzimmer_billy',
         'wohnzimmer_bücherregal_mittel', 'wohnzimmer_regal_klein', 'wohnzimmer_regal_mittel','wohnzimmer_bodenlampe', 'wohnzimmer_lampe_nachttisch', 'wohnzimmer_tischlampe', 'wohnzimmer_buegelbrett',
-        'wohnzimmer_teppich_groß', 'wohnzimmer_pflanze', 'wohnzimmer_spiegel','wohnzimmer_truhe', 'wohnzimmer_weinkiste',
+        'wohnzimmer_teppich_groß', 'wohnzimmer_pflanze', 'wohnzimmer_spiegel','wohnzimmer_truhe', 'wohnzimmer_weinkiste','wohnzimmer_schirm', 'wohnzimmer_muellsack', 'wohnzimmer_trittleiter', 'wohnzimmer_reifen',
 
         'küche_buffet_mit_aufsätzen', 'küche_unterteil_je_tür', 'küche_oberteil_je_tür', 'küche_tisch_06', 'küche_tisch_10', 'küche_tisch_b12', 'küche_tisch_a12', 'küche_stuhl',
         'küche_eckbank_je_sitz', 'küche_besenschrank', 'küche_herd', 'küche_geschirrspülmaschine', 'küche_waschmaschine_trockner', 'küche_kühlschrank_truhe_b_120', 'küche_kühlschrank_truhe_a_120',
@@ -39,19 +39,25 @@ class Umzug extends Model
 
 
 
-        'bad_waschmaschine', 'bad_wäschetrockner', 'bad_wäscheständer', 'bad_waeschekorb', 'bad_waschbeckenunterschrank', 'bad_truhe_kommode', 'bad_kleiderablage', 'bad_stuhl_hocker', 'bad_toilettenschrank', 'bad_wäschekorb', 'bad_deckenlampe', 'bad_spiegel',
+        'bad_waschmaschine', 'bad_wäschetrockner', 'bad_wäscheständer', 'bad_waeschekorb', 'bad_waschbeckenunterschrank', 'bad_truhe_kommode', 'bad_kleiderablage', 'bad_stuhl_hocker', 'bad_toilettenschrank', 'bad_wäschekorb', 'bad_deckenlampe','bad_stehlampe','bad_bodenlampe',
+        'bad_lampe_nachttisch','bad_tischlampe','bad_spiegel','bad_pflanze', 'bad_bild', 'bad_teppich', 'bad_teppich_groß', 'bad_umzugskarton_a80', 'bad_umzugskarton_b80',
 
         'kinderzimmer_schrank_bis_zwei_türen', 'kinderzimmer_schrank_zerlegbar', 'kinderzimmer_babybett', 'kinderzimmer_wickeltisch', 'kinderzimmer_kinderbett_komplett', 'kinderzimmer_etagenbett_komplett', 'kinderzimmer_bettzeug_je_betteinheit', 'kinderzimmer_nachttisch','kinderzimmer_bett_komplett',
         'kinderzimmer_kommode_mittel', 'kinderzimmer_kommode_klein', 'kinderzimmer_schreibpult', 'kinderzimmer_spielzeugkiste', 'kinderzimmer_tisch_b06', 'kinderzimmer_tisch_b10', 'kinderzimmer_tisch_b12', 'kinderzimmer_tisch_a12', 'kinderzimmer_laufgitter', 'kinderzimmer_stuhl_hocker',
         'kinderzimmer_teppich', 'kinderzimmer_brücke', 'kinderzimmer_anbauwand_b38', 'kinderzimmer_anbauwand_a38', 'kinderzimmer_kleiderbehältnis', 'kinderzimmer_umzugskarton_b80', 'kinderzimmer_umzugskarton_a80',
         'kinderzimmer_schrank_klein','kinderzimmer_schrank2', 'kinderzimmer_schrank3','kinderzimmer_hochschrank','kinderzimmer_truhe', 'kinderzimmer_stehlampe', 'kinderzimmer_deckenlampe', 'kinderzimmer_billy', 'kinderzimmer_buecherregal', 'kinderzimmer_buecherregal_mittel',
-        'kinderzimmer_regal_mittel', 'kinderzimmer_regal_klein',
+        'kinderzimmer_regal_mittel', 'kinderzimmer_regal_klein','kinderzimmer_sideboard_mittel', 'kinderzimmer_sideboard', 'kinderzimmer_schuhschrank2', 'kinderzimmer_vitrine', 'kinderzimmer_bodenlampe', 'kinderzimmer_lampe_nachttisch', 'kinderzimmer_tischlampe', 'kinderzimmer_sideboard_mittel', 'kinderzimmer_sideboard',
+        'kinderzimmer_schuhschrank2', 'kinderzimmer_vitrine',
 
         'weitere_zimmer_schreibtisch_b16', 'weitere_zimmer_schreibtisch_a16', 'weitere_zimmer_schreibtischcontainer',
         'weitere_zimmer_schreibtischstuhl', 'weitere_zimmer_winkelkombination', 'weitere_zimmer_bücherregal', 'weitere_zimmer_aktenschrank',
         'weitere_zimmer_sessel_ohne_armlehnen', 'weitere_zimmer_sessel_mit_armlehnen', 'weitere_zimmer_tisch_b06', 'weitere_zimmer_tisch_b10',
         'weitere_zimmer_tisch_b12', 'weitere_zimmer_tisch_a12', 'weitere_zimmer_computer', 'weitere_zimmer_tischkopierer', 'weitere_zimmer_stehlampe',
-        'weitere_zimmer_deckenlampe', 'weitere_zimmer_teppich', 'weitere_zimmer_brücke', 'weitere_zimmer_umzugskarton_b80', 'weitere_zimmer_umzugskarton_a80',
+        'weitere_zimmer_deckenlampe', 'weitere_zimmer_brücke', 'weitere_zimmer_umzugskarton_b80', 'weitere_zimmer_umzugskarton_a80',
+        'weitere_zimmer_eckschreibtisch', 'weitere_zimmer_sekretär','weitere_zimmer_regal_mittel', 'weitere_zimmer_regal_klein', 'weitere_zimmer_billy',
+        'weitere_zimmer_stuhl', 'weitere_zimmer_stuhl_mit_armlehnen', 'weitere_zimmer_klappstuhl', 'weitere_zimmer_hocker','weitere_zimmer_stehlampe', 'weitere_zimmer_deckenlampe',
+        'weitere_zimmer_bodenlampe', 'weitere_zimmer_lampe_nachttisch', 'weitere_zimmer_tischlampe', 'weitere_zimmer_teppich', 'weitere_zimmer_teppich_groß', 'weitere_zimmer_bilder_b08', 'weitere_zimmer_pflanze',
+        'weitere_zimmer_spiegel','weitere_zimmer_drucker', 'weitere_zimmer_buegelbrett', 'weitere_zimmer_staubsauger',
 
         'sonstiges_fahrrad_moped', 'sonstiges_motorrad', 'sonstiges_dreirad_kinderrad', 'sonstiges_bügelbrett', 'sonstiges_staubsauger',
         'sonstiges_autoreifen', 'sonstiges_koffer', 'sonstiges_klapptisch_klappstuhl', 'sonstiges_kinderwagen', 'sonstiges_leiter',
@@ -59,6 +65,9 @@ class Umzug extends Model
         'sonstiges_werkzeugkoffer', 'sonstiges_ski', 'sonstiges_schlitten', 'sonstiges_blumenkübel_kasten', 'sonstiges_sonnenschirm',
         'sonstiges_tischtennisplatte', 'sonstiges_mülltonne', 'sonstiges_regal', 'sonstiges_gartengeräte', 'sonstiges_sonnenbank',
         'sonstiges_gartengrill', 'sonstiges_umzugskarton_b80', 'sonstiges_umzugskarton_a80',
+        'sonstiges_trittleiter', 'sonstiges_muellsack', 'sonstiges_weinkiste', 'sonstiges_tisch_gartentisch', 'sonstiges_gartenstuhl', 'sonstiges_werkzeug',
+        'sonstiges_katzenkratzbaum_groß','sonstiges_katzenkratzbaum_mittel', 'sonstiges_katzenkratzbaum_klein', 'sonstiges_aquarium_200', 'sonstiges_aquarium_75', 'sonstiges_koffer_groß',
+        'sonstiges_klavier','sonstiges_werkzeuge', 'sonstiges_bohrmaschine', 'sonstiges_hochdruckreiniger',
 
         'auszugsort','einzugsort', 'etage_auszug', 'etage_einzug', 'aussenaufzug_auszug', 'aussenaufzug_einzug', 'halteverbot_auszug', 'halteverbot_einzug', 'abtrageweg_auszug',
         'abtrageweg_einzug', 'volumen', 'distanz_text', 'versicherung', 'übersee_lokal', 'distanz', 'montage','steuerbefreiung', 'umzug',
