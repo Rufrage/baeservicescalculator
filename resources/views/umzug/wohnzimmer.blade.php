@@ -200,12 +200,12 @@
             {!! Form::number('wohnzimmer_kleiderschrank3', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/Sideboard_mittel.svg') }}" alt="" height="64px">
+            <img src="{{ asset('images/moebel/sideboard_klein.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_sideboard_groß', 'Sideboard (mittel)') !!}
             {!! Form::number('wohnzimmer_sideboard_groß', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/Schrank_hochschrank.svg') }}" alt="" height="64px">
+            <img src="{{ asset('images/moebel/schrank_hochschrank.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_schrank_hochschrank', 'Schrank, Hochschrank') !!}
             {!! Form::number('wohnzimmer_schrank_hochschrank', null, ['class'=>'form-control']) !!}
         </div>

@@ -99,13 +99,13 @@
             {!! Form::number('kinderzimmer_schrank3', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/Schrank_hochschrank.svg') }}" alt="" height="64px">
+            <img src="{{ asset('images/moebel/schrank_hochschrank.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_hochschrank', 'Schrank, Hochschrank') !!}
             {!! Form::number('kinderzimmer_hochschrank', null, ['class'=>'form-control']) !!}
         </div>
 
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/Sideboard_mittel.svg') }}" alt="" height="64px">
+            <img src="{{ asset('images/moebel/sideboard_klein.svg') }}" alt="" height="64px">
             {!! Form::label('kinderzimmer_sideboard_mittel', 'Sideboard (mittel)') !!}
             {!! Form::number('kinderzimmer_sideboard_mittel', null, ['class'=>'form-control']) !!}
         </div>
