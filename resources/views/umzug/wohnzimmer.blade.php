@@ -317,13 +317,13 @@
             {!! Form::number('wohnzimmer_truhe', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            {!! Form::label('wohnzimmer_trittleiter', 'Leiter, Trittleiter') !!}
-            {!! Form::number('wohnzimmer_trittleiter', null, ['class'=>'form-control']) !!}
-        </div>
-        <div class="col-sm-6 col-lg-4">
             <img src="{{ asset('images/moebel/muellsack_groß_gefüllt.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_muellsack', 'Müllsack (groß), gefüllt') !!}
             {!! Form::number('wohnzimmer_muellsack', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            {!! Form::label('wohnzimmer_trittleiter', 'Leiter, Trittleiter') !!}
+            {!! Form::number('wohnzimmer_trittleiter', null, ['class'=>'form-control']) !!}
         </div>
 
 
