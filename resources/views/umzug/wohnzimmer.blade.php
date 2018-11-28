@@ -185,7 +185,7 @@
             {!! Form::number('wohnzimmer_kommode_klein', null, ['class'=>'form-control']) !!}
         </div>
         <div class="col-sm-6 col-lg-4">
-            <img src="{{ asset('images/moebel/schrank_klein.svg') }}" alt="" height="64px">
+            <img src="{{ asset('images/moebel/Schrank_klein.svg') }}" alt="" height="64px">
             {!! Form::label('wohnzimmer_schrank', 'Schrank (klein)') !!}
             {!! Form::number('wohnzimmer_schrank', null, ['class'=>'form-control']) !!}
         </div>
