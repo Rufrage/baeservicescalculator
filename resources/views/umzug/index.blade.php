@@ -34,6 +34,9 @@
               <td>{{$umzug->created_at->diffForHumans()}}</td>
               <td>{{$umzug->updated_at->diffForHumans()}}</td>
               <td>
+                  {!! Form::open(['route' => ['umzug.destroy', $umzug->id], 'method' => 'delete']) !!}
+                  {!! Form::button('Löschen', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs float-right', 'onclick' => "return confirm('Wirklich löschen?')"]) !!}
+                  {!! Form::close() !!}
                   <a href="/umzug/{{$umzug->id}}/edit" class="btn btn-success float-right">Bearbeiten</a>
               </td>
             </tr>

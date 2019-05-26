@@ -110,7 +110,8 @@ class UmzugController extends Controller
      */
     public function destroy(Umzug $umzug)
     {
-        //
+        $umzug->delete();
+        return redirect(route('umzug.index'));
     }
 
     public function calculate(Umzug $umzug)
