@@ -268,7 +268,7 @@ class CalculatorController extends Controller
 
         return "You should not be here";
 
-        switch ($request->currentroom){
+/*        switch ($request->currentroom){
             case "wohnzimmer":
                 //Wohnzimmer speichern
                 break;
@@ -284,6 +284,6 @@ class CalculatorController extends Controller
             case "kueche":
                 $currentroom = $request->switch;
                 return view('calculator.kueche', compact('currentroom'));
-        }
+        }*/
     }
 }

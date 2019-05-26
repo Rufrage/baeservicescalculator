@@ -18,6 +18,14 @@ class CreateUmzugsTable extends Migration
             $table->timestamps();
             $table->string('vorname')->nullable();
             $table->string('nachname')->nullable();
+            $table->string('adresse')->nullable();
+            $table->string('telefon')->nullable();
+            $table->string('email')->nullable();
+            $table->string('rechnungsempfänger')->nullable();
+            $table->string('ansprechpartner')->nullable();
+            $table->string('kakao_talk_id')->nullable();
+            $table->string('position')->nullable();
+
             $table->string('auszugsort')->nullable();
             $table->string('einzugsort')->nullable();
             $table->integer('etage_auszug')->default(0)->nullable();
