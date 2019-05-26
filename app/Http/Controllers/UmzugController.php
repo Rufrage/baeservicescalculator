@@ -547,7 +547,8 @@ class UmzugController extends Controller
                     $key == "einzugsort" || $key == "etage_auszug" || $key == "etage_einzug" || $key == "aussenaufzug_einzug" || $key == "aussenaufzug_auszug" ||
                     $key == "halteverbot_einzug" || $key == "halteverbot_auszug" || $key == "abtrageweg_einzug" || $key == "abtrageweg_auszug" || $key == "volumen" ||
                     $key == "distanz_text" || $key == "versicherung" || $key == "übersee_lokal" || $key == "distanz" || $key == "montage" || $key == "übersee_verpackung" ||
-                    $key == "gestellung_container" || $key == "materialgestellung" || $key == "steuerbefreiung") {
+                    $key == "gestellung_container" || $key == "materialgestellung" || $key == "steuerbefreiung" || $key == "adresse" || $key == "telefon" ||
+                    $key == "email" || $key == "rechnungsempfänger" || $key == "ansprechpartner" || $key == "kakao_talk_id" || $key == "position") {
                     continue;
                 } else {
                     //print($value);
